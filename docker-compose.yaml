@@ -1,0 +1,54 @@
+version: "3.6"
+
+networks:
+  common-network:
+
+services:
+  ansible-playbook:
+    image: arsulegai/blockchain-automation-framework_ansible-playbook:latest
+    build:
+      context: .
+      args:
+        - http_proxy_var=http://proxy.wal-mart.com:9080
+        - https_proxy_var=http://proxy.wal-mart.com:9080
+#    image: hyperledgerlabs/baf-build:latest
+    container_name: ansible-playbook
+    working_dir: /Users/s0s0dit/project/blockchain-automation-framework
+    volumes:
+    - .:/Users/s0s0dit/project/blockchain-automation-framework
+    networks:
+      common-network:
+    depends_on:
+      - vault.suneelbaf.svc.cluster.local
+    command: ansible-playbook platforms/shared/configuration/site.yaml -e "@./build/network.yaml" -vvv
+
+  ansible-reset:
+    image: arsulegai/blockchain-automation-framework_ansible-playbook:latest
+    build:
+      context: .
+    container_name: ansible-reset
+    working_dir: /Users/s0s0dit/project/blockchain-automation-framework
+    volumes:
+    - .:/Users/s0s0dit/project/blockchain-automation-framework
+#    network_mode: "host"
+    networks:
+      common-network:
+    depends_on:
+      - vault.suneelbaf.svc.cluster.local
+    command: ansible-playbook -vv /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/site.yaml --inventory-file=/Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/inventory/ -e "@/Users/s0s0dit/project/blockchain-automation-framework/build/network.yaml" -e 'ansible_python_interpreter=/usr/bin/python3' -e "reset='true'"
+
+  vault.suneelbaf.svc.cluster.local:
+    image: arsulegai/blockchain-automation-framework_ansible-playbook:latest
+    build:
+      context: .
+    container_name: vault.suneelbaf.svc.cluster.local
+    working_dir: /Users/s0s0dit/project/blockchain-automation-framework
+    environment:
+      - KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/config
+    volumes:
+    - .:/Users/s0s0dit/project/blockchain-automation-framework
+    networks:
+      common-network:
+    expose:
+    - 8200
+    command: kubectl port-forward service/vault 8200:8200 --address 0.0.0.0
