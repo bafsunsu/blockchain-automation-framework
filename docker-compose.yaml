@@ -20,7 +20,7 @@ services:
       common-network:
     depends_on:
       - vault.suneelbaf.svc.cluster.local
-    command: ansible-playbook platforms/shared/configuration/site.yaml -e "@./build/network.yaml" -vvv
+    command: ansible-playbook platforms/hyperledger-fabric/configuration/add-new-channel.yaml -e "@./build/network.yaml" -vvv
 
   ansible-reset:
     image: arsulegai/blockchain-automation-framework_ansible-playbook:latest
