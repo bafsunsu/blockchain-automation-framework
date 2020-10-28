@@ -51,4 +51,4 @@ services:
       common-network:
     expose:
     - 8200
-    command: kubectl port-forward service/vault 8200:8200 --address 0.0.0.0
+    command: kubectl port-forward service/vault 8200:8200 --address 0.0.0.0 -n suneelbaf
