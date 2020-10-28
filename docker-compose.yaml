@@ -44,11 +44,11 @@ services:
     container_name: vault.suneelbaf.svc.cluster.local
     working_dir: /Users/s0s0dit/project/blockchain-automation-framework
     environment:
-      - KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/config
+      - KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml
     volumes:
     - .:/Users/s0s0dit/project/blockchain-automation-framework
     networks:
       common-network:
     expose:
     - 8200
-    command: kubectl port-forward service/vault 8200:8200 --address 0.0.0.0
+    command: kubectl port-forward service/vault 8200:8200 --address 0.0.0.0 -n suneelbaf
