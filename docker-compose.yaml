@@ -22,6 +22,25 @@ services:
       - vault.suneelbaf.svc.cluster.local
     command: ansible-playbook platforms/shared/configuration/site.yaml -e "@./build/network.yaml" -vvv
 
+
+  ansible-playbook-addpeer:
+    image: arsulegai/blockchain-automation-framework_ansible-playbook:latest
+    build:
+      context: .
+      args:
+        - http_proxy_var=http://proxy.wal-mart.com:9080
+        - https_proxy_var=http://proxy.wal-mart.com:9080
+#    image: hyperledgerlabs/baf-build:latest
+    container_name: ansible-playbook-addpeer
+    working_dir: /Users/s0s0dit/project/blockchain-automation-framework
+    volumes:
+    - .:/Users/s0s0dit/project/blockchain-automation-framework
+    networks:
+      common-network:
+    depends_on:
+      - vault.suneelbaf.svc.cluster.local
+    command: ansible-playbook platforms/hyperledger-fabric/configuration/add-peer.yaml -e "@./build/network_add_peer.yaml" -vvv
+
   ansible-reset:
     image: arsulegai/blockchain-automation-framework_ansible-playbook:latest
     build:
