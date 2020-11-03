@@ -28884,3 +28884,2747 @@ Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command
 <localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpojnzq3ds TO /root/.ansible/tmp/ansible-tmp-1604399580.1645927-21824-257578992026948/AnsiballZ_command.py
 <localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399580.1645927-21824-257578992026948/ /root/.ansible/tmp/ansible-tmp-1604399580.1645927-21824-257578992026948/AnsiballZ_command.py && sleep 0'
 <localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399580.1645927-21824-257578992026948/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399580.1645927-21824-257578992026948/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "cmd": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing Peer files\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:local\n",
+    "delta": "0:00:09.731870",
+    "end": "2020-11-03 10:33:10.028432",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing Peer files\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:local\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-11-03 10:33:00.296562",
+    "stderr": "To https://github.com/bafsunsu/blockchain-automation-framework.git\n   1f7ebd34..d545700e  HEAD -> local",
+    "stderr_lines": [
+        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
+        "   1f7ebd34..d545700e  HEAD -> local"
+    ],
+    "stdout": "---------------SHOW CONTENT OF DIR---------------\n.\n..\n.DS_Store\n.circleci\n.git\n.github\n.gitignore\n.travis.yml\nCODEOWNERS\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nDockerfile\nLICENSE\nMAINTAINERS.md\nREADME.md\nautomation\nbuild\nconsole.out\ndocker-compose.yaml\ndocs\nexamples\nplatforms\nrelease-notes.md\nreset.sh\nrun.sh\n---------------GIT PUSH---------------\nUnstaged changes after reset:\nM\tplatforms/hyperledger-fabric/configuration/.yamllint\nM\tplatforms/hyperledger-fabric/configuration/README.md\nM\tplatforms/hyperledger-fabric/configuration/add-new-channel.yaml\nM\tplatforms/hyperledger-fabric/configuration/add-organization.yaml\nM\tplatforms/hyperledger-fabric/configuration/add-peer.yaml\nM\tplatforms/hyperledger-fabric/configuration/chaincode-install-instantiate.yaml\nM\tplatforms/hyperledger-fabric/configuration/chaincode-upgrade.yaml\nM\tplatforms/hyperledger-fabric/configuration/create-join-channel.yaml\nM\tplatforms/hyperledger-fabric/configuration/deploy-network.yaml\nM\tplatforms/hyperledger-fabric/configuration/generate-artefacts-deploy.yaml\nM\tplatforms/hyperledger-fabric/configuration/molecule/crypto/cleanup.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/crypto/converge.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/crypto/molecule.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/crypto/prepare.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/crypto/verify.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/default/cleanup.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/default/converge.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/default/molecule.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/default/prepare.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/default/verify.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/cleanup.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/converge.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/molecule.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/prepare.yml\nM\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/verify.yml\nM\tplatforms/hyperledger-fabric/configuration/openssl.conf\nM\tplatforms/hyperledger-fabric/configuration/reset-network.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/add_new_peer/crypto_script/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/add_new_peer/crypto_script/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/add_new_peer/crypto_script/templates/organisation_script.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/anchorpeer/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/anchorpeer/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/anchorpeer/tasks/nested_anchorpeer.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/ca-server/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/ca-server/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/ca-server/vars/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/ca-tools/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/ca-tools/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/install/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/install/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/install/tasks/valuefile.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/tasks/valuefile.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/invoke/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/invoke/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/invoke/tasks/valuefile.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/upgrade/tasks/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/upgrade/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/upgrade/tasks/valuefile.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channel_artifacts/README.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channel_artifacts/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channel_artifacts/vars/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channels/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/orderercheck.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/peercheck.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/valuefile.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/tasks/check.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/tasks/nested_channel_join.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/cli_pod/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxOrderer.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxOrg.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxProfile.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxinit.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/common.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/orderer.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/orderercheck.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/common.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/peer.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/peercheck.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/templates/orderer_organisation_script.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/templates/orderer_script.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/templates/organisation_script.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/genesis/README.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/genesis/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/tasks/create_json.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/templates/organisation_script.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/vars/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/orderers/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/orderers/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/orderers/vars/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/peers/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/peers/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/peers/vars/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/awsorderer_sc.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/awspeer_sc.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/azureorderer_sc.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/azurepeer_sc.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/mini_sc.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/vars/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/delete/flux_releases/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/delete/flux_releases/meta/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/delete/flux_releases/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/delete/genesis/README.md\nM\tplatforms/hyperledger-fabric/configuration/roles/delete/genesis/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/delete/gitops_files/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/delete/gitops_files/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/delete/vault_secrets/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/delete/vault_secrets/meta/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/delete/vault_secrets/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/anchorpeer_job.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/ca-orderer.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/ca-peer.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/ca-tools.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/cli.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/create_channel_job.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/helm_component.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/install_chaincode_job.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/instantiate_chaincode_job.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/invoke_chaincode_job.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/join_channel_job.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/orderernode.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/upgrade_chaincode_job.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/value_peer.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/zkkafka.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/helm_component/vars/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/k8_component/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/k8_component/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/default.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/existing_peer_cli.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/namespace_component.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/orderer_cli.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/reviewer.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/reviewer_rbac.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/vault_auth.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/k8_component/vars/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/tasks/nested_create_cli.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/tasks/nested_fetch_role.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/vars/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/nested_sign_and_update.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/nested_update_channel.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/peercheck.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/valuefile.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/get_ambassador_crypto/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/get_crypto/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/get_crypto/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/Readme.md\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/templates/orderer-ro.tpl\nM\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/templates/peer-ro.tpl\nM\tplatforms/hyperledger-fabric/configuration/samples/network-fabric-add-new-channel.yaml\nM\tplatforms/hyperledger-fabric/configuration/samples/network-fabric-add-organization.yaml\nM\tplatforms/hyperledger-fabric/configuration/samples/network-fabricv-add-peer.yaml\nM\tplatforms/hyperledger-fabric/configuration/samples/network-fabricv2-raft.yaml\nM\tplatforms/hyperledger-fabric/configuration/samples/network-fabricv2.yaml\nM\tplatforms/hyperledger-fabric/configuration/samples/network-minikube.yaml\n[local d545700e] [ci skip] Pushing Peer files\n 2 files changed, 1206 insertions(+)\n create mode 100644 platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer0.yaml",
+    "stdout_lines": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".DS_Store",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        ".travis.yml",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "automation",
+        "build",
+        "console.out",
+        "docker-compose.yaml",
+        "docs",
+        "examples",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "Unstaged changes after reset:",
+        "M\tplatforms/hyperledger-fabric/configuration/.yamllint",
+        "M\tplatforms/hyperledger-fabric/configuration/README.md",
+        "M\tplatforms/hyperledger-fabric/configuration/add-new-channel.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/add-organization.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/add-peer.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/chaincode-install-instantiate.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/chaincode-upgrade.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/create-join-channel.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/deploy-network.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/generate-artefacts-deploy.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/crypto/cleanup.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/crypto/converge.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/crypto/molecule.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/crypto/prepare.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/crypto/verify.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/default/cleanup.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/default/converge.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/default/molecule.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/default/prepare.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/default/verify.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/cleanup.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/converge.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/molecule.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/prepare.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/verify.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/openssl.conf",
+        "M\tplatforms/hyperledger-fabric/configuration/reset-network.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/add_new_peer/crypto_script/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/add_new_peer/crypto_script/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/add_new_peer/crypto_script/templates/organisation_script.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/anchorpeer/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/anchorpeer/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/anchorpeer/tasks/nested_anchorpeer.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/ca-server/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/ca-server/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/ca-server/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/ca-tools/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/ca-tools/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/install/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/install/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/install/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/invoke/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/invoke/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/invoke/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/upgrade/tasks/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/upgrade/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/upgrade/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channel_artifacts/README.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channel_artifacts/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channel_artifacts/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/orderercheck.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/peercheck.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/tasks/check.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/tasks/nested_channel_join.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/cli_pod/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxOrderer.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxOrg.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxProfile.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxinit.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/common.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/orderer.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/orderercheck.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/common.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/peer.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/peercheck.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/templates/orderer_organisation_script.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/templates/orderer_script.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/templates/organisation_script.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/genesis/README.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/genesis/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/tasks/create_json.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/templates/organisation_script.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/orderers/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/orderers/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/orderers/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/peers/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/peers/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/peers/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/awsorderer_sc.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/awspeer_sc.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/azureorderer_sc.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/azurepeer_sc.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/mini_sc.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/flux_releases/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/flux_releases/meta/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/flux_releases/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/genesis/README.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/genesis/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/gitops_files/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/gitops_files/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/vault_secrets/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/vault_secrets/meta/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/vault_secrets/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/anchorpeer_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/ca-orderer.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/ca-peer.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/ca-tools.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/cli.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/create_channel_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/helm_component.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/install_chaincode_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/instantiate_chaincode_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/invoke_chaincode_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/join_channel_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/orderernode.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/upgrade_chaincode_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/value_peer.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/zkkafka.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/default.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/existing_peer_cli.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/namespace_component.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/orderer_cli.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/reviewer.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/reviewer_rbac.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/vault_auth.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/tasks/nested_create_cli.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/tasks/nested_fetch_role.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/nested_sign_and_update.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/nested_update_channel.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/peercheck.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/get_ambassador_crypto/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/get_crypto/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/get_crypto/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/templates/orderer-ro.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/templates/peer-ro.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-fabric-add-new-channel.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-fabric-add-organization.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-fabricv-add-peer.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-fabricv2-raft.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-fabricv2.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-minikube.yaml",
+        "[local d545700e] [ci skip] Pushing Peer files",
+        " 2 files changed, 1206 insertions(+)",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer0.yaml"
+    ]
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Output for gitpush] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:32
+ok: [localhost] => {
+    "msg": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".DS_Store",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        ".travis.yml",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "automation",
+        "build",
+        "console.out",
+        "docker-compose.yaml",
+        "docs",
+        "examples",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "Unstaged changes after reset:",
+        "M\tplatforms/hyperledger-fabric/configuration/.yamllint",
+        "M\tplatforms/hyperledger-fabric/configuration/README.md",
+        "M\tplatforms/hyperledger-fabric/configuration/add-new-channel.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/add-organization.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/add-peer.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/chaincode-install-instantiate.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/chaincode-upgrade.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/create-join-channel.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/deploy-network.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/generate-artefacts-deploy.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/crypto/cleanup.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/crypto/converge.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/crypto/molecule.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/crypto/prepare.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/crypto/verify.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/default/cleanup.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/default/converge.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/default/molecule.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/default/prepare.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/default/verify.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/cleanup.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/converge.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/molecule.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/prepare.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/molecule/pre-vault-setup/verify.yml",
+        "M\tplatforms/hyperledger-fabric/configuration/openssl.conf",
+        "M\tplatforms/hyperledger-fabric/configuration/reset-network.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/add_new_peer/crypto_script/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/add_new_peer/crypto_script/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/add_new_peer/crypto_script/templates/organisation_script.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/anchorpeer/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/anchorpeer/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/anchorpeer/tasks/nested_anchorpeer.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/ca-server/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/ca-server/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/ca-server/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/ca-tools/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/ca-tools/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/install/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/install/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/install/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/invoke/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/invoke/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/invoke/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/upgrade/tasks/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/upgrade/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/chaincode/upgrade/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channel_artifacts/README.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channel_artifacts/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channel_artifacts/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/orderercheck.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/peercheck.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/tasks/check.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/channels_join/tasks/nested_channel_join.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/cli_pod/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxOrderer.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxOrg.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxProfile.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/configtx/templates/configtxinit.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/common.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/orderer.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/orderer/tasks/orderercheck.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/common.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/peer.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto/peer/tasks/peercheck.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/templates/orderer_organisation_script.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/templates/orderer_script.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/crypto_script/templates/organisation_script.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/genesis/README.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/genesis/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/tasks/create_json.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/templates/organisation_script.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/new_organization/create_block/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/orderers/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/orderers/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/orderers/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/peers/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/peers/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/peers/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/awsorderer_sc.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/awspeer_sc.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/azureorderer_sc.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/azurepeer_sc.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/templates/mini_sc.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/create/storageclass/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/flux_releases/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/flux_releases/meta/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/flux_releases/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/genesis/README.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/genesis/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/gitops_files/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/gitops_files/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/vault_secrets/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/vault_secrets/meta/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/delete/vault_secrets/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/anchorpeer_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/ca-orderer.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/ca-peer.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/ca-tools.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/cli.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/create_channel_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/helm_component.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/install_chaincode_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/instantiate_chaincode_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/invoke_chaincode_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/join_channel_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/orderernode.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/upgrade_chaincode_job.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/value_peer.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/templates/zkkafka.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/helm_component/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/default.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/existing_peer_cli.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/namespace_component.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/orderer_cli.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/reviewer.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/reviewer_rbac.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/templates/vault_auth.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/k8_component/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/tasks/nested_create_cli.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/tasks/nested_fetch_role.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/fetch/vars/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/nested_sign_and_update.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/nested_update_channel.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/peercheck.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/config_block/sign_and_update/tasks/valuefile.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/get_ambassador_crypto/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/get_crypto/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/get_crypto/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/Readme.md",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/templates/orderer-ro.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/templates/peer-ro.tpl",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-fabric-add-new-channel.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-fabric-add-organization.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-fabricv-add-peer.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-fabricv2-raft.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-fabricv2.yaml",
+        "M\tplatforms/hyperledger-fabric/configuration/samples/network-minikube.yaml",
+        "[local d545700e] [ci skip] Pushing Peer files",
+        " 2 files changed, 1206 insertions(+)",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer0.yaml"
+    ]
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Error for git_push] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:37
+ok: [localhost] => {
+    "msg": [
+        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
+        "   1f7ebd34..d545700e  HEAD -> local"
+    ]
+}
+
+TASK [Waiting for peer pod {{ peer.name }} in {{ item.name | lower }}-net] *****
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/peers/tasks/main.yaml:50
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/helm_component : Wait for Pod peer0 in carrier-net] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:5
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/helm_component : Check for {{ job_title }} job on {{ component_name }}] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:22
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/helm_component : Wait for Pod peer0 in carrier-net] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:36
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399590.3618424-21878-268059648933687 `" && echo ansible-tmp-1604399590.3618424-21878-268059648933687="` echo /root/.ansible/tmp/ansible-tmp-1604399590.3618424-21878-268059648933687 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpufa3rmmd TO /root/.ansible/tmp/ansible-tmp-1604399590.3618424-21878-268059648933687/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399590.3618424-21878-268059648933687/ /root/.ansible/tmp/ansible-tmp-1604399590.3618424-21878-268059648933687/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399590.3618424-21878-268059648933687/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399590.3618424-21878-268059648933687/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Pod peer0 in carrier-net (20 retries left).Result was: {
+    "attempts": 1,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = peer0"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399620.997595-21878-21719516552396 `" && echo ansible-tmp-1604399620.997595-21878-21719516552396="` echo /root/.ansible/tmp/ansible-tmp-1604399620.997595-21878-21719516552396 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpw5sob_9z TO /root/.ansible/tmp/ansible-tmp-1604399620.997595-21878-21719516552396/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399620.997595-21878-21719516552396/ /root/.ansible/tmp/ansible-tmp-1604399620.997595-21878-21719516552396/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399620.997595-21878-21719516552396/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399620.997595-21878-21719516552396/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Pod peer0 in carrier-net (19 retries left).Result was: {
+    "attempts": 2,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = peer0"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399651.6919298-21878-139518395855665 `" && echo ansible-tmp-1604399651.6919298-21878-139518395855665="` echo /root/.ansible/tmp/ansible-tmp-1604399651.6919298-21878-139518395855665 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpq5ym32bh TO /root/.ansible/tmp/ansible-tmp-1604399651.6919298-21878-139518395855665/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399651.6919298-21878-139518395855665/ /root/.ansible/tmp/ansible-tmp-1604399651.6919298-21878-139518395855665/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399651.6919298-21878-139518395855665/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399651.6919298-21878-139518395855665/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Pod peer0 in carrier-net (18 retries left).Result was: {
+    "attempts": 3,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = peer0"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399682.3991854-21878-147987637706463 `" && echo ansible-tmp-1604399682.3991854-21878-147987637706463="` echo /root/.ansible/tmp/ansible-tmp-1604399682.3991854-21878-147987637706463 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpxwvjiaii TO /root/.ansible/tmp/ansible-tmp-1604399682.3991854-21878-147987637706463/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399682.3991854-21878-147987637706463/ /root/.ansible/tmp/ansible-tmp-1604399682.3991854-21878-147987637706463/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399682.3991854-21878-147987637706463/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399682.3991854-21878-147987637706463/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Pod peer0 in carrier-net (17 retries left).Result was: {
+    "attempts": 4,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = peer0"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399713.0517492-21878-167907921414913 `" && echo ansible-tmp-1604399713.0517492-21878-167907921414913="` echo /root/.ansible/tmp/ansible-tmp-1604399713.0517492-21878-167907921414913 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmp2v98dmha TO /root/.ansible/tmp/ansible-tmp-1604399713.0517492-21878-167907921414913/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399713.0517492-21878-167907921414913/ /root/.ansible/tmp/ansible-tmp-1604399713.0517492-21878-167907921414913/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399713.0517492-21878-167907921414913/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399713.0517492-21878-167907921414913/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Pod peer0 in carrier-net (16 retries left).Result was: {
+    "attempts": 5,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = peer0"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399743.679338-21878-120540771225026 `" && echo ansible-tmp-1604399743.679338-21878-120540771225026="` echo /root/.ansible/tmp/ansible-tmp-1604399743.679338-21878-120540771225026 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmp2tcvt0u_ TO /root/.ansible/tmp/ansible-tmp-1604399743.679338-21878-120540771225026/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399743.679338-21878-120540771225026/ /root/.ansible/tmp/ansible-tmp-1604399743.679338-21878-120540771225026/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399743.679338-21878-120540771225026/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399743.679338-21878-120540771225026/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Pod peer0 in carrier-net (15 retries left).Result was: {
+    "attempts": 6,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = peer0"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399774.3374653-21878-270731145035766 `" && echo ansible-tmp-1604399774.3374653-21878-270731145035766="` echo /root/.ansible/tmp/ansible-tmp-1604399774.3374653-21878-270731145035766 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpib39hrpm TO /root/.ansible/tmp/ansible-tmp-1604399774.3374653-21878-270731145035766/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399774.3374653-21878-270731145035766/ /root/.ansible/tmp/ansible-tmp-1604399774.3374653-21878-270731145035766/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399774.3374653-21878-270731145035766/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399774.3374653-21878-270731145035766/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Pod peer0 in carrier-net (14 retries left).Result was: {
+    "attempts": 7,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = peer0"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399805.1589472-21878-22166277592984 `" && echo ansible-tmp-1604399805.1589472-21878-22166277592984="` echo /root/.ansible/tmp/ansible-tmp-1604399805.1589472-21878-22166277592984 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmps66x7kwm TO /root/.ansible/tmp/ansible-tmp-1604399805.1589472-21878-22166277592984/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399805.1589472-21878-22166277592984/ /root/.ansible/tmp/ansible-tmp-1604399805.1589472-21878-22166277592984/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399805.1589472-21878-22166277592984/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399805.1589472-21878-22166277592984/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Pod peer0 in carrier-net (13 retries left).Result was: {
+    "attempts": 8,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = peer0"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399835.789343-21878-128396707478814 `" && echo ansible-tmp-1604399835.789343-21878-128396707478814="` echo /root/.ansible/tmp/ansible-tmp-1604399835.789343-21878-128396707478814 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpuqsao3fp TO /root/.ansible/tmp/ansible-tmp-1604399835.789343-21878-128396707478814/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399835.789343-21878-128396707478814/ /root/.ansible/tmp/ansible-tmp-1604399835.789343-21878-128396707478814/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399835.789343-21878-128396707478814/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399835.789343-21878-128396707478814/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Pod peer0 in carrier-net (12 retries left).Result was: {
+    "attempts": 9,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = peer0"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399866.5199192-21878-25754950318528 `" && echo ansible-tmp-1604399866.5199192-21878-25754950318528="` echo /root/.ansible/tmp/ansible-tmp-1604399866.5199192-21878-25754950318528 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpuk5u1ji6 TO /root/.ansible/tmp/ansible-tmp-1604399866.5199192-21878-25754950318528/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399866.5199192-21878-25754950318528/ /root/.ansible/tmp/ansible-tmp-1604399866.5199192-21878-25754950318528/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399866.5199192-21878-25754950318528/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399866.5199192-21878-25754950318528/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "attempts": 10,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = peer0"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "v1",
+            "kind": "Pod",
+            "metadata": {
+                "annotations": {
+                    "checksum/config": "8481409cc7e2fa9dedd9a07b8ed9ae0e6ff1621a3a3b2359e4365633baf448b1"
+                },
+                "creationTimestamp": "2020-11-03T10:36:37Z",
+                "generateName": "peer0-",
+                "labels": {
+                    "app": "peer0",
+                    "app.kubernetes.io/instance": "carrier-peer0",
+                    "app.kubernetes.io/name": "peer0",
+                    "controller-revision-hash": "peer0-b74b75664",
+                    "statefulset.kubernetes.io/pod-name": "peer0-0"
+                },
+                "name": "peer0-0",
+                "namespace": "carrier-net",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "apps/v1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "StatefulSet",
+                        "name": "peer0",
+                        "uid": "f119a57f-32e6-40d3-b448-9a9d9870948c"
+                    }
+                ],
+                "resourceVersion": "1745824",
+                "selfLink": "/api/v1/namespaces/carrier-net/pods/peer0-0",
+                "uid": "71771efc-4ddd-4ed5-9f88-e16e1e03018a"
+            },
+            "spec": {
+                "containers": [
+                    {
+                        "args": [
+                            "chown -R couchdb:couchdb /opt/couchdb\nchmod -R 0770 /opt/couchdb/data\nchmod 664 /opt/couchdb/etc/*.ini\nchmod 664 /opt/couchdb/etc/local.d/*.ini\nchmod 775 /opt/couchdb/etc/*.d\nif [ -e /etc/hyperledger/fabric/crypto/user_cred ] && [ -z $COUCHDB_USER ]\nthen\n  echo \" Error! Please provide username for the password \"\n  exit 1\n  break\nelif [ -e /etc/hyperledger/fabric/crypto/user_cred ] && [ ! -z $COUCHDB_USER ]\nthen\n  export COUCHDB_PASSWORD=`cat /etc/hyperledger/fabric/crypto/user_cred`\n  break\nelif [ ! -e /etc/hyperledger/fabric/crypto/user_cred ] && [ ! -z $COUCHDB_USER ]\nthen\n  echo \" Error! Please provide password for username $COUCHDB_USER \"\n  exit 1\n  break\nelse\n  :\nfi\ntini -- /docker-entrypoint.sh /opt/couchdb/bin/couchdb"
+                        ],
+                        "command": [
+                            "sh",
+                            "-c"
+                        ],
+                        "env": [
+                            {
+                                "name": "COUCHDB_USER",
+                                "value": "carrier-user"
+                            }
+                        ],
+                        "image": "hyperledger/fabric-couchdb:0.4.18",
+                        "imagePullPolicy": "IfNotPresent",
+                        "name": "couchdb",
+                        "ports": [
+                            {
+                                "containerPort": 5984,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "resources": {},
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/opt/couchdb/data",
+                                "name": "datadir-couchdb"
+                            },
+                            {
+                                "mountPath": "/etc/hyperledger/fabric/crypto",
+                                "name": "certificates"
+                            },
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "name": "vault-auth-token-pj5fm",
+                                "readOnly": true
+                            }
+                        ]
+                    },
+                    {
+                        "args": [
+                            "cp /etc/hyperledger/fabric/NodeOUconfig/mspconfig  /etc/hyperledger/fabric/crypto/msp/config.yaml\nexport CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=`cat /etc/hyperledger/fabric/crypto/user_cred`\npeer node start"
+                        ],
+                        "command": [
+                            "sh",
+                            "-c"
+                        ],
+                        "envFrom": [
+                            {
+                                "configMapRef": {
+                                    "name": "peer0-config"
+                                }
+                            }
+                        ],
+                        "image": "hyperledger/fabric-peer:2.0.0",
+                        "imagePullPolicy": "IfNotPresent",
+                        "name": "peer0",
+                        "ports": [
+                            {
+                                "containerPort": 7051,
+                                "name": "grpc",
+                                "protocol": "TCP"
+                            },
+                            {
+                                "containerPort": 7053,
+                                "name": "events",
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "resources": {},
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/hyperledger/production",
+                                "name": "datadir"
+                            },
+                            {
+                                "mountPath": "/host/var/run/docker.sock",
+                                "name": "dockersocket"
+                            },
+                            {
+                                "mountPath": "/etc/hyperledger/fabric/crypto",
+                                "name": "certificates"
+                            },
+                            {
+                                "mountPath": "/etc/hyperledger/fabric/NodeOUconfig",
+                                "name": "peer0-msp-config-volume",
+                                "readOnly": true
+                            },
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "name": "vault-auth-token-pj5fm",
+                                "readOnly": true
+                            }
+                        ]
+                    }
+                ],
+                "dnsPolicy": "ClusterFirst",
+                "enableServiceLinks": true,
+                "hostname": "peer0-0",
+                "imagePullSecrets": [
+                    {
+                        "name": "regcred"
+                    }
+                ],
+                "initContainers": [
+                    {
+                        "args": [
+                            "#!/usr/bin/env sh\nvalidateVaultResponse () {\nif echo ${2} | grep \"errors\"; then\n echo \"ERROR: unable to retrieve ${1}: ${2}\"\n exit 1\n fi\n}\n\nKUBE_SA_TOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)\necho \"Getting secrets from Vault Server: ${VAULT_ADDR}\"\n# Login to Vault and so I can get an approle token\nVAULT_CLIENT_TOKEN=$(curl -sS --request POST ${VAULT_ADDR}/v1/auth/${KUBERNETES_AUTH_PATH}/login \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"role\":\"'\"${VAULT_APP_ROLE}\"'\",\"jwt\":\"'\"${KUBE_SA_TOKEN}\"'\"}' | \\\n  jq -r 'if .errors then . else .auth.client_token end')        \nvalidateVaultResponse 'vault login token' \"${VAULT_CLIENT_TOKEN}\"\n\nvault_secret_key=\"${VAULT_SECRET_PREFIX}/tls\"\necho \"Getting TLS certificates from Vault using key $vault_secret_key\"\n\nOUTPUT_PATH=\"${MOUNT_PATH}/tls\"\nLOOKUP_SECRET_RESPONSE=$(curl -sS --header \"X-Vault-Token: ${VAULT_CLIENT_TOKEN}\" ${VAULT_ADDR}/v1/${vault_secret_key} | jq -r 'if .errors then . else . end')\n\nvalidateVaultResponse \"secret (${vault_secret_key})\" \"${LOOKUP_SECRET_RESPONSE}\"\n\nTLS_CA_CERT=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"ca.crt\"]')\nTLS_SERVER_CERT=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"server.crt\"]')\nTLS_SERVER_KEY=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"server.key\"]')\n\nmkdir -p ${OUTPUT_PATH}\necho \"${TLS_CA_CERT}\" >> ${OUTPUT_PATH}/ca.crt\necho \"${TLS_SERVER_CERT}\" >> ${OUTPUT_PATH}/server.crt\necho \"${TLS_SERVER_KEY}\" >> ${OUTPUT_PATH}/server.key\n\nvault_secret_key=\"${VAULT_SECRET_PREFIX}/msp\"\necho \"Getting MSP certificates from Vault using key $vault_secret_key\"\n\nOUTPUT_PATH=\"${MOUNT_PATH}/msp\"\nLOOKUP_SECRET_RESPONSE=$(curl -sS --header \"X-Vault-Token: ${VAULT_CLIENT_TOKEN}\" ${VAULT_ADDR}/v1/${vault_secret_key} | jq -r 'if .errors then . else . end')\nvalidateVaultResponse \"secret (${vault_secret_key})\" \"${LOOKUP_SECRET_RESPONSE}\"\n\nADMINCERT=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"admincerts\"]')\nCACERTS=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"cacerts\"]')\nKEYSTORE=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"keystore\"]')\nSIGNCERTS=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"signcerts\"]')\nTLSCACERTS=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"tlscacerts\"]')\n\nmkdir -p ${OUTPUT_PATH}/admincerts\nmkdir -p ${OUTPUT_PATH}/cacerts\nmkdir -p ${OUTPUT_PATH}/keystore\nmkdir -p ${OUTPUT_PATH}/signcerts\nmkdir -p ${OUTPUT_PATH}/tlscacerts\n\necho \"${ADMINCERT}\" >> ${OUTPUT_PATH}/admincerts/admin.crt\necho \"${CACERTS}\" >> ${OUTPUT_PATH}/cacerts/ca.crt\necho \"${KEYSTORE}\" >> ${OUTPUT_PATH}/keystore/server.key\necho \"${SIGNCERTS}\" >> ${OUTPUT_PATH}/signcerts/server.crt\necho \"${TLSCACERTS}\" >> ${OUTPUT_PATH}/tlscacerts/tlsca.crt\n\n# COUCH_DB CREDENTIALS\necho \"Getting couch db credentials\"\nSECRET_COUCHDB_PASS=secret/credentials/carrier-net/couchdb/carrier?user\nif [ ! -z $SECRET_COUCHDB_PASS ]\nthen\n  vault_secret_key=$(echo ${SECRET_COUCHDB_PASS} |awk -F \"?\" '{print $1}')\n  vault_data_key=$(echo ${SECRET_COUCHDB_PASS} |awk -F \"?\" '{print $2}')\n  LOOKUP_SECRET_RESPONSE=$(curl -sS \\\n    --header \"X-Vault-Token: ${VAULT_CLIENT_TOKEN}\" \\\n    ${VAULT_ADDR}/v1/${vault_secret_key} | jq -r 'if .errors then . else . end')\n  validateVaultResponse \"secret (${vault_secret_key})\" \"${LOOKUP_SECRET_RESPONSE}\"\n  PASSWORD=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r \".data[\\\"${vault_data_key}\\\"]\")\n  echo \"${PASSWORD}\" >> ${MOUNT_PATH}/user_cred \nfi            "
+                        ],
+                        "command": [
+                            "sh",
+                            "-c"
+                        ],
+                        "env": [
+                            {
+                                "name": "VAULT_ADDR",
+                                "value": "http://vault.suneelbaf.svc.cluster.local:8200"
+                            },
+                            {
+                                "name": "VAULT_SECRET_PREFIX",
+                                "value": "secret/crypto/peerOrganizations/carrier-net/peers/peer0.carrier-net"
+                            },
+                            {
+                                "name": "KUBERNETES_AUTH_PATH",
+                                "value": "carrier-net-auth"
+                            },
+                            {
+                                "name": "VAULT_APP_ROLE",
+                                "value": "vault-role"
+                            },
+                            {
+                                "name": "MOUNT_PATH",
+                                "value": "/secret"
+                            }
+                        ],
+                        "image": "index.docker.io/hyperledgerlabs/alpine-utils:1.0",
+                        "imagePullPolicy": "Always",
+                        "name": "certificates-init",
+                        "resources": {},
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/secret",
+                                "name": "certificates"
+                            },
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "name": "vault-auth-token-pj5fm",
+                                "readOnly": true
+                            }
+                        ]
+                    }
+                ],
+                "nodeName": "aks-fabricpool-41135923-vmss000000",
+                "priority": 0,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {},
+                "serviceAccount": "vault-auth",
+                "serviceAccountName": "vault-auth",
+                "subdomain": "peer0",
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.kubernetes.io/not-ready",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300
+                    }
+                ],
+                "volumes": [
+                    {
+                        "name": "datadir",
+                        "persistentVolumeClaim": {
+                            "claimName": "datadir-peer0-0"
+                        }
+                    },
+                    {
+                        "name": "datadir-couchdb",
+                        "persistentVolumeClaim": {
+                            "claimName": "datadir-couchdb-peer0-0"
+                        }
+                    },
+                    {
+                        "emptyDir": {
+                            "medium": "Memory"
+                        },
+                        "name": "certificates"
+                    },
+                    {
+                        "hostPath": {
+                            "path": "/var/run/docker.sock",
+                            "type": ""
+                        },
+                        "name": "dockersocket"
+                    },
+                    {
+                        "configMap": {
+                            "defaultMode": 420,
+                            "items": [
+                                {
+                                    "key": "mspconfig",
+                                    "path": "mspconfig"
+                                }
+                            ],
+                            "name": "peer0-msp-config"
+                        },
+                        "name": "peer0-msp-config-volume"
+                    },
+                    {
+                        "name": "vault-auth-token-pj5fm",
+                        "secret": {
+                            "defaultMode": 420,
+                            "secretName": "vault-auth-token-pj5fm"
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:37:29Z",
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:37:30Z",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:37:30Z",
+                        "status": "True",
+                        "type": "ContainersReady"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:36:52Z",
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://5032cb3625f9f19b495e211daefcca21727ab733f12ca9c59804f3ab37ae9e8b",
+                        "image": "hyperledger/fabric-couchdb:0.4.18",
+                        "imageID": "docker-pullable://hyperledger/fabric-couchdb@sha256:048b7c44c1deaabd0f3d84fbf2f7b649d7b10c54a3241c7354f078ee2eff077c",
+                        "lastState": {},
+                        "name": "couchdb",
+                        "ready": true,
+                        "restartCount": 0,
+                        "started": true,
+                        "state": {
+                            "running": {
+                                "startedAt": "2020-11-03T10:37:29Z"
+                            }
+                        }
+                    },
+                    {
+                        "containerID": "docker://d0e15cd3628e3ee44abac209c86027ed012f01142022a2508447ba725b61fb58",
+                        "image": "hyperledger/fabric-peer:2.0.0",
+                        "imageID": "docker-pullable://hyperledger/fabric-peer@sha256:2d8c001a0843ccbd63ad2be9d30427cd5bfd35603f3c82d84921f1609371ac02",
+                        "lastState": {},
+                        "name": "peer0",
+                        "ready": true,
+                        "restartCount": 0,
+                        "started": true,
+                        "state": {
+                            "running": {
+                                "startedAt": "2020-11-03T10:37:30Z"
+                            }
+                        }
+                    }
+                ],
+                "hostIP": "10.1.0.4",
+                "initContainerStatuses": [
+                    {
+                        "containerID": "docker://2ee6b9684a9d046e98317f791d886860b38868f04e3a0dd187cc0c0a0653e17b",
+                        "image": "hyperledgerlabs/alpine-utils:1.0",
+                        "imageID": "docker-pullable://hyperledgerlabs/alpine-utils@sha256:d074834d802a48f13d5f19402b4e570e158213d74c75485fc39fef890f8c7027",
+                        "lastState": {},
+                        "name": "certificates-init",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "terminated": {
+                                "containerID": "docker://2ee6b9684a9d046e98317f791d886860b38868f04e3a0dd187cc0c0a0653e17b",
+                                "exitCode": 0,
+                                "finishedAt": "2020-11-03T10:37:29Z",
+                                "reason": "Completed",
+                                "startedAt": "2020-11-03T10:37:28Z"
+                            }
+                        }
+                    }
+                ],
+                "phase": "Running",
+                "podIP": "10.1.0.16",
+                "podIPs": [
+                    {
+                        "ip": "10.1.0.16"
+                    }
+                ],
+                "qosClass": "BestEffort",
+                "startTime": "2020-11-03T10:36:52Z"
+            }
+        }
+    ]
+}
+
+TASK [include_role : create/channels] ******************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/deploy-network.yaml:191
+
+TASK [create/channels : Call valuefile when participant is creator] ************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/channels/tasks/main.yaml:7
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+included: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/channels/tasks/valuefile.yaml for localhost => (item={'organization': None, 'name': 'carrier', 'type': 'creator', 'org_status': 'new', 'peers': [{'peer': None, 'name': 'peer0', 'gossipAddress': 'peer0.carrier-net.svc.cluster.local:7051', 'peerAddress': 'peer0.carrier-net.svc.cluster.local:7051'}], 'ordererAddress': 'orderer3.supplychain-net.svc.cluster.local:7050'})
+
+TASK [create/channels : Check orderer pod is up] *******************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/channels/tasks/valuefile.yaml:6
+skipping: [localhost] => (item={'organization': None, 'name': 'carrier', 'country': 'GB', 'state': 'London', 'location': 'London', 'subject': 'O=Carrier,OU=Carrier,L=51.50/-0.13/London,C=GB', 'type': 'peer', 'external_url_suffix': 'carrier-net.svc.cluster.local', 'org_status': 'new', 'ca_data': {'url': 'ca.carrier-net:7054', 'certificate': 'file/server.crt'}, 'cloud_provider': 'azure', 'k8s': {'region': 'cluster_region', 'context': 'fabric-aks-dev1', 'config_file': '/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml'}, 'vault': {'url': 'http://vault.suneelbaf.svc.cluster.local:8200', 'root_token': 's.V28i17sRnBQyQV55J3jHp0hu'}, 'gitops': {'git_ssh': 'ssh://git@github.com/bafsunsu/blockchain-automation-framework.git', 'branch': 'local', 'release_dir': 'platforms/hyperledger-fabric/releases/dev', 'chart_source': 'platforms/hyperledger-fabric/charts', 'git_push_url': 'github.com/bafsunsu/blockchain-automation-framework.git', 'username': 'bafsunsu', 'password': 'bafsunsu2020', 'email': 's.unil18031992@gmail.com', 'private_key': '/Users/s0s0dit/project/blockchain-automation-framework/build/gitops'}, 'services': {'ca': {'name': 'ca', 'subject': '/C=GB/ST=London/L=London/O=Carrier/CN=ca.carrier-net', 'type': 'ca', 'grpc': {'port': 7054}}, 'peers': [{'peer': None, 'name': 'peer0', 'type': 'anchor', 'gossippeeraddress': 'peer0.carrier-net:7051', 'peerAddress': 'peer0.carrier-net.svc.cluster.local:7051', 'cli': 'enabled', 'grpc': {'port': 7051}, 'events': {'port': 7053}, 'couchdb': {'port': 5984}, 'restserver': {'targetPort': 20001, 'port': 20001}, 'expressapi': {'targetPort': 3000, 'port': 3000}}]}})  => {
+    "ansible_loop_var": "ordererorg",
+    "changed": false,
+    "ordererorg": {
+        "ca_data": {
+            "certificate": "file/server.crt",
+            "url": "ca.carrier-net:7054"
+        },
+        "cloud_provider": "azure",
+        "country": "GB",
+        "external_url_suffix": "carrier-net.svc.cluster.local",
+        "gitops": {
+            "branch": "local",
+            "chart_source": "platforms/hyperledger-fabric/charts",
+            "email": "s.unil18031992@gmail.com",
+            "git_push_url": "github.com/bafsunsu/blockchain-automation-framework.git",
+            "git_ssh": "ssh://git@github.com/bafsunsu/blockchain-automation-framework.git",
+            "password": "bafsunsu2020",
+            "private_key": "/Users/s0s0dit/project/blockchain-automation-framework/build/gitops",
+            "release_dir": "platforms/hyperledger-fabric/releases/dev",
+            "username": "bafsunsu"
+        },
+        "k8s": {
+            "config_file": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "context": "fabric-aks-dev1",
+            "region": "cluster_region"
+        },
+        "location": "London",
+        "name": "carrier",
+        "org_status": "new",
+        "organization": null,
+        "services": {
+            "ca": {
+                "grpc": {
+                    "port": 7054
+                },
+                "name": "ca",
+                "subject": "/C=GB/ST=London/L=London/O=Carrier/CN=ca.carrier-net",
+                "type": "ca"
+            },
+            "peers": [
+                {
+                    "cli": "enabled",
+                    "couchdb": {
+                        "port": 5984
+                    },
+                    "events": {
+                        "port": 7053
+                    },
+                    "expressapi": {
+                        "port": 3000,
+                        "targetPort": 3000
+                    },
+                    "gossippeeraddress": "peer0.carrier-net:7051",
+                    "grpc": {
+                        "port": 7051
+                    },
+                    "name": "peer0",
+                    "peer": null,
+                    "peerAddress": "peer0.carrier-net.svc.cluster.local:7051",
+                    "restserver": {
+                        "port": 20001,
+                        "targetPort": 20001
+                    },
+                    "type": "anchor"
+                }
+            ]
+        },
+        "state": "London",
+        "subject": "O=Carrier,OU=Carrier,L=51.50/-0.13/London,C=GB",
+        "type": "peer",
+        "vault": {
+            "root_token": "s.V28i17sRnBQyQV55J3jHp0hu",
+            "url": "http://vault.suneelbaf.svc.cluster.local:8200"
+        }
+    },
+    "skip_reason": "Conditional result was False"
+}
+included: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/channels/tasks/orderercheck.yaml for localhost => (item={'organization': None, 'name': 'supplychain', 'country': 'UK', 'state': 'London', 'location': 'London', 'subject': 'O=Orderer,L=51.50/-0.13/London,C=GB', 'type': 'orderer', 'external_url_suffix': 'supplychain-net.svc.cluster.local', 'org_status': 'new', 'ca_data': {'url': 'ca.supplychain-net:7054', 'certificate': 'file/server.crt'}, 'cloud_provider': 'azure', 'k8s': {'region': 'cluster_region', 'context': 'fabric-aks-dev1', 'config_file': '/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml'}, 'vault': {'url': 'http://vault.suneelbaf.svc.cluster.local:8200', 'root_token': 's.V28i17sRnBQyQV55J3jHp0hu'}, 'gitops': {'git_ssh': 'ssh://git@github.com/bafsunsu/blockchain-automation-framework.git', 'branch': 'local', 'release_dir': 'platforms/hyperledger-fabric/releases/dev', 'chart_source': 'platforms/hyperledger-fabric/charts', 'git_push_url': 'github.com/bafsunsu/blockchain-automation-framework.git', 'username': 'bafsunsu', 'password': 'bafsunsu2020', 'email': 's.unil18031992@gmail.com', 'private_key': '/Users/s0s0dit/project/blockchain-automation-framework/build/gitops'}, 'services': {'ca': {'name': 'ca', 'subject': '/C=GB/ST=London/L=London/O=Orderer/CN=ca.supplychain-net', 'type': 'ca', 'grpc': {'port': 7054}}, 'consensus': {'name': 'raft', 'type': 'broker', 'replicas': 4, 'grpc': {'port': 9092}}, 'orderers': [{'orderer': None, 'name': 'orderer3', 'type': 'orderer', 'consensus': 'raft', 'grpc': {'port': 7050}}]}})
+
+TASK [Waiting for orderer pod {{ orderer.name }} in {{ orderer_namespace }}] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/channels/tasks/orderercheck.yaml:1
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/helm_component : Wait for Pod orderer3 in supplychain-net] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:5
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/helm_component : Check for {{ job_title }} job on {{ component_name }}] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:22
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/helm_component : Wait for Pod orderer3 in supplychain-net] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:36
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399867.7585447-22152-17184147911317 `" && echo ansible-tmp-1604399867.7585447-22152-17184147911317="` echo /root/.ansible/tmp/ansible-tmp-1604399867.7585447-22152-17184147911317 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmp5kf0lhwp TO /root/.ansible/tmp/ansible-tmp-1604399867.7585447-22152-17184147911317/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399867.7585447-22152-17184147911317/ /root/.ansible/tmp/ansible-tmp-1604399867.7585447-22152-17184147911317/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399867.7585447-22152-17184147911317/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399867.7585447-22152-17184147911317/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "attempts": 1,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = orderer3"
+            ],
+            "name": null,
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "v1",
+            "kind": "Pod",
+            "metadata": {
+                "annotations": {
+                    "checksum/config": "b1ad9689c4162ffa7782d78a3a8b01e26aa20f57489765a93110a34daa1e90de"
+                },
+                "creationTimestamp": "2020-11-03T10:36:38Z",
+                "generateName": "orderer3-",
+                "labels": {
+                    "app": "orderer3",
+                    "app.kubernetes.io/instance": "supplychain-orderer3",
+                    "app.kubernetes.io/name": "orderer3",
+                    "controller-revision-hash": "orderer3-854bbcc546",
+                    "statefulset.kubernetes.io/pod-name": "orderer3-0"
+                },
+                "name": "orderer3-0",
+                "namespace": "supplychain-net",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "apps/v1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "StatefulSet",
+                        "name": "orderer3",
+                        "uid": "56e71999-a78c-4521-aeed-551e7f486314"
+                    }
+                ],
+                "resourceVersion": "1745772",
+                "selfLink": "/api/v1/namespaces/supplychain-net/pods/orderer3-0",
+                "uid": "a7b14227-ced2-4ccb-8105-1f9aa021f31a"
+            },
+            "spec": {
+                "containers": [
+                    {
+                        "command": [
+                            "sh",
+                            "-c",
+                            "cat /var/hyperledger/orderer/genesis/genesis.block.base64 | base64 -d > /var/hyperledger/orderer/orderer.genesis.block && orderer"
+                        ],
+                        "envFrom": [
+                            {
+                                "configMapRef": {
+                                    "name": "orderer3-config"
+                                }
+                            }
+                        ],
+                        "image": "hyperledger/fabric-orderer:2.0.0",
+                        "imagePullPolicy": "IfNotPresent",
+                        "name": "orderer3",
+                        "ports": [
+                            {
+                                "containerPort": 7050,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "resources": {},
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/hyperledger/production/orderer",
+                                "name": "datadir"
+                            },
+                            {
+                                "mountPath": "/var/hyperledger/orderer/genesis",
+                                "name": "orderer3-genesis-volume",
+                                "readOnly": true
+                            },
+                            {
+                                "mountPath": "/var/hyperledger/orderer/crypto",
+                                "name": "certificates",
+                                "readOnly": true
+                            },
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "name": "vault-auth-token-lwpl5",
+                                "readOnly": true
+                            }
+                        ],
+                        "workingDir": "/opt/gopath/src/github.com/hyperledger/fabric"
+                    }
+                ],
+                "dnsPolicy": "ClusterFirst",
+                "enableServiceLinks": true,
+                "hostname": "orderer3-0",
+                "imagePullSecrets": [
+                    {
+                        "name": "regcred"
+                    }
+                ],
+                "initContainers": [
+                    {
+                        "args": [
+                            "#!/usr/bin/env sh\nif [ raft == kafka ]\nthen\nCOUNTER=1\nFLAG=true\nKAFKACOUNT=0\nCOUNT=0\n\nwhile [ \"$COUNTER\" -le  ]\ndo\n   \n   if [ \"$FLAG\" == false ]\n   then\n      echo \"$KAFKACOUNT kafka brokers out of $COUNT are up and running!\"\n      echo \"Retry attempted $COUNTER times, retrying after  seconds\"\n      COUNTER=`expr \"$COUNTER\" + 1`\n      sleep \n\n   else\n      echo \"SUCCESS!\"\n      echo \"All $KAFKACOUNT kafka broker are up and running!\"\n      exit 0\n      break\n   fi\ndone\nif [ \"$COUNTER\" -gt  ] || [ \"$FLAG\" == false ]\nthen\n   echo \"Retry attempted $COUNTER times, no kafka brokers are up and running. Giving up!\"\n   exit 1\n   break\n\nfi\nfi"
+                        ],
+                        "command": [
+                            "sh",
+                            "-c"
+                        ],
+                        "image": "busybox",
+                        "imagePullPolicy": "Always",
+                        "name": "kafka-healthcheck",
+                        "resources": {},
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "name": "vault-auth-token-lwpl5",
+                                "readOnly": true
+                            }
+                        ]
+                    },
+                    {
+                        "args": [
+                            "#!/usr/bin/env sh\nvalidateVaultResponse () {\nif echo ${2} | grep \"errors\"; then\n echo \"ERROR: unable to retrieve ${1}: ${2}\"\n exit 1\n fi\n}\n\nKUBE_SA_TOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)\n\necho \"Getting secrets from Vault Server: ${VAULT_ADDR}\"\n# Login to Vault and so I can get an approle token\nVAULT_CLIENT_TOKEN=$(curl -sS --request POST ${VAULT_ADDR}/v1/auth/${KUBERNETES_AUTH_PATH}/login \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"role\":\"'\"${VAULT_APP_ROLE}\"'\",\"jwt\":\"'\"${KUBE_SA_TOKEN}\"'\"}' | \\\n  jq -r 'if .errors then . else .auth.client_token end')\n\nvalidateVaultResponse 'vault login token' \"${VAULT_CLIENT_TOKEN}\"\n\nvault_secret_key=\"${VAULT_SECRET_PREFIX}/tls\"\necho \"Getting TLS certificates from Vault using key $vault_secret_key\"\n\nOUTPUT_PATH=\"${MOUNT_PATH}/tls\"\nLOOKUP_SECRET_RESPONSE=$(curl -sS --header \"X-Vault-Token: ${VAULT_CLIENT_TOKEN}\" ${VAULT_ADDR}/v1/${vault_secret_key} | jq -r 'if .errors then . else . end')\nvalidateVaultResponse \"secret (${vault_secret_key})\" \"${LOOKUP_SECRET_RESPONSE}\"\n\nTLS_CA_CERT=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"ca.crt\"]')\nTLS_SERVER_CERT=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"server.crt\"]')\nTLS_SERVER_KEY=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"server.key\"]')\n\nmkdir -p ${OUTPUT_PATH}\necho \"${TLS_CA_CERT}\" >> ${OUTPUT_PATH}/ca.crt\necho \"${TLS_SERVER_CERT}\" >> ${OUTPUT_PATH}/server.crt\necho \"${TLS_SERVER_KEY}\" >> ${OUTPUT_PATH}/server.key\n\nvault_secret_key=\"${VAULT_SECRET_PREFIX}/msp\"\necho \"Getting MSP certificates from Vault using key $vault_secret_key\"\n\nOUTPUT_PATH=\"${MOUNT_PATH}/msp\"\nLOOKUP_SECRET_RESPONSE=$(curl -sS --header \"X-Vault-Token: ${VAULT_CLIENT_TOKEN}\" ${VAULT_ADDR}/v1/${vault_secret_key} | jq -r 'if .errors then . else . end')\nvalidateVaultResponse \"secret (${vault_secret_key})\" \"${LOOKUP_SECRET_RESPONSE}\"\n\nADMINCERT=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"admincerts\"]')\nCACERTS=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"cacerts\"]')\nKEYSTORE=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"keystore\"]')\nSIGNCERTS=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"signcerts\"]')\nTLSCACERTS=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"tlscacerts\"]')\n\nmkdir -p ${OUTPUT_PATH}/admincerts\nmkdir -p ${OUTPUT_PATH}/cacerts\nmkdir -p ${OUTPUT_PATH}/keystore\nmkdir -p ${OUTPUT_PATH}/signcerts\nmkdir -p ${OUTPUT_PATH}/tlscacerts\n\necho \"${ADMINCERT}\" >> ${OUTPUT_PATH}/admincerts/admin.crt\necho \"${CACERTS}\" >> ${OUTPUT_PATH}/cacerts/ca.crt\necho \"${KEYSTORE}\" >> ${OUTPUT_PATH}/keystore/server.key\necho \"${SIGNCERTS}\" >> ${OUTPUT_PATH}/signcerts/server.crt\necho \"${TLSCACERTS}\" >> ${OUTPUT_PATH}/tlscacerts/tlsca.crt"
+                        ],
+                        "command": [
+                            "sh",
+                            "-c"
+                        ],
+                        "env": [
+                            {
+                                "name": "VAULT_ADDR",
+                                "value": "http://vault.suneelbaf.svc.cluster.local:8200"
+                            },
+                            {
+                                "name": "VAULT_SECRET_PREFIX",
+                                "value": "secret/crypto/ordererOrganizations/supplychain-net/orderers/orderer3.supplychain-net"
+                            },
+                            {
+                                "name": "KUBERNETES_AUTH_PATH",
+                                "value": "supplychain-net-auth"
+                            },
+                            {
+                                "name": "VAULT_APP_ROLE",
+                                "value": "vault-role"
+                            },
+                            {
+                                "name": "MOUNT_PATH",
+                                "value": "/secret"
+                            }
+                        ],
+                        "image": "index.docker.io/hyperledgerlabs/alpine-utils:1.0",
+                        "imagePullPolicy": "Always",
+                        "name": "certificates-init",
+                        "resources": {},
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/secret",
+                                "name": "certificates"
+                            },
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "name": "vault-auth-token-lwpl5",
+                                "readOnly": true
+                            }
+                        ]
+                    }
+                ],
+                "nodeName": "aks-fabricpool-41135923-vmss000001",
+                "priority": 0,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {},
+                "serviceAccount": "vault-auth",
+                "serviceAccountName": "vault-auth",
+                "subdomain": "orderer3",
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.kubernetes.io/not-ready",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300
+                    }
+                ],
+                "volumes": [
+                    {
+                        "name": "datadir",
+                        "persistentVolumeClaim": {
+                            "claimName": "datadir-orderer3-0"
+                        }
+                    },
+                    {
+                        "emptyDir": {
+                            "medium": "Memory"
+                        },
+                        "name": "certificates"
+                    },
+                    {
+                        "configMap": {
+                            "defaultMode": 420,
+                            "items": [
+                                {
+                                    "key": "genesis.block.base64",
+                                    "path": "genesis.block.base64"
+                                }
+                            ],
+                            "name": "genesis-block-orderer3"
+                        },
+                        "name": "orderer3-genesis-volume"
+                    },
+                    {
+                        "name": "vault-auth-token-lwpl5",
+                        "secret": {
+                            "defaultMode": 420,
+                            "secretName": "vault-auth-token-lwpl5"
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:37:16Z",
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:37:17Z",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:37:17Z",
+                        "status": "True",
+                        "type": "ContainersReady"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:36:52Z",
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://941bba8256bcdd2e9f4630a5d96e4c1bd7848cedc6e7a0c0ca91d76374f72e33",
+                        "image": "hyperledger/fabric-orderer:2.0.0",
+                        "imageID": "docker-pullable://hyperledger/fabric-orderer@sha256:e85d1e89248d9ae1f3953ac6eb11b4d5795903757ecd7702ac1f5384c71371e3",
+                        "lastState": {},
+                        "name": "orderer3",
+                        "ready": true,
+                        "restartCount": 0,
+                        "started": true,
+                        "state": {
+                            "running": {
+                                "startedAt": "2020-11-03T10:37:17Z"
+                            }
+                        }
+                    }
+                ],
+                "hostIP": "10.1.0.35",
+                "initContainerStatuses": [
+                    {
+                        "containerID": "docker://dac38f2d542f5b5aecd95a687118e4a26aeaeb736c6c87763eaf548873ed4d62",
+                        "image": "busybox:latest",
+                        "imageID": "docker-pullable://busybox@sha256:a9286defaba7b3a519d585ba0e37d0b2cbee74ebfe590960b0b1d6a5e97d1e1d",
+                        "lastState": {},
+                        "name": "kafka-healthcheck",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "terminated": {
+                                "containerID": "docker://dac38f2d542f5b5aecd95a687118e4a26aeaeb736c6c87763eaf548873ed4d62",
+                                "exitCode": 0,
+                                "finishedAt": "2020-11-03T10:37:14Z",
+                                "reason": "Completed",
+                                "startedAt": "2020-11-03T10:37:14Z"
+                            }
+                        }
+                    },
+                    {
+                        "containerID": "docker://60fa7384ba5da86cd0843a1ad7246a86df99b8c164b722e7bfd77beab6a9344e",
+                        "image": "hyperledgerlabs/alpine-utils:1.0",
+                        "imageID": "docker-pullable://hyperledgerlabs/alpine-utils@sha256:d074834d802a48f13d5f19402b4e570e158213d74c75485fc39fef890f8c7027",
+                        "lastState": {},
+                        "name": "certificates-init",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "terminated": {
+                                "containerID": "docker://60fa7384ba5da86cd0843a1ad7246a86df99b8c164b722e7bfd77beab6a9344e",
+                                "exitCode": 0,
+                                "finishedAt": "2020-11-03T10:37:16Z",
+                                "reason": "Completed",
+                                "startedAt": "2020-11-03T10:37:15Z"
+                            }
+                        }
+                    }
+                ],
+                "phase": "Running",
+                "podIP": "10.1.0.40",
+                "podIPs": [
+                    {
+                        "ip": "10.1.0.40"
+                    }
+                ],
+                "qosClass": "BestEffort",
+                "startTime": "2020-11-03T10:36:52Z"
+            }
+        }
+    ]
+}
+
+TASK [create/channels : Check peer pod is up] **********************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/channels/tasks/valuefile.yaml:18
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+included: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/channels/tasks/peercheck.yaml for localhost => (item={'organization': None, 'name': 'carrier', 'country': 'GB', 'state': 'London', 'location': 'London', 'subject': 'O=Carrier,OU=Carrier,L=51.50/-0.13/London,C=GB', 'type': 'peer', 'external_url_suffix': 'carrier-net.svc.cluster.local', 'org_status': 'new', 'ca_data': {'url': 'ca.carrier-net:7054', 'certificate': 'file/server.crt'}, 'cloud_provider': 'azure', 'k8s': {'region': 'cluster_region', 'context': 'fabric-aks-dev1', 'config_file': '/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml'}, 'vault': {'url': 'http://vault.suneelbaf.svc.cluster.local:8200', 'root_token': 's.V28i17sRnBQyQV55J3jHp0hu'}, 'gitops': {'git_ssh': 'ssh://git@github.com/bafsunsu/blockchain-automation-framework.git', 'branch': 'local', 'release_dir': 'platforms/hyperledger-fabric/releases/dev', 'chart_source': 'platforms/hyperledger-fabric/charts', 'git_push_url': 'github.com/bafsunsu/blockchain-automation-framework.git', 'username': 'bafsunsu', 'password': 'bafsunsu2020', 'email': 's.unil18031992@gmail.com', 'private_key': '/Users/s0s0dit/project/blockchain-automation-framework/build/gitops'}, 'services': {'ca': {'name': 'ca', 'subject': '/C=GB/ST=London/L=London/O=Carrier/CN=ca.carrier-net', 'type': 'ca', 'grpc': {'port': 7054}}, 'peers': [{'peer': None, 'name': 'peer0', 'type': 'anchor', 'gossippeeraddress': 'peer0.carrier-net:7051', 'peerAddress': 'peer0.carrier-net.svc.cluster.local:7051', 'cli': 'enabled', 'grpc': {'port': 7051}, 'events': {'port': 7053}, 'couchdb': {'port': 5984}, 'restserver': {'targetPort': 20001, 'port': 20001}, 'expressapi': {'targetPort': 3000, 'port': 3000}}]}})
+
+TASK [Waiting for peer pod {{ peer_name }} in {{ org.name | lower }}-net] ******
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/channels/tasks/peercheck.yaml:1
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/helm_component : Wait for Pod peer0 in carrier-net] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:5
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/helm_component : Check for {{ job_title }} job on {{ component_name }}] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:22
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/helm_component : Wait for Pod peer0 in carrier-net] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:36
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399868.8451262-22188-14082037920283 `" && echo ansible-tmp-1604399868.8451262-22188-14082037920283="` echo /root/.ansible/tmp/ansible-tmp-1604399868.8451262-22188-14082037920283 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpsrbxcvid TO /root/.ansible/tmp/ansible-tmp-1604399868.8451262-22188-14082037920283/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399868.8451262-22188-14082037920283/ /root/.ansible/tmp/ansible-tmp-1604399868.8451262-22188-14082037920283/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399868.8451262-22188-14082037920283/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399868.8451262-22188-14082037920283/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "attempts": 1,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Running"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = peer0"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "v1",
+            "kind": "Pod",
+            "metadata": {
+                "annotations": {
+                    "checksum/config": "8481409cc7e2fa9dedd9a07b8ed9ae0e6ff1621a3a3b2359e4365633baf448b1"
+                },
+                "creationTimestamp": "2020-11-03T10:36:37Z",
+                "generateName": "peer0-",
+                "labels": {
+                    "app": "peer0",
+                    "app.kubernetes.io/instance": "carrier-peer0",
+                    "app.kubernetes.io/name": "peer0",
+                    "controller-revision-hash": "peer0-b74b75664",
+                    "statefulset.kubernetes.io/pod-name": "peer0-0"
+                },
+                "name": "peer0-0",
+                "namespace": "carrier-net",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "apps/v1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "StatefulSet",
+                        "name": "peer0",
+                        "uid": "f119a57f-32e6-40d3-b448-9a9d9870948c"
+                    }
+                ],
+                "resourceVersion": "1745824",
+                "selfLink": "/api/v1/namespaces/carrier-net/pods/peer0-0",
+                "uid": "71771efc-4ddd-4ed5-9f88-e16e1e03018a"
+            },
+            "spec": {
+                "containers": [
+                    {
+                        "args": [
+                            "chown -R couchdb:couchdb /opt/couchdb\nchmod -R 0770 /opt/couchdb/data\nchmod 664 /opt/couchdb/etc/*.ini\nchmod 664 /opt/couchdb/etc/local.d/*.ini\nchmod 775 /opt/couchdb/etc/*.d\nif [ -e /etc/hyperledger/fabric/crypto/user_cred ] && [ -z $COUCHDB_USER ]\nthen\n  echo \" Error! Please provide username for the password \"\n  exit 1\n  break\nelif [ -e /etc/hyperledger/fabric/crypto/user_cred ] && [ ! -z $COUCHDB_USER ]\nthen\n  export COUCHDB_PASSWORD=`cat /etc/hyperledger/fabric/crypto/user_cred`\n  break\nelif [ ! -e /etc/hyperledger/fabric/crypto/user_cred ] && [ ! -z $COUCHDB_USER ]\nthen\n  echo \" Error! Please provide password for username $COUCHDB_USER \"\n  exit 1\n  break\nelse\n  :\nfi\ntini -- /docker-entrypoint.sh /opt/couchdb/bin/couchdb"
+                        ],
+                        "command": [
+                            "sh",
+                            "-c"
+                        ],
+                        "env": [
+                            {
+                                "name": "COUCHDB_USER",
+                                "value": "carrier-user"
+                            }
+                        ],
+                        "image": "hyperledger/fabric-couchdb:0.4.18",
+                        "imagePullPolicy": "IfNotPresent",
+                        "name": "couchdb",
+                        "ports": [
+                            {
+                                "containerPort": 5984,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "resources": {},
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/opt/couchdb/data",
+                                "name": "datadir-couchdb"
+                            },
+                            {
+                                "mountPath": "/etc/hyperledger/fabric/crypto",
+                                "name": "certificates"
+                            },
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "name": "vault-auth-token-pj5fm",
+                                "readOnly": true
+                            }
+                        ]
+                    },
+                    {
+                        "args": [
+                            "cp /etc/hyperledger/fabric/NodeOUconfig/mspconfig  /etc/hyperledger/fabric/crypto/msp/config.yaml\nexport CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=`cat /etc/hyperledger/fabric/crypto/user_cred`\npeer node start"
+                        ],
+                        "command": [
+                            "sh",
+                            "-c"
+                        ],
+                        "envFrom": [
+                            {
+                                "configMapRef": {
+                                    "name": "peer0-config"
+                                }
+                            }
+                        ],
+                        "image": "hyperledger/fabric-peer:2.0.0",
+                        "imagePullPolicy": "IfNotPresent",
+                        "name": "peer0",
+                        "ports": [
+                            {
+                                "containerPort": 7051,
+                                "name": "grpc",
+                                "protocol": "TCP"
+                            },
+                            {
+                                "containerPort": 7053,
+                                "name": "events",
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "resources": {},
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/hyperledger/production",
+                                "name": "datadir"
+                            },
+                            {
+                                "mountPath": "/host/var/run/docker.sock",
+                                "name": "dockersocket"
+                            },
+                            {
+                                "mountPath": "/etc/hyperledger/fabric/crypto",
+                                "name": "certificates"
+                            },
+                            {
+                                "mountPath": "/etc/hyperledger/fabric/NodeOUconfig",
+                                "name": "peer0-msp-config-volume",
+                                "readOnly": true
+                            },
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "name": "vault-auth-token-pj5fm",
+                                "readOnly": true
+                            }
+                        ]
+                    }
+                ],
+                "dnsPolicy": "ClusterFirst",
+                "enableServiceLinks": true,
+                "hostname": "peer0-0",
+                "imagePullSecrets": [
+                    {
+                        "name": "regcred"
+                    }
+                ],
+                "initContainers": [
+                    {
+                        "args": [
+                            "#!/usr/bin/env sh\nvalidateVaultResponse () {\nif echo ${2} | grep \"errors\"; then\n echo \"ERROR: unable to retrieve ${1}: ${2}\"\n exit 1\n fi\n}\n\nKUBE_SA_TOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)\necho \"Getting secrets from Vault Server: ${VAULT_ADDR}\"\n# Login to Vault and so I can get an approle token\nVAULT_CLIENT_TOKEN=$(curl -sS --request POST ${VAULT_ADDR}/v1/auth/${KUBERNETES_AUTH_PATH}/login \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"role\":\"'\"${VAULT_APP_ROLE}\"'\",\"jwt\":\"'\"${KUBE_SA_TOKEN}\"'\"}' | \\\n  jq -r 'if .errors then . else .auth.client_token end')        \nvalidateVaultResponse 'vault login token' \"${VAULT_CLIENT_TOKEN}\"\n\nvault_secret_key=\"${VAULT_SECRET_PREFIX}/tls\"\necho \"Getting TLS certificates from Vault using key $vault_secret_key\"\n\nOUTPUT_PATH=\"${MOUNT_PATH}/tls\"\nLOOKUP_SECRET_RESPONSE=$(curl -sS --header \"X-Vault-Token: ${VAULT_CLIENT_TOKEN}\" ${VAULT_ADDR}/v1/${vault_secret_key} | jq -r 'if .errors then . else . end')\n\nvalidateVaultResponse \"secret (${vault_secret_key})\" \"${LOOKUP_SECRET_RESPONSE}\"\n\nTLS_CA_CERT=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"ca.crt\"]')\nTLS_SERVER_CERT=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"server.crt\"]')\nTLS_SERVER_KEY=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"server.key\"]')\n\nmkdir -p ${OUTPUT_PATH}\necho \"${TLS_CA_CERT}\" >> ${OUTPUT_PATH}/ca.crt\necho \"${TLS_SERVER_CERT}\" >> ${OUTPUT_PATH}/server.crt\necho \"${TLS_SERVER_KEY}\" >> ${OUTPUT_PATH}/server.key\n\nvault_secret_key=\"${VAULT_SECRET_PREFIX}/msp\"\necho \"Getting MSP certificates from Vault using key $vault_secret_key\"\n\nOUTPUT_PATH=\"${MOUNT_PATH}/msp\"\nLOOKUP_SECRET_RESPONSE=$(curl -sS --header \"X-Vault-Token: ${VAULT_CLIENT_TOKEN}\" ${VAULT_ADDR}/v1/${vault_secret_key} | jq -r 'if .errors then . else . end')\nvalidateVaultResponse \"secret (${vault_secret_key})\" \"${LOOKUP_SECRET_RESPONSE}\"\n\nADMINCERT=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"admincerts\"]')\nCACERTS=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"cacerts\"]')\nKEYSTORE=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"keystore\"]')\nSIGNCERTS=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"signcerts\"]')\nTLSCACERTS=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r '.data[\"tlscacerts\"]')\n\nmkdir -p ${OUTPUT_PATH}/admincerts\nmkdir -p ${OUTPUT_PATH}/cacerts\nmkdir -p ${OUTPUT_PATH}/keystore\nmkdir -p ${OUTPUT_PATH}/signcerts\nmkdir -p ${OUTPUT_PATH}/tlscacerts\n\necho \"${ADMINCERT}\" >> ${OUTPUT_PATH}/admincerts/admin.crt\necho \"${CACERTS}\" >> ${OUTPUT_PATH}/cacerts/ca.crt\necho \"${KEYSTORE}\" >> ${OUTPUT_PATH}/keystore/server.key\necho \"${SIGNCERTS}\" >> ${OUTPUT_PATH}/signcerts/server.crt\necho \"${TLSCACERTS}\" >> ${OUTPUT_PATH}/tlscacerts/tlsca.crt\n\n# COUCH_DB CREDENTIALS\necho \"Getting couch db credentials\"\nSECRET_COUCHDB_PASS=secret/credentials/carrier-net/couchdb/carrier?user\nif [ ! -z $SECRET_COUCHDB_PASS ]\nthen\n  vault_secret_key=$(echo ${SECRET_COUCHDB_PASS} |awk -F \"?\" '{print $1}')\n  vault_data_key=$(echo ${SECRET_COUCHDB_PASS} |awk -F \"?\" '{print $2}')\n  LOOKUP_SECRET_RESPONSE=$(curl -sS \\\n    --header \"X-Vault-Token: ${VAULT_CLIENT_TOKEN}\" \\\n    ${VAULT_ADDR}/v1/${vault_secret_key} | jq -r 'if .errors then . else . end')\n  validateVaultResponse \"secret (${vault_secret_key})\" \"${LOOKUP_SECRET_RESPONSE}\"\n  PASSWORD=$(echo ${LOOKUP_SECRET_RESPONSE} | jq -r \".data[\\\"${vault_data_key}\\\"]\")\n  echo \"${PASSWORD}\" >> ${MOUNT_PATH}/user_cred \nfi            "
+                        ],
+                        "command": [
+                            "sh",
+                            "-c"
+                        ],
+                        "env": [
+                            {
+                                "name": "VAULT_ADDR",
+                                "value": "http://vault.suneelbaf.svc.cluster.local:8200"
+                            },
+                            {
+                                "name": "VAULT_SECRET_PREFIX",
+                                "value": "secret/crypto/peerOrganizations/carrier-net/peers/peer0.carrier-net"
+                            },
+                            {
+                                "name": "KUBERNETES_AUTH_PATH",
+                                "value": "carrier-net-auth"
+                            },
+                            {
+                                "name": "VAULT_APP_ROLE",
+                                "value": "vault-role"
+                            },
+                            {
+                                "name": "MOUNT_PATH",
+                                "value": "/secret"
+                            }
+                        ],
+                        "image": "index.docker.io/hyperledgerlabs/alpine-utils:1.0",
+                        "imagePullPolicy": "Always",
+                        "name": "certificates-init",
+                        "resources": {},
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/secret",
+                                "name": "certificates"
+                            },
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "name": "vault-auth-token-pj5fm",
+                                "readOnly": true
+                            }
+                        ]
+                    }
+                ],
+                "nodeName": "aks-fabricpool-41135923-vmss000000",
+                "priority": 0,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {},
+                "serviceAccount": "vault-auth",
+                "serviceAccountName": "vault-auth",
+                "subdomain": "peer0",
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.kubernetes.io/not-ready",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300
+                    }
+                ],
+                "volumes": [
+                    {
+                        "name": "datadir",
+                        "persistentVolumeClaim": {
+                            "claimName": "datadir-peer0-0"
+                        }
+                    },
+                    {
+                        "name": "datadir-couchdb",
+                        "persistentVolumeClaim": {
+                            "claimName": "datadir-couchdb-peer0-0"
+                        }
+                    },
+                    {
+                        "emptyDir": {
+                            "medium": "Memory"
+                        },
+                        "name": "certificates"
+                    },
+                    {
+                        "hostPath": {
+                            "path": "/var/run/docker.sock",
+                            "type": ""
+                        },
+                        "name": "dockersocket"
+                    },
+                    {
+                        "configMap": {
+                            "defaultMode": 420,
+                            "items": [
+                                {
+                                    "key": "mspconfig",
+                                    "path": "mspconfig"
+                                }
+                            ],
+                            "name": "peer0-msp-config"
+                        },
+                        "name": "peer0-msp-config-volume"
+                    },
+                    {
+                        "name": "vault-auth-token-pj5fm",
+                        "secret": {
+                            "defaultMode": 420,
+                            "secretName": "vault-auth-token-pj5fm"
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:37:29Z",
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:37:30Z",
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:37:30Z",
+                        "status": "True",
+                        "type": "ContainersReady"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2020-11-03T10:36:52Z",
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://5032cb3625f9f19b495e211daefcca21727ab733f12ca9c59804f3ab37ae9e8b",
+                        "image": "hyperledger/fabric-couchdb:0.4.18",
+                        "imageID": "docker-pullable://hyperledger/fabric-couchdb@sha256:048b7c44c1deaabd0f3d84fbf2f7b649d7b10c54a3241c7354f078ee2eff077c",
+                        "lastState": {},
+                        "name": "couchdb",
+                        "ready": true,
+                        "restartCount": 0,
+                        "started": true,
+                        "state": {
+                            "running": {
+                                "startedAt": "2020-11-03T10:37:29Z"
+                            }
+                        }
+                    },
+                    {
+                        "containerID": "docker://d0e15cd3628e3ee44abac209c86027ed012f01142022a2508447ba725b61fb58",
+                        "image": "hyperledger/fabric-peer:2.0.0",
+                        "imageID": "docker-pullable://hyperledger/fabric-peer@sha256:2d8c001a0843ccbd63ad2be9d30427cd5bfd35603f3c82d84921f1609371ac02",
+                        "lastState": {},
+                        "name": "peer0",
+                        "ready": true,
+                        "restartCount": 0,
+                        "started": true,
+                        "state": {
+                            "running": {
+                                "startedAt": "2020-11-03T10:37:30Z"
+                            }
+                        }
+                    }
+                ],
+                "hostIP": "10.1.0.4",
+                "initContainerStatuses": [
+                    {
+                        "containerID": "docker://2ee6b9684a9d046e98317f791d886860b38868f04e3a0dd187cc0c0a0653e17b",
+                        "image": "hyperledgerlabs/alpine-utils:1.0",
+                        "imageID": "docker-pullable://hyperledgerlabs/alpine-utils@sha256:d074834d802a48f13d5f19402b4e570e158213d74c75485fc39fef890f8c7027",
+                        "lastState": {},
+                        "name": "certificates-init",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "terminated": {
+                                "containerID": "docker://2ee6b9684a9d046e98317f791d886860b38868f04e3a0dd187cc0c0a0653e17b",
+                                "exitCode": 0,
+                                "finishedAt": "2020-11-03T10:37:29Z",
+                                "reason": "Completed",
+                                "startedAt": "2020-11-03T10:37:28Z"
+                            }
+                        }
+                    }
+                ],
+                "phase": "Running",
+                "podIP": "10.1.0.16",
+                "podIPs": [
+                    {
+                        "ip": "10.1.0.16"
+                    }
+                ],
+                "qosClass": "BestEffort",
+                "startTime": "2020-11-03T10:36:52Z"
+            }
+        }
+    ]
+}
+
+TASK [Create Create_Channel value file] ****************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/channels/tasks/valuefile.yaml:28
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+
+TASK [helm_component : Ensures /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier dir exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:8
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399869.6588502-22218-208974287822155 `" && echo ansible-tmp-1604399869.6588502-22218-208974287822155="` echo /root/.ansible/tmp/ansible-tmp-1604399869.6588502-22218-208974287822155 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/file.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpa3xmdspf TO /root/.ansible/tmp/ansible-tmp-1604399869.6588502-22218-208974287822155/AnsiballZ_file.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399869.6588502-22218-208974287822155/ /root/.ansible/tmp/ansible-tmp-1604399869.6588502-22218-208974287822155/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399869.6588502-22218-208974287822155/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399869.6588502-22218-208974287822155/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "diff": {
+        "after": {
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier"
+        },
+        "before": {
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier"
+        }
+    },
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier",
+            "recurse": false,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": false
+        }
+    },
+    "mode": "0755",
+    "owner": "root",
+    "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier",
+    "size": 4096,
+    "state": "directory",
+    "uid": 0
+}
+
+TASK [helm_component : Check if the value file is already present] *************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:15
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399869.8689098-22244-97940873083267 `" && echo ansible-tmp-1604399869.8689098-22244-97940873083267="` echo /root/.ansible/tmp/ansible-tmp-1604399869.8689098-22244-97940873083267 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmp374b8iap TO /root/.ansible/tmp/ansible-tmp-1604399869.8689098-22244-97940873083267/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399869.8689098-22244-97940873083267/ /root/.ansible/tmp/ansible-tmp-1604399869.8689098-22244-97940873083267/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399869.8689098-22244-97940873083267/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399869.8689098-22244-97940873083267/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/allchannel.yaml"
+        }
+    },
+    "stat": {
+        "exists": false
+    }
+}
+
+TASK [helm_component : create value file for allchannel] ***********************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:24
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817 `" && echo ansible-tmp-1604399870.0695853-22270-278758727603817="` echo /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817 `" ) && sleep 0'
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmp21jrrxhq TO /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/ /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/AnsiballZ_stat.py && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmp_5x2bhpa/create_channel_job.tpl TO /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/source
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/ /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/source && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/copy.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmp5d8kjah2 TO /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/AnsiballZ_copy.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/ /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "checksum": "ff9a3ac6e92d7a6dfd8a462813c67520fa14fb5d",
+    "dest": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/allchannel.yaml",
+    "diff": [],
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "create_channel_job.tpl",
+            "attributes": null,
+            "backup": false,
+            "checksum": "ff9a3ac6e92d7a6dfd8a462813c67520fa14fb5d",
+            "content": null,
+            "dest": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/allchannel.yaml",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/source",
+            "unsafe_writes": false,
+            "validate": null
+        }
+    },
+    "md5sum": "7aa8d8a53dbeb7a2b99c44d687f8be09",
+    "mode": "0644",
+    "owner": "root",
+    "size": 1825,
+    "src": "/root/.ansible/tmp/ansible-tmp-1604399870.0695853-22270-278758727603817/source",
+    "state": "file",
+    "uid": 0
+}
+
+TASK [Helm lint] ***************************************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:34
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Check if value file exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:10
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399870.5868702-22312-43995237929109 `" && echo ansible-tmp-1604399870.5868702-22312-43995237929109="` echo /root/.ansible/tmp/ansible-tmp-1604399870.5868702-22312-43995237929109 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmppaiaxfma TO /root/.ansible/tmp/ansible-tmp-1604399870.5868702-22312-43995237929109/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399870.5868702-22312-43995237929109/ /root/.ansible/tmp/ansible-tmp-1604399870.5868702-22312-43995237929109/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399870.5868702-22312-43995237929109/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399870.5868702-22312-43995237929109/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/allchannel.yaml"
+        }
+    },
+    "stat": {
+        "atime": 1604399870.4689481,
+        "attr_flags": "e",
+        "attributes": [
+            "extents"
+        ],
+        "block_size": 4096,
+        "blocks": 8,
+        "charset": "us-ascii",
+        "checksum": "ff9a3ac6e92d7a6dfd8a462813c67520fa14fb5d",
+        "ctime": 1604399870.4689481,
+        "dev": 2080,
+        "device_type": 0,
+        "executable": false,
+        "exists": true,
+        "gid": 0,
+        "gr_name": "root",
+        "inode": 5001,
+        "isblk": false,
+        "ischr": false,
+        "isdir": false,
+        "isfifo": false,
+        "isgid": false,
+        "islnk": false,
+        "isreg": true,
+        "issock": false,
+        "isuid": false,
+        "mimetype": "text/plain",
+        "mode": "0644",
+        "mtime": 1604399870.332946,
+        "nlink": 1,
+        "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/allchannel.yaml",
+        "pw_name": "root",
+        "readable": true,
+        "rgrp": true,
+        "roth": true,
+        "rusr": true,
+        "size": 1825,
+        "uid": 0,
+        "version": "1186622192",
+        "wgrp": false,
+        "woth": false,
+        "writeable": true,
+        "wusr": true,
+        "xgrp": false,
+        "xoth": false,
+        "xusr": false
+    }
+}
+
+TASK [Check or create test directory] ******************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:16
+
+TASK [../../shared/configuration/roles/check/setup : check if dir exists or not] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:3
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399870.8483825-22342-150094832372791 `" && echo ansible-tmp-1604399870.8483825-22342-150094832372791="` echo /root/.ansible/tmp/ansible-tmp-1604399870.8483825-22342-150094832372791 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpli1xdyop TO /root/.ansible/tmp/ansible-tmp-1604399870.8483825-22342-150094832372791/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399870.8483825-22342-150094832372791/ /root/.ansible/tmp/ansible-tmp-1604399870.8483825-22342-150094832372791/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399870.8483825-22342-150094832372791/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399870.8483825-22342-150094832372791/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "./build/test"
+        }
+    },
+    "stat": {
+        "atime": 1604398992.5719323,
+        "attr_flags": "e",
+        "attributes": [
+            "extents"
+        ],
+        "block_size": 4096,
+        "blocks": 8,
+        "charset": "binary",
+        "ctime": 1604399579.5806267,
+        "dev": 2080,
+        "device_type": 0,
+        "executable": true,
+        "exists": true,
+        "gid": 0,
+        "gr_name": "root",
+        "inode": 4671,
+        "isblk": false,
+        "ischr": false,
+        "isdir": true,
+        "isfifo": false,
+        "isgid": false,
+        "islnk": false,
+        "isreg": false,
+        "issock": false,
+        "isuid": false,
+        "mimetype": "inode/directory",
+        "mode": "0755",
+        "mtime": 1604399579.5806267,
+        "nlink": 2,
+        "path": "./build/test",
+        "pw_name": "root",
+        "readable": true,
+        "rgrp": true,
+        "roth": true,
+        "rusr": true,
+        "size": 4096,
+        "uid": 0,
+        "version": "3982184158",
+        "wgrp": false,
+        "woth": false,
+        "writeable": true,
+        "wusr": true,
+        "xgrp": true,
+        "xoth": true,
+        "xusr": true
+    }
+}
+
+TASK [../../shared/configuration/roles/check/setup : Ensures dir exists] *******
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:11
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [../../shared/configuration/roles/check/setup : Check if Kubernetes-auth already created for Organization] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:20
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [../../shared/configuration/roles/check/setup : Check if policy exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:30
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [../../shared/configuration/roles/check/setup : Check docker cred exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:41
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Load file into memory] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:25
+ok: [localhost] => {
+    "ansible_facts": {
+        "apiVersion": "flux.weave.works/v1beta1",
+        "kind": "HelmRelease",
+        "metadata": {
+            "annotations": {
+                "flux.weave.works/automated": "false"
+            },
+            "name": "channel-carrier",
+            "namespace": "carrier-net"
+        },
+        "spec": {
+            "chart": {
+                "git": "ssh://git@github.com/bafsunsu/blockchain-automation-framework.git",
+                "path": "platforms/hyperledger-fabric/charts/create_channel",
+                "ref": "local"
+            },
+            "releaseName": "channel-carrier",
+            "values": {
+                "channel": {
+                    "name": "allchannel"
+                },
+                "channeltx": "CrEDChgKFggCGgYI0eOE/QUiCmFsbGNoYW5uZWwSlAMKkQMKCmFsbGNoYW5uZWwSMRIfCgtBcHBs\naWNhdGlvbhIQEg4KCmNhcnJpZXJNU1ASABoOCgpDb25zb3J0aXVtEgAazwISowIKC0FwcGxpY2F0\naW9uEpMCCAESDgoKY2Fycmllck1TUBIAGiYKDENhcGFiaWxpdGllcxIWEgwKCgoGVjFfNF8yEgAa\nBkFkbWlucyIsCgtFbmRvcnNlbWVudBIdEhMIAxIPCgtFbmRvcnNlbWVudBACGgZBZG1pbnMiIgoH\nUmVhZGVycxIXEg0IAxIJCgdSZWFkZXJzGgZBZG1pbnMiIgoHV3JpdGVycxIXEg0IAxIJCgdXcml0\nZXJzGgZBZG1pbnMiIgoGQWRtaW5zEhgSDggDEgoKBkFkbWlucxACGgZBZG1pbnMiNQoUTGlmZWN5\nY2xlRW5kb3JzZW1lbnQSHRITCAMSDwoLRW5kb3JzZW1lbnQQAhoGQWRtaW5zKgZBZG1pbnMaJwoK\nQ29uc29ydGl1bRIZEhcKFVN1cHBseUNoYWluQ29uc29ydGl1bQ==",
+                "metadata": {
+                    "images": {
+                        "alpineutils": "index.docker.io/hyperledgerlabs/alpine-utils:1.0",
+                        "fabrictools": "hyperledger/fabric-tools:2.0.0"
+                    },
+                    "namespace": "carrier-net"
+                },
+                "orderer": {
+                    "address": "orderer3.supplychain-net.svc.cluster.local:7050"
+                },
+                "peer": {
+                    "address": "peer0.carrier-net:7051",
+                    "localmspid": "carrierMSP",
+                    "loglevel": "debug",
+                    "name": "peer0",
+                    "tlsstatus": true
+                },
+                "vault": {
+                    "address": "http://vault.suneelbaf.svc.cluster.local:8200",
+                    "adminsecretprefix": "secret/crypto/peerOrganizations/carrier-net/users/admin",
+                    "authpath": "carrier-net-auth",
+                    "imagesecretname": "regcred",
+                    "orderersecretprefix": "secret/crypto/peerOrganizations/carrier-net/orderer",
+                    "role": "vault-role",
+                    "serviceaccountname": "vault-auth"
+                }
+            }
+        }
+    },
+    "ansible_included_var_files": [
+        "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/releases/dev/carrier/carrier/allchannel.yaml"
+    ],
+    "changed": false
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Create value file] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:30
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281 `" && echo ansible-tmp-1604399871.2382984-22380-100045236843281="` echo /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpzmig1wez TO /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/ /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/AnsiballZ_stat.py && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpqdjd_aev TO /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/source
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/ /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/source && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/copy.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmp661narye TO /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/AnsiballZ_copy.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/ /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "checksum": "959af5d23ad1724703b7253aff9e3aa713837aaf",
+    "dest": "./build/test/channel-carrier.yaml",
+    "diff": [],
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "tmpqdjd_aev",
+            "attributes": null,
+            "backup": false,
+            "checksum": "959af5d23ad1724703b7253aff9e3aa713837aaf",
+            "content": null,
+            "dest": "./build/test/channel-carrier.yaml",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/source",
+            "unsafe_writes": false,
+            "validate": null
+        }
+    },
+    "md5sum": "76f4986ddb46f1e44d4f85cc5631ff7e",
+    "mode": "0644",
+    "owner": "root",
+    "size": 1374,
+    "src": "/root/.ansible/tmp/ansible-tmp-1604399871.2382984-22380-100045236843281/source",
+    "state": "file",
+    "uid": 0
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Run helm lint] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:35
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399871.5988753-22420-260949322135133 `" && echo ansible-tmp-1604399871.5988753-22420-260949322135133="` echo /root/.ansible/tmp/ansible-tmp-1604399871.5988753-22420-260949322135133 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpry86j_3h TO /root/.ansible/tmp/ansible-tmp-1604399871.5988753-22420-260949322135133/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399871.5988753-22420-260949322135133/ /root/.ansible/tmp/ansible-tmp-1604399871.5988753-22420-260949322135133/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399871.5988753-22420-260949322135133/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399871.5988753-22420-260949322135133/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "cmd": "helm lint -f \"./build/test/channel-carrier.yaml\" \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/create_channel\"\n",
+    "delta": "0:00:00.072600",
+    "end": "2020-11-03 10:37:51.802715",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "helm lint -f \"./build/test/channel-carrier.yaml\" \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/create_channel\"\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-11-03 10:37:51.730115",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "==> Linting /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/create_channel\n[INFO] Chart.yaml: icon is recommended\n\n1 chart(s) linted, no failures",
+    "stdout_lines": [
+        "==> Linting /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/create_channel",
+        "[INFO] Chart.yaml: icon is recommended",
+        "",
+        "1 chart(s) linted, no failures"
+    ]
+}
+
+TASK [Git Push] ****************************************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/channels/tasks/valuefile.yaml:51
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Check if directory: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../ exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:3
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399872.0906575-22454-81674240726920 `" && echo ansible-tmp-1604399872.0906575-22454-81674240726920="` echo /root/.ansible/tmp/ansible-tmp-1604399872.0906575-22454-81674240726920 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/file.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmpcrdm6xu6 TO /root/.ansible/tmp/ansible-tmp-1604399872.0906575-22454-81674240726920/AnsiballZ_file.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399872.0906575-22454-81674240726920/ /root/.ansible/tmp/ansible-tmp-1604399872.0906575-22454-81674240726920/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399872.0906575-22454-81674240726920/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604399872.0906575-22454-81674240726920/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "diff": {
+        "after": {
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../"
+        },
+        "before": {
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../"
+        }
+    },
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../",
+            "recurse": false,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": false
+        }
+    },
+    "mode": "0755",
+    "owner": "root",
+    "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../",
+    "size": 4096,
+    "state": "directory",
+    "uid": 0
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Execute git push via shell task] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:9
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604399872.3047612-22480-169918676058455 `" && echo ansible-tmp-1604399872.3047612-22480-169918676058455="` echo /root/.ansible/tmp/ansible-tmp-1604399872.3047612-22480-169918676058455 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-11765jouig8id/tmphgv0ha9m TO /root/.ansible/tmp/ansible-tmp-1604399872.3047612-22480-169918676058455/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604399872.3047612-22480-169918676058455/ /root/.ansible/tmp/ansible-tmp-1604399872.3047612-22480-169918676058455/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604399872.3047612-22480-169918676058455/AnsiballZ_command.py && sleep 0'
