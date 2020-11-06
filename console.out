@@ -11107,3 +11107,742 @@ Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command
 <localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmppog71ueg TO /root/.ansible/tmp/ansible-tmp-1604649893.861504-25007-148755447166421/AnsiballZ_command.py
 <localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649893.861504-25007-148755447166421/ /root/.ansible/tmp/ansible-tmp-1604649893.861504-25007-148755447166421/AnsiballZ_command.py && sleep 0'
 <localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649893.861504-25007-148755447166421/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649893.861504-25007-148755447166421/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "cmd": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:gorilla\n",
+    "delta": "0:00:03.281537",
+    "end": "2020-11-06 08:04:57.271319",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:gorilla\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-11-06 08:04:53.989782",
+    "stderr": "To https://github.com/bafsunsu/blockchain-automation-framework.git\n   9dd4a8cd..bb98f61c  HEAD -> gorilla",
+    "stderr_lines": [
+        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
+        "   9dd4a8cd..bb98f61c  HEAD -> gorilla"
+    ],
+    "stdout": "---------------SHOW CONTENT OF DIR---------------\n.\n..\n.circleci\n.git\n.github\n.gitignore\n.travis.yml\nCODEOWNERS\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nDockerfile\nLICENSE\nMAINTAINERS.md\nREADME.md\nautomation\nbuild\nconsole.out\nconsole1.out\ndocs\nexamples\nplatforms\nrelease-notes.md\nreset.sh\nrun.sh\n---------------GIT PUSH---------------\n[gorilla bb98f61c] [ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding\n 1 file changed, 532 insertions(+)",
+    "stdout_lines": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        ".travis.yml",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "automation",
+        "build",
+        "console.out",
+        "console1.out",
+        "docs",
+        "examples",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "[gorilla bb98f61c] [ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding",
+        " 1 file changed, 532 insertions(+)"
+    ]
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Output for gitpush] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:32
+ok: [localhost] => {
+    "msg": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        ".travis.yml",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "automation",
+        "build",
+        "console.out",
+        "console1.out",
+        "docs",
+        "examples",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "[gorilla bb98f61c] [ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding",
+        " 1 file changed, 532 insertions(+)"
+    ]
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Error for git_push] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:37
+ok: [localhost] => {
+    "msg": [
+        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
+        "   9dd4a8cd..bb98f61c  HEAD -> gorilla"
+    ]
+}
+
+TASK [Checking for the carrier-net-role-tokenreview-binding] *******************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:90
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [Including the check for ServiceAccount vault-reviewer in carrier-net] ****
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:103
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Check ServiceAccount vault-reviewer is created] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:7
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-reviewer] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:17
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-reviewer] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:32
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-reviewer] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:45
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649897.6223109-25065-226950100549921 `" && echo ansible-tmp-1604649897.6223109-25065-226950100549921="` echo /root/.ansible/tmp/ansible-tmp-1604649897.6223109-25065-226950100549921 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp7m0w_3bd TO /root/.ansible/tmp/ansible-tmp-1604649897.6223109-25065-226950100549921/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649897.6223109-25065-226950100549921/ /root/.ansible/tmp/ansible-tmp-1604649897.6223109-25065-226950100549921/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649897.6223109-25065-226950100549921/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649897.6223109-25065-226950100549921/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "attempts": 1,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "v1",
+            "kind": "ServiceAccount",
+            "metadata": {
+                "annotations": {
+                    "fluxcd.io/sync-checksum": "b58363452cf175c51393cb14895aa328f29926fb",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"ServiceAccount\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"b58363452cf175c51393cb14895aa328f29926fb\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.SfwI4bUp-9vBmNtYuvWPud29wS2vub5mkmAEFSwImLM\"},\"name\":\"vault-reviewer\",\"namespace\":\"carrier-net\"}}\n"
+                },
+                "creationTimestamp": "2020-11-06T07:55:37Z",
+                "labels": {
+                    "fluxcd.io/sync-gc-mark": "sha256.SfwI4bUp-9vBmNtYuvWPud29wS2vub5mkmAEFSwImLM"
+                },
+                "name": "vault-reviewer",
+                "namespace": "carrier-net",
+                "resourceVersion": "2403287",
+                "selfLink": "/api/v1/namespaces/carrier-net/serviceaccounts/vault-reviewer",
+                "uid": "4fa90ccc-145b-4c1e-afe7-81013755f989"
+            },
+            "secrets": [
+                {
+                    "name": "vault-reviewer-token-r4226"
+                }
+            ]
+        }
+    ]
+}
+
+TASK [Including the check for ServiceAccount vault-auth in carrier-net] ********
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:115
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Check ServiceAccount vault-auth is created] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:7
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-auth] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:17
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-auth] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:32
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-auth] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:45
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649898.4064786-25101-144118997037586 `" && echo ansible-tmp-1604649898.4064786-25101-144118997037586="` echo /root/.ansible/tmp/ansible-tmp-1604649898.4064786-25101-144118997037586 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp_id7lf5w TO /root/.ansible/tmp/ansible-tmp-1604649898.4064786-25101-144118997037586/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649898.4064786-25101-144118997037586/ /root/.ansible/tmp/ansible-tmp-1604649898.4064786-25101-144118997037586/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649898.4064786-25101-144118997037586/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649898.4064786-25101-144118997037586/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "attempts": 1,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-auth",
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "v1",
+            "kind": "ServiceAccount",
+            "metadata": {
+                "annotations": {
+                    "fluxcd.io/sync-checksum": "1f1e2eea45453e92f0290eba38f04db3a5b9e630",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"ServiceAccount\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"1f1e2eea45453e92f0290eba38f04db3a5b9e630\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.dtH53QwRXD4Ub9H-9Pfs3PmTtIHuyT-6vz4YP0xgw_4\"},\"name\":\"vault-auth\",\"namespace\":\"carrier-net\"}}\n"
+                },
+                "creationTimestamp": "2020-11-06T07:55:37Z",
+                "labels": {
+                    "fluxcd.io/sync-gc-mark": "sha256.dtH53QwRXD4Ub9H-9Pfs3PmTtIHuyT-6vz4YP0xgw_4"
+                },
+                "name": "vault-auth",
+                "namespace": "carrier-net",
+                "resourceVersion": "2403283",
+                "selfLink": "/api/v1/namespaces/carrier-net/serviceaccounts/vault-auth",
+                "uid": "dc05cb2b-05c1-42fc-b104-65a1ead85430"
+            },
+            "secrets": [
+                {
+                    "name": "vault-auth-token-rvknq"
+                }
+            ]
+        }
+    ]
+}
+
+TASK [include_role : setup/vault_kubernetes] ***********************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/deploy-network.yaml:32
+
+TASK [Waiting for the namespace walmart-net to be created] *********************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml:7
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Check Namespace walmart-net is created] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:7
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for Namespace walmart-net] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:17
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649899.2511375-25135-236775470226322 `" && echo ansible-tmp-1604649899.2511375-25135-236775470226322="` echo /root/.ansible/tmp/ansible-tmp-1604649899.2511375-25135-236775470226322 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp_vfalzta TO /root/.ansible/tmp/ansible-tmp-1604649899.2511375-25135-236775470226322/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649899.2511375-25135-236775470226322/ /root/.ansible/tmp/ansible-tmp-1604649899.2511375-25135-236775470226322/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649899.2511375-25135-236775470226322/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649899.2511375-25135-236775470226322/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "attempts": 1,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "Namespace",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "walmart-net",
+            "namespace": null,
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "annotations": {
+                    "fluxcd.io/sync-checksum": "42333c092f583cd8c9e567f7c9309cf9b1a19a7a",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"42333c092f583cd8c9e567f7c9309cf9b1a19a7a\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.5ghI6f1RCMw7etASBXtHoKqBQMXua26tzh8kOI6dbS0\"},\"name\":\"walmart-net\"}}\n"
+                },
+                "creationTimestamp": "2020-11-06T07:10:22Z",
+                "labels": {
+                    "fluxcd.io/sync-gc-mark": "sha256.5ghI6f1RCMw7etASBXtHoKqBQMXua26tzh8kOI6dbS0"
+                },
+                "name": "walmart-net",
+                "resourceVersion": "2396284",
+                "selfLink": "/api/v1/namespaces/walmart-net",
+                "uid": "3d9d6e48-5349-4c48-ba0c-3703e64ff272"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        }
+    ]
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for Namespace walmart-net] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:32
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for Namespace walmart-net] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:45
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [Creating the build directory] ********************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml:18
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/setup : check if dir exists or not] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:3
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649899.9972332-25169-232572875682763 `" && echo ansible-tmp-1604649899.9972332-25169-232572875682763="` echo /root/.ansible/tmp/ansible-tmp-1604649899.9972332-25169-232572875682763 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpgjbemah3 TO /root/.ansible/tmp/ansible-tmp-1604649899.9972332-25169-232572875682763/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649899.9972332-25169-232572875682763/ /root/.ansible/tmp/ansible-tmp-1604649899.9972332-25169-232572875682763/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649899.9972332-25169-232572875682763/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649899.9972332-25169-232572875682763/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "./build"
+        }
+    },
+    "stat": {
+        "exists": false
+    }
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/setup : Ensures dir exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:11
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649900.1822727-25195-54596561544141 `" && echo ansible-tmp-1604649900.1822727-25195-54596561544141="` echo /root/.ansible/tmp/ansible-tmp-1604649900.1822727-25195-54596561544141 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/file.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpcdgivfb_ TO /root/.ansible/tmp/ansible-tmp-1604649900.1822727-25195-54596561544141/AnsiballZ_file.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649900.1822727-25195-54596561544141/ /root/.ansible/tmp/ansible-tmp-1604649900.1822727-25195-54596561544141/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649900.1822727-25195-54596561544141/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649900.1822727-25195-54596561544141/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "diff": {
+        "after": {
+            "path": "./build",
+            "state": "directory"
+        },
+        "before": {
+            "path": "./build",
+            "state": "absent"
+        }
+    },
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": "0755",
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./build",
+            "recurse": true,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": false
+        }
+    },
+    "mode": "0755",
+    "owner": "root",
+    "path": "./build",
+    "size": 4096,
+    "state": "directory",
+    "uid": 0
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/setup : Check if Kubernetes-auth already created for Organization] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:20
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/setup : Check if policy exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:30
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/setup : Check docker cred exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:41
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [Checking if the vault path already exists] *******************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml:26
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/setup : check if dir exists or not] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:3
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/setup : Ensures dir exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:11
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/setup : Check if Kubernetes-auth already created for Organization] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:20
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649900.5749385-25233-91943901555065 `" && echo ansible-tmp-1604649900.5749385-25233-91943901555065="` echo /root/.ansible/tmp/ansible-tmp-1604649900.5749385-25233-91943901555065 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp95nytg_1 TO /root/.ansible/tmp/ansible-tmp-1604649900.5749385-25233-91943901555065/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649900.5749385-25233-91943901555065/ /root/.ansible/tmp/ansible-tmp-1604649900.5749385-25233-91943901555065/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'VAULT_ADDR=http://vault.default.svc.cluster.local:8200 VAULT_TOKEN=s.V28i17sRnBQyQV55J3jHp0hu /usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649900.5749385-25233-91943901555065/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649900.5749385-25233-91943901555065/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "cmd": "vault auth list --format json | jq \"to_entries[] | select(.value.restricted|not) | .key\"\n",
+    "delta": "0:00:00.074897",
+    "end": "2020-11-06 08:05:00.779631",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "vault auth list --format json | jq \"to_entries[] | select(.value.restricted|not) | .key\"\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-11-06 08:05:00.704734",
+    "stderr": "Error listing enabled authentications: Get \"http://vault.default.svc.cluster.local:8200/v1/sys/auth\": dial tcp: lookup vault.default.svc.cluster.local on 10.0.0.10:53: no such host",
+    "stderr_lines": [
+        "Error listing enabled authentications: Get \"http://vault.default.svc.cluster.local:8200/v1/sys/auth\": dial tcp: lookup vault.default.svc.cluster.local on 10.0.0.10:53: no such host"
+    ],
+    "stdout": "",
+    "stdout_lines": []
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/setup : Check if policy exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:30
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/setup : Check docker cred exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:41
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [setup/vault_kubernetes : Set Variable] ***********************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml:32
+ok: [localhost] => {
+    "ansible_facts": {
+        "auth_list": {
+            "changed": true,
+            "cmd": "vault auth list --format json | jq \"to_entries[] | select(.value.restricted|not) | .key\"\n",
+            "delta": "0:00:00.074897",
+            "end": "2020-11-06 08:05:00.779631",
+            "failed": false,
+            "rc": 0,
+            "start": "2020-11-06 08:05:00.704734",
+            "stderr": "Error listing enabled authentications: Get \"http://vault.default.svc.cluster.local:8200/v1/sys/auth\": dial tcp: lookup vault.default.svc.cluster.local on 10.0.0.10:53: no such host",
+            "stderr_lines": [
+                "Error listing enabled authentications: Get \"http://vault.default.svc.cluster.local:8200/v1/sys/auth\": dial tcp: lookup vault.default.svc.cluster.local on 10.0.0.10:53: no such host"
+            ],
+            "stdout": "",
+            "stdout_lines": []
+        }
+    },
+    "changed": false
+}
+
+TASK [setup/vault_kubernetes : set_fact] ***************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml:37
+ok: [localhost] => {
+    "ansible_facts": {
+        "component_auth_temp": "\"walmart-net-auth/\"",
+        "vault_auth_status": false
+    },
+    "changed": false
+}
+
+TASK [setup/vault_kubernetes : set_fact] ***************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml:42
+
+TASK [setup/vault_kubernetes : Enable and configure Kubernetes-auth for Organization] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml:50
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649900.9861133-25280-242338968166552 `" && echo ansible-tmp-1604649900.9861133-25280-242338968166552="` echo /root/.ansible/tmp/ansible-tmp-1604649900.9861133-25280-242338968166552 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpq1gn91wf TO /root/.ansible/tmp/ansible-tmp-1604649900.9861133-25280-242338968166552/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649900.9861133-25280-242338968166552/ /root/.ansible/tmp/ansible-tmp-1604649900.9861133-25280-242338968166552/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'VAULT_ADDR=http://vault.default.svc.cluster.local:8200 VAULT_TOKEN=s.V28i17sRnBQyQV55J3jHp0hu /usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649900.9861133-25280-242338968166552/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649900.9861133-25280-242338968166552/ > /dev/null 2>&1 && sleep 0'
+fatal: [localhost]: FAILED! => {
+    "changed": true,
+    "cmd": "vault auth enable --path=\"walmart-net-auth\" kubernetes\n",
+    "delta": "0:00:00.043710",
+    "end": "2020-11-06 08:05:01.159953",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "vault auth enable --path=\"walmart-net-auth\" kubernetes\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "msg": "non-zero return code",
+    "rc": 2,
+    "start": "2020-11-06 08:05:01.116243",
+    "stderr": "Error enabling kubernetes auth: Post \"http://vault.default.svc.cluster.local:8200/v1/sys/auth/walmart-net-auth\": dial tcp: lookup vault.default.svc.cluster.local on 10.0.0.10:53: no such host",
+    "stderr_lines": [
+        "Error enabling kubernetes auth: Post \"http://vault.default.svc.cluster.local:8200/v1/sys/auth/walmart-net-auth\": dial tcp: lookup vault.default.svc.cluster.local on 10.0.0.10:53: no such host"
+    ],
+    "stdout": "",
+    "stdout_lines": []
+}
+...ignoring
+
+TASK [setup/vault_kubernetes : Get Kubernetes cert files for organizations] ****
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml:62
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649901.2202678-25314-9921239648643 `" && echo ansible-tmp-1604649901.2202678-25314-9921239648643="` echo /root/.ansible/tmp/ansible-tmp-1604649901.2202678-25314-9921239648643 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpcusgt14s TO /root/.ansible/tmp/ansible-tmp-1604649901.2202678-25314-9921239648643/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649901.2202678-25314-9921239648643/ /root/.ansible/tmp/ansible-tmp-1604649901.2202678-25314-9921239648643/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649901.2202678-25314-9921239648643/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649901.2202678-25314-9921239648643/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "cmd": "KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl get secrets $(KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl get secrets | grep \"default\" | awk '{print $1}') -o jsonpath=\"{.data['ca\\.crt']}\" | base64 -d > \"./build/walmart-net.ca.cert\"\n",
+    "delta": "0:00:00.238020",
+    "end": "2020-11-06 08:05:01.597834",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl get secrets $(KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl get secrets | grep \"default\" | awk '{print $1}') -o jsonpath=\"{.data['ca\\.crt']}\" | base64 -d > \"./build/walmart-net.ca.cert\"\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-11-06 08:05:01.359814",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "",
+    "stdout_lines": []
+}
+
+TASK [setup/vault_kubernetes : Write reviewer token for Organisations] *********
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/setup/vault_kubernetes/tasks/main.yaml:70
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649901.667022-25356-1728601002940 `" && echo ansible-tmp-1604649901.667022-25356-1728601002940="` echo /root/.ansible/tmp/ansible-tmp-1604649901.667022-25356-1728601002940 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmppunv3t3p TO /root/.ansible/tmp/ansible-tmp-1604649901.667022-25356-1728601002940/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649901.667022-25356-1728601002940/ /root/.ansible/tmp/ansible-tmp-1604649901.667022-25356-1728601002940/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'VAULT_ADDR=http://vault.default.svc.cluster.local:8200 VAULT_TOKEN=s.V28i17sRnBQyQV55J3jHp0hu /usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649901.667022-25356-1728601002940/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649901.667022-25356-1728601002940/ > /dev/null 2>&1 && sleep 0'
+fatal: [localhost]: FAILED! => {
+    "changed": true,
+    "cmd": "export REVIEWER_TOKEN=$(KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl get secret $(KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl get serviceaccount -n walmart-net vault-reviewer -o jsonpath={.secrets[0].name}) -n walmart-net -o  jsonpath={.data.token} | base64 -d)\nvault write auth/walmart-net-auth/config token_reviewer_jwt=\"$REVIEWER_TOKEN\" kubernetes_host=$(KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl config view -o jsonpath=\"{.clusters[?(@.name==\\\"fabric-aks-dev1\\\")].cluster.server}\") kubernetes_ca_cert=@\"./build/walmart-net.ca.cert\"\n",
+    "delta": "0:00:00.323476",
+    "end": "2020-11-06 08:05:02.124686",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "export REVIEWER_TOKEN=$(KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl get secret $(KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl get serviceaccount -n walmart-net vault-reviewer -o jsonpath={.secrets[0].name}) -n walmart-net -o  jsonpath={.data.token} | base64 -d)\nvault write auth/walmart-net-auth/config token_reviewer_jwt=\"$REVIEWER_TOKEN\" kubernetes_host=$(KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl config view -o jsonpath=\"{.clusters[?(@.name==\\\"fabric-aks-dev1\\\")].cluster.server}\") kubernetes_ca_cert=@\"./build/walmart-net.ca.cert\"\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "msg": "non-zero return code",
+    "rc": 2,
+    "start": "2020-11-06 08:05:01.801210",
+    "stderr": "Error writing data to auth/walmart-net-auth/config: Put \"http://vault.default.svc.cluster.local:8200/v1/auth/walmart-net-auth/config\": dial tcp: lookup vault.default.svc.cluster.local on 10.0.0.10:53: no such host",
+    "stderr_lines": [
+        "Error writing data to auth/walmart-net-auth/config: Put \"http://vault.default.svc.cluster.local:8200/v1/auth/walmart-net-auth/config\": dial tcp: lookup vault.default.svc.cluster.local on 10.0.0.10:53: no such host"
+    ],
+    "stdout": "",
+    "stdout_lines": []
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=81   changed=18   unreachable=0    failed=1    skipped=182  rescued=0    ignored=1   
+
