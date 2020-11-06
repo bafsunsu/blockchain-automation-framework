@@ -10882,3 +10882,1106 @@ Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command
 <localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmp3ffa3c9l TO /root/.ansible/tmp/ansible-tmp-1604677929.5424328-21117-220817555563636/AnsiballZ_command.py
 <localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604677929.5424328-21117-220817555563636/ /root/.ansible/tmp/ansible-tmp-1604677929.5424328-21117-220817555563636/AnsiballZ_command.py && sleep 0'
 <localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604677929.5424328-21117-220817555563636/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604677929.5424328-21117-220817555563636/ > /dev/null 2>&1 && sleep 0'
+fatal: [localhost]: FAILED! => {
+    "changed": true,
+    "cmd": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:oreo\n",
+    "delta": "0:00:05.782187",
+    "end": "2020-11-06 15:52:15.455643",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:oreo\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "msg": "non-zero return code",
+    "rc": 1,
+    "start": "2020-11-06 15:52:09.673456",
+    "stderr": "To https://github.com/bafsunsu/blockchain-automation-framework.git\n ! [rejected]          HEAD -> oreo (fetch first)\nerror: failed to push some refs to 'https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git'\nhint: Updates were rejected because the remote contains work that you do\nhint: not have locally. This is usually caused by another repository pushing\nhint: to the same ref. You may want to first integrate the remote changes\nhint: (e.g., 'git pull ...') before pushing again.\nhint: See the 'Note about fast-forwards' in 'git push --help' for details.",
+    "stderr_lines": [
+        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
+        " ! [rejected]          HEAD -> oreo (fetch first)",
+        "error: failed to push some refs to 'https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git'",
+        "hint: Updates were rejected because the remote contains work that you do",
+        "hint: not have locally. This is usually caused by another repository pushing",
+        "hint: to the same ref. You may want to first integrate the remote changes",
+        "hint: (e.g., 'git pull ...') before pushing again.",
+        "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
+    ],
+    "stdout": "---------------SHOW CONTENT OF DIR---------------\n.\n..\n.circleci\n.git\n.github\n.gitignore\n.travis.yml\nCODEOWNERS\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nDockerfile\nLICENSE\nMAINTAINERS.md\nREADME.md\nautomation\nbuild\nconsole.out\ndocs\nexamples\nplatforms\nrelease-notes.md\nreset.sh\nrun.sh\n---------------GIT PUSH---------------\n[gorilla 64c3dcc7] [ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding\n 5 files changed, 10911 insertions(+), 25950 deletions(-)\n rewrite console.out (74%)\n create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/namespace.yaml\n create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/reviewer_rbac.yaml\n create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/vault-reviewer.yaml\n create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/vaultAuth.yaml",
+    "stdout_lines": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        ".travis.yml",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "automation",
+        "build",
+        "console.out",
+        "docs",
+        "examples",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "[gorilla 64c3dcc7] [ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding",
+        " 5 files changed, 10911 insertions(+), 25950 deletions(-)",
+        " rewrite console.out (74%)",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/namespace.yaml",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/reviewer_rbac.yaml",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/vault-reviewer.yaml",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/vaultAuth.yaml"
+    ]
+}
+...ignoring
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Output for gitpush] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:32
+ok: [localhost] => {
+    "msg": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        ".travis.yml",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "automation",
+        "build",
+        "console.out",
+        "docs",
+        "examples",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "[gorilla 64c3dcc7] [ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding",
+        " 5 files changed, 10911 insertions(+), 25950 deletions(-)",
+        " rewrite console.out (74%)",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/namespace.yaml",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/reviewer_rbac.yaml",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/vault-reviewer.yaml",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/supplychain/orderer/vaultAuth.yaml"
+    ]
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Error for git_push] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:37
+ok: [localhost] => {
+    "msg": [
+        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
+        " ! [rejected]          HEAD -> oreo (fetch first)",
+        "error: failed to push some refs to 'https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git'",
+        "hint: Updates were rejected because the remote contains work that you do",
+        "hint: not have locally. This is usually caused by another repository pushing",
+        "hint: to the same ref. You may want to first integrate the remote changes",
+        "hint: (e.g., 'git pull ...') before pushing again.",
+        "hint: See the 'Note about fast-forwards' in 'git push --help' for details."
+    ]
+}
+
+TASK [Checking for the supplychain-net-role-tokenreview-binding] ***************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:90
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Check ClusterRoleBinding supplychain-net-role-tokenreview-binding is created] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:7
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ClusterRoleBinding supplychain-net-role-tokenreview-binding] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:17
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604677935.694356-21165-253314975570247 `" && echo ansible-tmp-1604677935.694356-21165-253314975570247="` echo /root/.ansible/tmp/ansible-tmp-1604677935.694356-21165-253314975570247 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpk2sphqc0 TO /root/.ansible/tmp/ansible-tmp-1604677935.694356-21165-253314975570247/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604677935.694356-21165-253314975570247/ /root/.ansible/tmp/ansible-tmp-1604677935.694356-21165-253314975570247/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604677935.694356-21165-253314975570247/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604677935.694356-21165-253314975570247/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "attempts": 1,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ClusterRoleBinding",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "supplychain-net-role-tokenreview-binding",
+            "namespace": null,
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "rbac.authorization.k8s.io/v1",
+            "kind": "ClusterRoleBinding",
+            "metadata": {
+                "annotations": {
+                    "fluxcd.io/sync-checksum": "e8e69174d8fae5811887caa7cabb9236d45efc2d",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"rbac.authorization.k8s.io/v1beta1\",\"kind\":\"ClusterRoleBinding\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"e8e69174d8fae5811887caa7cabb9236d45efc2d\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.ELKV0kW2GiS34476-0RLg5-XmvhPpQ7_f7G3we-rJHw\"},\"name\":\"supplychain-net-role-tokenreview-binding\"},\"roleRef\":{\"apiGroup\":\"rbac.authorization.k8s.io\",\"kind\":\"ClusterRole\",\"name\":\"system:auth-delegator\"},\"subjects\":[{\"kind\":\"ServiceAccount\",\"name\":\"vault-reviewer\",\"namespace\":\"supplychain-net\"}]}\n"
+                },
+                "creationTimestamp": "2020-10-28T06:59:47Z",
+                "labels": {
+                    "fluxcd.io/sync-gc-mark": "sha256.ELKV0kW2GiS34476-0RLg5-XmvhPpQ7_f7G3we-rJHw"
+                },
+                "name": "supplychain-net-role-tokenreview-binding",
+                "resourceVersion": "1990397",
+                "selfLink": "/apis/rbac.authorization.k8s.io/v1/clusterrolebindings/supplychain-net-role-tokenreview-binding",
+                "uid": "b89aea82-0494-441d-9a22-9cf0de129356"
+            },
+            "roleRef": {
+                "apiGroup": "rbac.authorization.k8s.io",
+                "kind": "ClusterRole",
+                "name": "system:auth-delegator"
+            },
+            "subjects": [
+                {
+                    "kind": "ServiceAccount",
+                    "name": "vault-reviewer",
+                    "namespace": "supplychain-net"
+                }
+            ]
+        }
+    ]
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ClusterRoleBinding supplychain-net-role-tokenreview-binding] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:32
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ClusterRoleBinding supplychain-net-role-tokenreview-binding] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:45
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [Including the check for ServiceAccount vault-reviewer in supplychain-net] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:103
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Check ServiceAccount vault-reviewer is created] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:7
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-reviewer] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:17
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-reviewer] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:32
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-reviewer] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:45
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604677936.544553-21205-20930131062283 `" && echo ansible-tmp-1604677936.544553-21205-20930131062283="` echo /root/.ansible/tmp/ansible-tmp-1604677936.544553-21205-20930131062283 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpubot60y_ TO /root/.ansible/tmp/ansible-tmp-1604677936.544553-21205-20930131062283/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604677936.544553-21205-20930131062283/ /root/.ansible/tmp/ansible-tmp-1604677936.544553-21205-20930131062283/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604677936.544553-21205-20930131062283/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604677936.544553-21205-20930131062283/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (20 retries left).Result was: {
+    "attempts": 1,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604677972.174664-21205-83806897551818 `" && echo ansible-tmp-1604677972.174664-21205-83806897551818="` echo /root/.ansible/tmp/ansible-tmp-1604677972.174664-21205-83806897551818 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpgx4urm8q TO /root/.ansible/tmp/ansible-tmp-1604677972.174664-21205-83806897551818/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604677972.174664-21205-83806897551818/ /root/.ansible/tmp/ansible-tmp-1604677972.174664-21205-83806897551818/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604677972.174664-21205-83806897551818/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604677972.174664-21205-83806897551818/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (19 retries left).Result was: {
+    "attempts": 2,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678007.7993813-21205-60608055548451 `" && echo ansible-tmp-1604678007.7993813-21205-60608055548451="` echo /root/.ansible/tmp/ansible-tmp-1604678007.7993813-21205-60608055548451 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmp9uow968z TO /root/.ansible/tmp/ansible-tmp-1604678007.7993813-21205-60608055548451/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678007.7993813-21205-60608055548451/ /root/.ansible/tmp/ansible-tmp-1604678007.7993813-21205-60608055548451/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678007.7993813-21205-60608055548451/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678007.7993813-21205-60608055548451/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (18 retries left).Result was: {
+    "attempts": 3,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678043.417166-21205-161539023326815 `" && echo ansible-tmp-1604678043.417166-21205-161539023326815="` echo /root/.ansible/tmp/ansible-tmp-1604678043.417166-21205-161539023326815 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpopwmdhwl TO /root/.ansible/tmp/ansible-tmp-1604678043.417166-21205-161539023326815/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678043.417166-21205-161539023326815/ /root/.ansible/tmp/ansible-tmp-1604678043.417166-21205-161539023326815/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678043.417166-21205-161539023326815/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678043.417166-21205-161539023326815/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (17 retries left).Result was: {
+    "attempts": 4,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678079.0536082-21205-3375653211748 `" && echo ansible-tmp-1604678079.0536082-21205-3375653211748="` echo /root/.ansible/tmp/ansible-tmp-1604678079.0536082-21205-3375653211748 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpn_dsw4ui TO /root/.ansible/tmp/ansible-tmp-1604678079.0536082-21205-3375653211748/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678079.0536082-21205-3375653211748/ /root/.ansible/tmp/ansible-tmp-1604678079.0536082-21205-3375653211748/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678079.0536082-21205-3375653211748/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678079.0536082-21205-3375653211748/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (16 retries left).Result was: {
+    "attempts": 5,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678114.6968718-21205-205093458780937 `" && echo ansible-tmp-1604678114.6968718-21205-205093458780937="` echo /root/.ansible/tmp/ansible-tmp-1604678114.6968718-21205-205093458780937 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpedlbwzrf TO /root/.ansible/tmp/ansible-tmp-1604678114.6968718-21205-205093458780937/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678114.6968718-21205-205093458780937/ /root/.ansible/tmp/ansible-tmp-1604678114.6968718-21205-205093458780937/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678114.6968718-21205-205093458780937/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678114.6968718-21205-205093458780937/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (15 retries left).Result was: {
+    "attempts": 6,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678150.3614354-21205-144341810832981 `" && echo ansible-tmp-1604678150.3614354-21205-144341810832981="` echo /root/.ansible/tmp/ansible-tmp-1604678150.3614354-21205-144341810832981 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpy_ktfnyz TO /root/.ansible/tmp/ansible-tmp-1604678150.3614354-21205-144341810832981/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678150.3614354-21205-144341810832981/ /root/.ansible/tmp/ansible-tmp-1604678150.3614354-21205-144341810832981/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678150.3614354-21205-144341810832981/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678150.3614354-21205-144341810832981/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (14 retries left).Result was: {
+    "attempts": 7,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678186.0014186-21205-173691426777833 `" && echo ansible-tmp-1604678186.0014186-21205-173691426777833="` echo /root/.ansible/tmp/ansible-tmp-1604678186.0014186-21205-173691426777833 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmp7vc4wpzp TO /root/.ansible/tmp/ansible-tmp-1604678186.0014186-21205-173691426777833/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678186.0014186-21205-173691426777833/ /root/.ansible/tmp/ansible-tmp-1604678186.0014186-21205-173691426777833/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678186.0014186-21205-173691426777833/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678186.0014186-21205-173691426777833/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (13 retries left).Result was: {
+    "attempts": 8,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678221.598598-21205-173575694665741 `" && echo ansible-tmp-1604678221.598598-21205-173575694665741="` echo /root/.ansible/tmp/ansible-tmp-1604678221.598598-21205-173575694665741 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpwxulhg1p TO /root/.ansible/tmp/ansible-tmp-1604678221.598598-21205-173575694665741/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678221.598598-21205-173575694665741/ /root/.ansible/tmp/ansible-tmp-1604678221.598598-21205-173575694665741/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678221.598598-21205-173575694665741/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678221.598598-21205-173575694665741/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (12 retries left).Result was: {
+    "attempts": 9,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678257.2819242-21205-67464854078786 `" && echo ansible-tmp-1604678257.2819242-21205-67464854078786="` echo /root/.ansible/tmp/ansible-tmp-1604678257.2819242-21205-67464854078786 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmp36bqa_wu TO /root/.ansible/tmp/ansible-tmp-1604678257.2819242-21205-67464854078786/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678257.2819242-21205-67464854078786/ /root/.ansible/tmp/ansible-tmp-1604678257.2819242-21205-67464854078786/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678257.2819242-21205-67464854078786/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678257.2819242-21205-67464854078786/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (11 retries left).Result was: {
+    "attempts": 10,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678292.9143076-21205-111934433274292 `" && echo ansible-tmp-1604678292.9143076-21205-111934433274292="` echo /root/.ansible/tmp/ansible-tmp-1604678292.9143076-21205-111934433274292 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmp1s3v7z78 TO /root/.ansible/tmp/ansible-tmp-1604678292.9143076-21205-111934433274292/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678292.9143076-21205-111934433274292/ /root/.ansible/tmp/ansible-tmp-1604678292.9143076-21205-111934433274292/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678292.9143076-21205-111934433274292/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678292.9143076-21205-111934433274292/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (10 retries left).Result was: {
+    "attempts": 11,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678328.505732-21205-56192423056486 `" && echo ansible-tmp-1604678328.505732-21205-56192423056486="` echo /root/.ansible/tmp/ansible-tmp-1604678328.505732-21205-56192423056486 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpsxn0pgu5 TO /root/.ansible/tmp/ansible-tmp-1604678328.505732-21205-56192423056486/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678328.505732-21205-56192423056486/ /root/.ansible/tmp/ansible-tmp-1604678328.505732-21205-56192423056486/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678328.505732-21205-56192423056486/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678328.505732-21205-56192423056486/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (9 retries left).Result was: {
+    "attempts": 12,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678364.1677027-21205-140305937680050 `" && echo ansible-tmp-1604678364.1677027-21205-140305937680050="` echo /root/.ansible/tmp/ansible-tmp-1604678364.1677027-21205-140305937680050 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpw8sc2hao TO /root/.ansible/tmp/ansible-tmp-1604678364.1677027-21205-140305937680050/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678364.1677027-21205-140305937680050/ /root/.ansible/tmp/ansible-tmp-1604678364.1677027-21205-140305937680050/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678364.1677027-21205-140305937680050/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678364.1677027-21205-140305937680050/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (8 retries left).Result was: {
+    "attempts": 13,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678399.8263233-21205-233993080685867 `" && echo ansible-tmp-1604678399.8263233-21205-233993080685867="` echo /root/.ansible/tmp/ansible-tmp-1604678399.8263233-21205-233993080685867 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpbt8mwp2r TO /root/.ansible/tmp/ansible-tmp-1604678399.8263233-21205-233993080685867/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678399.8263233-21205-233993080685867/ /root/.ansible/tmp/ansible-tmp-1604678399.8263233-21205-233993080685867/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678399.8263233-21205-233993080685867/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678399.8263233-21205-233993080685867/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (7 retries left).Result was: {
+    "attempts": 14,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678435.5043807-21205-270192407776656 `" && echo ansible-tmp-1604678435.5043807-21205-270192407776656="` echo /root/.ansible/tmp/ansible-tmp-1604678435.5043807-21205-270192407776656 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpkr04k4ub TO /root/.ansible/tmp/ansible-tmp-1604678435.5043807-21205-270192407776656/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678435.5043807-21205-270192407776656/ /root/.ansible/tmp/ansible-tmp-1604678435.5043807-21205-270192407776656/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678435.5043807-21205-270192407776656/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678435.5043807-21205-270192407776656/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (6 retries left).Result was: {
+    "attempts": 15,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678471.1782324-21205-143310689135460 `" && echo ansible-tmp-1604678471.1782324-21205-143310689135460="` echo /root/.ansible/tmp/ansible-tmp-1604678471.1782324-21205-143310689135460 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpfer3ewya TO /root/.ansible/tmp/ansible-tmp-1604678471.1782324-21205-143310689135460/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678471.1782324-21205-143310689135460/ /root/.ansible/tmp/ansible-tmp-1604678471.1782324-21205-143310689135460/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678471.1782324-21205-143310689135460/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678471.1782324-21205-143310689135460/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (5 retries left).Result was: {
+    "attempts": 16,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678506.7752337-21205-142241702811394 `" && echo ansible-tmp-1604678506.7752337-21205-142241702811394="` echo /root/.ansible/tmp/ansible-tmp-1604678506.7752337-21205-142241702811394 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpujietarj TO /root/.ansible/tmp/ansible-tmp-1604678506.7752337-21205-142241702811394/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678506.7752337-21205-142241702811394/ /root/.ansible/tmp/ansible-tmp-1604678506.7752337-21205-142241702811394/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678506.7752337-21205-142241702811394/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678506.7752337-21205-142241702811394/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (4 retries left).Result was: {
+    "attempts": 17,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678542.386926-21205-210334903490549 `" && echo ansible-tmp-1604678542.386926-21205-210334903490549="` echo /root/.ansible/tmp/ansible-tmp-1604678542.386926-21205-210334903490549 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpo6cyxtrm TO /root/.ansible/tmp/ansible-tmp-1604678542.386926-21205-210334903490549/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678542.386926-21205-210334903490549/ /root/.ansible/tmp/ansible-tmp-1604678542.386926-21205-210334903490549/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678542.386926-21205-210334903490549/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678542.386926-21205-210334903490549/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (3 retries left).Result was: {
+    "attempts": 18,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678578.001812-21205-23772271873844 `" && echo ansible-tmp-1604678578.001812-21205-23772271873844="` echo /root/.ansible/tmp/ansible-tmp-1604678578.001812-21205-23772271873844 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpahq7b3wl TO /root/.ansible/tmp/ansible-tmp-1604678578.001812-21205-23772271873844/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678578.001812-21205-23772271873844/ /root/.ansible/tmp/ansible-tmp-1604678578.001812-21205-23772271873844/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678578.001812-21205-23772271873844/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678578.001812-21205-23772271873844/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (2 retries left).Result was: {
+    "attempts": 19,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678613.620377-21205-30690753622389 `" && echo ansible-tmp-1604678613.620377-21205-30690753622389="` echo /root/.ansible/tmp/ansible-tmp-1604678613.620377-21205-30690753622389 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmps78_tn90 TO /root/.ansible/tmp/ansible-tmp-1604678613.620377-21205-30690753622389/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678613.620377-21205-30690753622389/ /root/.ansible/tmp/ansible-tmp-1604678613.620377-21205-30690753622389/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678613.620377-21205-30690753622389/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678613.620377-21205-30690753622389/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for ServiceAccount vault-reviewer (1 retries left).Result was: {
+    "attempts": 20,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604678649.264309-21205-167774040528353 `" && echo ansible-tmp-1604678649.264309-21205-167774040528353="` echo /root/.ansible/tmp/ansible-tmp-1604678649.264309-21205-167774040528353 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-18680qsa6cprz/tmpvs7k5dsy TO /root/.ansible/tmp/ansible-tmp-1604678649.264309-21205-167774040528353/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604678649.264309-21205-167774040528353/ /root/.ansible/tmp/ansible-tmp-1604678649.264309-21205-167774040528353/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604678649.264309-21205-167774040528353/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604678649.264309-21205-167774040528353/ > /dev/null 2>&1 && sleep 0'
+fatal: [localhost]: FAILED! => {
+    "attempts": 20,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [],
+            "host": null,
+            "kind": "ServiceAccount",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [],
+            "name": "vault-reviewer",
+            "namespace": "supplychain-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": []
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=76   changed=20   unreachable=0    failed=1    skipped=150  rescued=0    ignored=1   
+
