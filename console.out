@@ -24,15 +24,15 @@ TASK [Gathering Facts] *********************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/environment-setup.yaml:7
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649811.1815548-20235-227233970672069 `" && echo ansible-tmp-1604649811.1815548-20235-227233970672069="` echo /root/.ansible/tmp/ansible-tmp-1604649811.1815548-20235-227233970672069 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649860.1161513-22828-108702511085106 `" && echo ansible-tmp-1604649860.1161513-22828-108702511085106="` echo /root/.ansible/tmp/ansible-tmp-1604649860.1161513-22828-108702511085106 `" ) && sleep 0'
 <localhost> Attempting python interpreter discovery
 <localhost> EXEC /bin/sh -c 'echo PLATFORM; uname; echo FOUND; command -v '"'"'/usr/bin/python'"'"'; command -v '"'"'python3.7'"'"'; command -v '"'"'python3.6'"'"'; command -v '"'"'python3.5'"'"'; command -v '"'"'python2.7'"'"'; command -v '"'"'python2.6'"'"'; command -v '"'"'/usr/libexec/platform-python'"'"'; command -v '"'"'/usr/bin/python3'"'"'; command -v '"'"'python'"'"'; echo ENDFOUND && sleep 0'
 <localhost> EXEC /bin/sh -c '/usr/bin/python3.6 && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/setup.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpchumvb8z TO /root/.ansible/tmp/ansible-tmp-1604649811.1815548-20235-227233970672069/AnsiballZ_setup.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649811.1815548-20235-227233970672069/ /root/.ansible/tmp/ansible-tmp-1604649811.1815548-20235-227233970672069/AnsiballZ_setup.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649811.1815548-20235-227233970672069/AnsiballZ_setup.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649811.1815548-20235-227233970672069/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpnxkzb2mh TO /root/.ansible/tmp/ansible-tmp-1604649860.1161513-22828-108702511085106/AnsiballZ_setup.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649860.1161513-22828-108702511085106/ /root/.ansible/tmp/ansible-tmp-1604649860.1161513-22828-108702511085106/AnsiballZ_setup.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649860.1161513-22828-108702511085106/AnsiballZ_setup.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649860.1161513-22828-108702511085106/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost]
 META: ran handlers
 
@@ -43,12 +43,12 @@ TASK [setup/kubectl : register temporary directory] ****************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649812.1108572-20287-108873890703806 `" && echo ansible-tmp-1604649812.1108572-20287-108873890703806="` echo /root/.ansible/tmp/ansible-tmp-1604649812.1108572-20287-108873890703806 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649861.0451953-22880-228110753459533 `" && echo ansible-tmp-1604649861.0451953-22880-228110753459533="` echo /root/.ansible/tmp/ansible-tmp-1604649861.0451953-22880-228110753459533 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/tempfile.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpcx1vcewe TO /root/.ansible/tmp/ansible-tmp-1604649812.1108572-20287-108873890703806/AnsiballZ_tempfile.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649812.1108572-20287-108873890703806/ /root/.ansible/tmp/ansible-tmp-1604649812.1108572-20287-108873890703806/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649812.1108572-20287-108873890703806/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649812.1108572-20287-108873890703806/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpk3q93i_q TO /root/.ansible/tmp/ansible-tmp-1604649861.0451953-22880-228110753459533/AnsiballZ_tempfile.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649861.0451953-22880-228110753459533/ /root/.ansible/tmp/ansible-tmp-1604649861.0451953-22880-228110753459533/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649861.0451953-22880-228110753459533/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649861.0451953-22880-228110753459533/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "gid": 0,
@@ -63,7 +63,7 @@ changed: [localhost] => {
     },
     "mode": "0700",
     "owner": "root",
-    "path": "/tmp/ansible._b3x5pwp",
+    "path": "/tmp/ansible.fcw10kms",
     "size": 4096,
     "state": "directory",
     "uid": 0
@@ -73,12 +73,12 @@ TASK [setup/kubectl : check kubectl] *******************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649812.4283657-20313-120366343115115 `" && echo ansible-tmp-1604649812.4283657-20313-120366343115115="` echo /root/.ansible/tmp/ansible-tmp-1604649812.4283657-20313-120366343115115 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649861.373808-22906-225536271790920 `" && echo ansible-tmp-1604649861.373808-22906-225536271790920="` echo /root/.ansible/tmp/ansible-tmp-1604649861.373808-22906-225536271790920 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpafre7dk_ TO /root/.ansible/tmp/ansible-tmp-1604649812.4283657-20313-120366343115115/AnsiballZ_stat.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649812.4283657-20313-120366343115115/ /root/.ansible/tmp/ansible-tmp-1604649812.4283657-20313-120366343115115/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649812.4283657-20313-120366343115115/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649812.4283657-20313-120366343115115/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpho5vf98q TO /root/.ansible/tmp/ansible-tmp-1604649861.373808-22906-225536271790920/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649861.373808-22906-225536271790920/ /root/.ansible/tmp/ansible-tmp-1604649861.373808-22906-225536271790920/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649861.373808-22906-225536271790920/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649861.373808-22906-225536271790920/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -176,12 +176,12 @@ TASK [setup/kubectl : Test kubectl installation] *******************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:55
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649812.914603-20349-238723582843013 `" && echo ansible-tmp-1604649812.914603-20349-238723582843013="` echo /root/.ansible/tmp/ansible-tmp-1604649812.914603-20349-238723582843013 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649861.8648672-22942-185759059538904 `" && echo ansible-tmp-1604649861.8648672-22942-185759059538904="` echo /root/.ansible/tmp/ansible-tmp-1604649861.8648672-22942-185759059538904 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp5a3rcm8g TO /root/.ansible/tmp/ansible-tmp-1604649812.914603-20349-238723582843013/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649812.914603-20349-238723582843013/ /root/.ansible/tmp/ansible-tmp-1604649812.914603-20349-238723582843013/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649812.914603-20349-238723582843013/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649812.914603-20349-238723582843013/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp_yz5xb9w TO /root/.ansible/tmp/ansible-tmp-1604649861.8648672-22942-185759059538904/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649861.8648672-22942-185759059538904/ /root/.ansible/tmp/ansible-tmp-1604649861.8648672-22942-185759059538904/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649861.8648672-22942-185759059538904/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649861.8648672-22942-185759059538904/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": [
@@ -190,8 +190,8 @@ ok: [localhost] => {
         "--client",
         "--short"
     ],
-    "delta": "0:00:00.049120",
-    "end": "2020-11-06 08:03:33.240701",
+    "delta": "0:00:00.049623",
+    "end": "2020-11-06 08:04:22.195829",
     "invocation": {
         "module_args": {
             "_raw_params": "kubectl version --client --short",
@@ -208,7 +208,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:33.191581",
+    "start": "2020-11-06 08:04:22.146206",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "Client Version: v1.19.0",
@@ -221,12 +221,12 @@ TASK [setup/kubectl : register temporary directory] ****************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649813.2870426-20380-42785383122976 `" && echo ansible-tmp-1604649813.2870426-20380-42785383122976="` echo /root/.ansible/tmp/ansible-tmp-1604649813.2870426-20380-42785383122976 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649862.2432268-22973-151048230283125 `" && echo ansible-tmp-1604649862.2432268-22973-151048230283125="` echo /root/.ansible/tmp/ansible-tmp-1604649862.2432268-22973-151048230283125 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/tempfile.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmphm2sg3_z TO /root/.ansible/tmp/ansible-tmp-1604649813.2870426-20380-42785383122976/AnsiballZ_tempfile.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649813.2870426-20380-42785383122976/ /root/.ansible/tmp/ansible-tmp-1604649813.2870426-20380-42785383122976/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649813.2870426-20380-42785383122976/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649813.2870426-20380-42785383122976/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpmjd6hpmh TO /root/.ansible/tmp/ansible-tmp-1604649862.2432268-22973-151048230283125/AnsiballZ_tempfile.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649862.2432268-22973-151048230283125/ /root/.ansible/tmp/ansible-tmp-1604649862.2432268-22973-151048230283125/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649862.2432268-22973-151048230283125/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649862.2432268-22973-151048230283125/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "gid": 0,
@@ -241,7 +241,7 @@ changed: [localhost] => {
     },
     "mode": "0700",
     "owner": "root",
-    "path": "/tmp/ansible.fzt0l85l",
+    "path": "/tmp/ansible.yyhh6hqx",
     "size": 4096,
     "state": "directory",
     "uid": 0
@@ -251,12 +251,12 @@ TASK [setup/kubectl : check kubectl] *******************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649813.4666758-20406-275022685456544 `" && echo ansible-tmp-1604649813.4666758-20406-275022685456544="` echo /root/.ansible/tmp/ansible-tmp-1604649813.4666758-20406-275022685456544 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649862.4198334-22999-98352383674123 `" && echo ansible-tmp-1604649862.4198334-22999-98352383674123="` echo /root/.ansible/tmp/ansible-tmp-1604649862.4198334-22999-98352383674123 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpso9yux9r TO /root/.ansible/tmp/ansible-tmp-1604649813.4666758-20406-275022685456544/AnsiballZ_stat.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649813.4666758-20406-275022685456544/ /root/.ansible/tmp/ansible-tmp-1604649813.4666758-20406-275022685456544/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649813.4666758-20406-275022685456544/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649813.4666758-20406-275022685456544/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpwtkyz4fy TO /root/.ansible/tmp/ansible-tmp-1604649862.4198334-22999-98352383674123/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649862.4198334-22999-98352383674123/ /root/.ansible/tmp/ansible-tmp-1604649862.4198334-22999-98352383674123/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649862.4198334-22999-98352383674123/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649862.4198334-22999-98352383674123/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -354,12 +354,12 @@ TASK [setup/kubectl : Test kubectl installation] *******************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:55
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649813.8130522-20442-224584450225706 `" && echo ansible-tmp-1604649813.8130522-20442-224584450225706="` echo /root/.ansible/tmp/ansible-tmp-1604649813.8130522-20442-224584450225706 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649862.7720215-23035-237061776742387 `" && echo ansible-tmp-1604649862.7720215-23035-237061776742387="` echo /root/.ansible/tmp/ansible-tmp-1604649862.7720215-23035-237061776742387 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp7k0vke46 TO /root/.ansible/tmp/ansible-tmp-1604649813.8130522-20442-224584450225706/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649813.8130522-20442-224584450225706/ /root/.ansible/tmp/ansible-tmp-1604649813.8130522-20442-224584450225706/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649813.8130522-20442-224584450225706/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649813.8130522-20442-224584450225706/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpqi1kyqsu TO /root/.ansible/tmp/ansible-tmp-1604649862.7720215-23035-237061776742387/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649862.7720215-23035-237061776742387/ /root/.ansible/tmp/ansible-tmp-1604649862.7720215-23035-237061776742387/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649862.7720215-23035-237061776742387/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649862.7720215-23035-237061776742387/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": [
@@ -368,8 +368,8 @@ ok: [localhost] => {
         "--client",
         "--short"
     ],
-    "delta": "0:00:00.050842",
-    "end": "2020-11-06 08:03:33.994263",
+    "delta": "0:00:00.048606",
+    "end": "2020-11-06 08:04:22.950752",
     "invocation": {
         "module_args": {
             "_raw_params": "kubectl version --client --short",
@@ -386,7 +386,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:33.943421",
+    "start": "2020-11-06 08:04:22.902146",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "Client Version: v1.19.0",
@@ -402,12 +402,12 @@ TASK [setup/helm : register temporary directory] *******************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649814.1257439-20475-277766753867823 `" && echo ansible-tmp-1604649814.1257439-20475-277766753867823="` echo /root/.ansible/tmp/ansible-tmp-1604649814.1257439-20475-277766753867823 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649863.079014-23068-135283426665308 `" && echo ansible-tmp-1604649863.079014-23068-135283426665308="` echo /root/.ansible/tmp/ansible-tmp-1604649863.079014-23068-135283426665308 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/tempfile.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpdxfpolk8 TO /root/.ansible/tmp/ansible-tmp-1604649814.1257439-20475-277766753867823/AnsiballZ_tempfile.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649814.1257439-20475-277766753867823/ /root/.ansible/tmp/ansible-tmp-1604649814.1257439-20475-277766753867823/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649814.1257439-20475-277766753867823/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649814.1257439-20475-277766753867823/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp6z2w3bmt TO /root/.ansible/tmp/ansible-tmp-1604649863.079014-23068-135283426665308/AnsiballZ_tempfile.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649863.079014-23068-135283426665308/ /root/.ansible/tmp/ansible-tmp-1604649863.079014-23068-135283426665308/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649863.079014-23068-135283426665308/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649863.079014-23068-135283426665308/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "gid": 0,
@@ -422,7 +422,7 @@ changed: [localhost] => {
     },
     "mode": "0700",
     "owner": "root",
-    "path": "/tmp/ansible.r_eeyqi4",
+    "path": "/tmp/ansible.rdhglm4r",
     "size": 4096,
     "state": "directory",
     "uid": 0
@@ -432,12 +432,12 @@ TASK [setup/helm : check helm] *************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649814.3034194-20501-261544689380127 `" && echo ansible-tmp-1604649814.3034194-20501-261544689380127="` echo /root/.ansible/tmp/ansible-tmp-1604649814.3034194-20501-261544689380127 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649863.257021-23094-103742270635383 `" && echo ansible-tmp-1604649863.257021-23094-103742270635383="` echo /root/.ansible/tmp/ansible-tmp-1604649863.257021-23094-103742270635383 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpwh0yo9qx TO /root/.ansible/tmp/ansible-tmp-1604649814.3034194-20501-261544689380127/AnsiballZ_stat.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649814.3034194-20501-261544689380127/ /root/.ansible/tmp/ansible-tmp-1604649814.3034194-20501-261544689380127/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649814.3034194-20501-261544689380127/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649814.3034194-20501-261544689380127/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp33m2tm1p TO /root/.ansible/tmp/ansible-tmp-1604649863.257021-23094-103742270635383/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649863.257021-23094-103742270635383/ /root/.ansible/tmp/ansible-tmp-1604649863.257021-23094-103742270635383/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649863.257021-23094-103742270635383/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649863.257021-23094-103742270635383/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -535,12 +535,12 @@ TASK [setup/helm : Test helm installation] *************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:58
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649814.642236-20537-211193406127986 `" && echo ansible-tmp-1604649814.642236-20537-211193406127986="` echo /root/.ansible/tmp/ansible-tmp-1604649814.642236-20537-211193406127986 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649863.6115396-23130-96884016578121 `" && echo ansible-tmp-1604649863.6115396-23130-96884016578121="` echo /root/.ansible/tmp/ansible-tmp-1604649863.6115396-23130-96884016578121 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpn5vdie9p TO /root/.ansible/tmp/ansible-tmp-1604649814.642236-20537-211193406127986/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649814.642236-20537-211193406127986/ /root/.ansible/tmp/ansible-tmp-1604649814.642236-20537-211193406127986/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649814.642236-20537-211193406127986/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649814.642236-20537-211193406127986/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmptc7lb4fk TO /root/.ansible/tmp/ansible-tmp-1604649863.6115396-23130-96884016578121/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649863.6115396-23130-96884016578121/ /root/.ansible/tmp/ansible-tmp-1604649863.6115396-23130-96884016578121/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649863.6115396-23130-96884016578121/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649863.6115396-23130-96884016578121/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": [
@@ -549,8 +549,8 @@ ok: [localhost] => {
         "--client",
         "--short"
     ],
-    "delta": "0:00:00.054641",
-    "end": "2020-11-06 08:03:34.827082",
+    "delta": "0:00:00.061895",
+    "end": "2020-11-06 08:04:23.803219",
     "invocation": {
         "module_args": {
             "_raw_params": "helm version --client --short",
@@ -567,7 +567,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:34.772441",
+    "start": "2020-11-06 08:04:23.741324",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "Client: v2.16.12+g47f0b88",
@@ -580,12 +580,12 @@ TASK [setup/helm : register temporary directory] *******************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649814.8727045-20568-80825587559305 `" && echo ansible-tmp-1604649814.8727045-20568-80825587559305="` echo /root/.ansible/tmp/ansible-tmp-1604649814.8727045-20568-80825587559305 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649863.850882-23161-250677344712198 `" && echo ansible-tmp-1604649863.850882-23161-250677344712198="` echo /root/.ansible/tmp/ansible-tmp-1604649863.850882-23161-250677344712198 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/tempfile.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpedgzvp2p TO /root/.ansible/tmp/ansible-tmp-1604649814.8727045-20568-80825587559305/AnsiballZ_tempfile.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649814.8727045-20568-80825587559305/ /root/.ansible/tmp/ansible-tmp-1604649814.8727045-20568-80825587559305/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649814.8727045-20568-80825587559305/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649814.8727045-20568-80825587559305/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp1p6pn1ur TO /root/.ansible/tmp/ansible-tmp-1604649863.850882-23161-250677344712198/AnsiballZ_tempfile.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649863.850882-23161-250677344712198/ /root/.ansible/tmp/ansible-tmp-1604649863.850882-23161-250677344712198/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649863.850882-23161-250677344712198/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649863.850882-23161-250677344712198/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "gid": 0,
@@ -600,7 +600,7 @@ changed: [localhost] => {
     },
     "mode": "0700",
     "owner": "root",
-    "path": "/tmp/ansible.abwmkytv",
+    "path": "/tmp/ansible.5x56fbmf",
     "size": 4096,
     "state": "directory",
     "uid": 0
@@ -610,12 +610,12 @@ TASK [setup/helm : check helm] *************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649815.0509715-20594-10806697502238 `" && echo ansible-tmp-1604649815.0509715-20594-10806697502238="` echo /root/.ansible/tmp/ansible-tmp-1604649815.0509715-20594-10806697502238 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649864.0259533-23187-168756122688865 `" && echo ansible-tmp-1604649864.0259533-23187-168756122688865="` echo /root/.ansible/tmp/ansible-tmp-1604649864.0259533-23187-168756122688865 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp2_wammr9 TO /root/.ansible/tmp/ansible-tmp-1604649815.0509715-20594-10806697502238/AnsiballZ_stat.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649815.0509715-20594-10806697502238/ /root/.ansible/tmp/ansible-tmp-1604649815.0509715-20594-10806697502238/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649815.0509715-20594-10806697502238/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649815.0509715-20594-10806697502238/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp7mad1csy TO /root/.ansible/tmp/ansible-tmp-1604649864.0259533-23187-168756122688865/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649864.0259533-23187-168756122688865/ /root/.ansible/tmp/ansible-tmp-1604649864.0259533-23187-168756122688865/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649864.0259533-23187-168756122688865/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649864.0259533-23187-168756122688865/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -713,12 +713,12 @@ TASK [setup/helm : Test helm installation] *************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:58
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649815.3926764-20631-266662570629666 `" && echo ansible-tmp-1604649815.3926764-20631-266662570629666="` echo /root/.ansible/tmp/ansible-tmp-1604649815.3926764-20631-266662570629666 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649864.3691628-23223-47080697509067 `" && echo ansible-tmp-1604649864.3691628-23223-47080697509067="` echo /root/.ansible/tmp/ansible-tmp-1604649864.3691628-23223-47080697509067 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpvz_u0tiy TO /root/.ansible/tmp/ansible-tmp-1604649815.3926764-20631-266662570629666/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649815.3926764-20631-266662570629666/ /root/.ansible/tmp/ansible-tmp-1604649815.3926764-20631-266662570629666/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649815.3926764-20631-266662570629666/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649815.3926764-20631-266662570629666/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp0ino75x8 TO /root/.ansible/tmp/ansible-tmp-1604649864.3691628-23223-47080697509067/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649864.3691628-23223-47080697509067/ /root/.ansible/tmp/ansible-tmp-1604649864.3691628-23223-47080697509067/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649864.3691628-23223-47080697509067/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649864.3691628-23223-47080697509067/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": [
@@ -727,8 +727,8 @@ ok: [localhost] => {
         "--client",
         "--short"
     ],
-    "delta": "0:00:00.050282",
-    "end": "2020-11-06 08:03:35.571815",
+    "delta": "0:00:00.053871",
+    "end": "2020-11-06 08:04:24.552796",
     "invocation": {
         "module_args": {
             "_raw_params": "helm version --client --short",
@@ -745,7 +745,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:35.521533",
+    "start": "2020-11-06 08:04:24.498925",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "Client: v2.16.12+g47f0b88",
@@ -761,12 +761,12 @@ TASK [setup/vault : register temporary directory] ******************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/vault/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649815.6749716-20664-247986943850254 `" && echo ansible-tmp-1604649815.6749716-20664-247986943850254="` echo /root/.ansible/tmp/ansible-tmp-1604649815.6749716-20664-247986943850254 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649864.6561313-23257-81134933821063 `" && echo ansible-tmp-1604649864.6561313-23257-81134933821063="` echo /root/.ansible/tmp/ansible-tmp-1604649864.6561313-23257-81134933821063 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/tempfile.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp3nqu6txu TO /root/.ansible/tmp/ansible-tmp-1604649815.6749716-20664-247986943850254/AnsiballZ_tempfile.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649815.6749716-20664-247986943850254/ /root/.ansible/tmp/ansible-tmp-1604649815.6749716-20664-247986943850254/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649815.6749716-20664-247986943850254/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649815.6749716-20664-247986943850254/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp0xpe7x6w TO /root/.ansible/tmp/ansible-tmp-1604649864.6561313-23257-81134933821063/AnsiballZ_tempfile.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649864.6561313-23257-81134933821063/ /root/.ansible/tmp/ansible-tmp-1604649864.6561313-23257-81134933821063/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649864.6561313-23257-81134933821063/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649864.6561313-23257-81134933821063/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "gid": 0,
@@ -781,7 +781,7 @@ changed: [localhost] => {
     },
     "mode": "0700",
     "owner": "root",
-    "path": "/tmp/ansible._7lle7xl",
+    "path": "/tmp/ansible.xc9wi01m",
     "size": 4096,
     "state": "directory",
     "uid": 0
@@ -791,12 +791,12 @@ TASK [setup/vault : check vault] ***********************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/vault/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649815.852088-20690-165605916456626 `" && echo ansible-tmp-1604649815.852088-20690-165605916456626="` echo /root/.ansible/tmp/ansible-tmp-1604649815.852088-20690-165605916456626 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649864.8345337-23283-116544830666951 `" && echo ansible-tmp-1604649864.8345337-23283-116544830666951="` echo /root/.ansible/tmp/ansible-tmp-1604649864.8345337-23283-116544830666951 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp5jtiv52v TO /root/.ansible/tmp/ansible-tmp-1604649815.852088-20690-165605916456626/AnsiballZ_stat.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649815.852088-20690-165605916456626/ /root/.ansible/tmp/ansible-tmp-1604649815.852088-20690-165605916456626/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649815.852088-20690-165605916456626/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649815.852088-20690-165605916456626/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpilrutm18 TO /root/.ansible/tmp/ansible-tmp-1604649864.8345337-23283-116544830666951/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649864.8345337-23283-116544830666951/ /root/.ansible/tmp/ansible-tmp-1604649864.8345337-23283-116544830666951/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649864.8345337-23283-116544830666951/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649864.8345337-23283-116544830666951/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -887,20 +887,20 @@ TASK [setup/vault : Test vault installation] ***********************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/vault/tasks/main.yaml:46
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649816.2989347-20724-253767664297480 `" && echo ansible-tmp-1604649816.2989347-20724-253767664297480="` echo /root/.ansible/tmp/ansible-tmp-1604649816.2989347-20724-253767664297480 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649865.2843678-23317-175899275361506 `" && echo ansible-tmp-1604649865.2843678-23317-175899275361506="` echo /root/.ansible/tmp/ansible-tmp-1604649865.2843678-23317-175899275361506 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpnb4wn9ne TO /root/.ansible/tmp/ansible-tmp-1604649816.2989347-20724-253767664297480/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649816.2989347-20724-253767664297480/ /root/.ansible/tmp/ansible-tmp-1604649816.2989347-20724-253767664297480/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649816.2989347-20724-253767664297480/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649816.2989347-20724-253767664297480/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpijiuwa5p TO /root/.ansible/tmp/ansible-tmp-1604649865.2843678-23317-175899275361506/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649865.2843678-23317-175899275361506/ /root/.ansible/tmp/ansible-tmp-1604649865.2843678-23317-175899275361506/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649865.2843678-23317-175899275361506/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649865.2843678-23317-175899275361506/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": [
         "vault",
         "version"
     ],
-    "delta": "0:00:00.030554",
-    "end": "2020-11-06 08:03:36.459433",
+    "delta": "0:00:00.032498",
+    "end": "2020-11-06 08:04:25.448081",
     "invocation": {
         "module_args": {
             "_raw_params": "vault version",
@@ -917,7 +917,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:36.428879",
+    "start": "2020-11-06 08:04:25.415583",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "Vault v1.5.5 (f5d1ddb3750e7c28e25036e1ef26a4c02379fc01)",
@@ -1401,13 +1401,13 @@ TASK [setup/tiller : Check if Tiller is already installed in the Kubernetes clus
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/tiller/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649816.7137327-20764-50133623234697 `" && echo ansible-tmp-1604649816.7137327-20764-50133623234697="` echo /root/.ansible/tmp/ansible-tmp-1604649816.7137327-20764-50133623234697 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649865.7052648-23357-105486490703857 `" && echo ansible-tmp-1604649865.7052648-23357-105486490703857="` echo /root/.ansible/tmp/ansible-tmp-1604649865.7052648-23357-105486490703857 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpdgzrr51i TO /root/.ansible/tmp/ansible-tmp-1604649816.7137327-20764-50133623234697/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649816.7137327-20764-50133623234697/ /root/.ansible/tmp/ansible-tmp-1604649816.7137327-20764-50133623234697/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649816.7137327-20764-50133623234697/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649816.7137327-20764-50133623234697/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpguc39q5n TO /root/.ansible/tmp/ansible-tmp-1604649865.7052648-23357-105486490703857/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649865.7052648-23357-105486490703857/ /root/.ansible/tmp/ansible-tmp-1604649865.7052648-23357-105486490703857/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649865.7052648-23357-105486490703857/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649865.7052648-23357-105486490703857/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -1687,13 +1687,13 @@ TASK [check/helm_component : Wait for Pod helm in kube-system] *****************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:36
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649817.7160711-20804-27234796046988 `" && echo ansible-tmp-1604649817.7160711-20804-27234796046988="` echo /root/.ansible/tmp/ansible-tmp-1604649817.7160711-20804-27234796046988 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649866.6955585-23397-67861454880375 `" && echo ansible-tmp-1604649866.6955585-23397-67861454880375="` echo /root/.ansible/tmp/ansible-tmp-1604649866.6955585-23397-67861454880375 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp4gc1g2k6 TO /root/.ansible/tmp/ansible-tmp-1604649817.7160711-20804-27234796046988/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649817.7160711-20804-27234796046988/ /root/.ansible/tmp/ansible-tmp-1604649817.7160711-20804-27234796046988/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649817.7160711-20804-27234796046988/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649817.7160711-20804-27234796046988/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp3k6ql520 TO /root/.ansible/tmp/ansible-tmp-1604649866.6955585-23397-67861454880375/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649866.6955585-23397-67861454880375/ /root/.ansible/tmp/ansible-tmp-1604649866.6955585-23397-67861454880375/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649866.6955585-23397-67861454880375/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649866.6955585-23397-67861454880375/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "attempts": 1,
     "changed": false,
@@ -1933,13 +1933,13 @@ TASK [setup/tiller : Check if Tiller is already installed in the Kubernetes clus
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/tiller/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649818.3830492-20832-68993232862536 `" && echo ansible-tmp-1604649818.3830492-20832-68993232862536="` echo /root/.ansible/tmp/ansible-tmp-1604649818.3830492-20832-68993232862536 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649867.3182166-23425-73167980117775 `" && echo ansible-tmp-1604649867.3182166-23425-73167980117775="` echo /root/.ansible/tmp/ansible-tmp-1604649867.3182166-23425-73167980117775 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp5t6g1vqt TO /root/.ansible/tmp/ansible-tmp-1604649818.3830492-20832-68993232862536/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649818.3830492-20832-68993232862536/ /root/.ansible/tmp/ansible-tmp-1604649818.3830492-20832-68993232862536/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649818.3830492-20832-68993232862536/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649818.3830492-20832-68993232862536/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmph50b0kdw TO /root/.ansible/tmp/ansible-tmp-1604649867.3182166-23425-73167980117775/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649867.3182166-23425-73167980117775/ /root/.ansible/tmp/ansible-tmp-1604649867.3182166-23425-73167980117775/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649867.3182166-23425-73167980117775/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649867.3182166-23425-73167980117775/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -2216,13 +2216,13 @@ TASK [check/helm_component : Wait for Pod helm in kube-system] *****************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:36
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649819.1800437-20872-147782252276602 `" && echo ansible-tmp-1604649819.1800437-20872-147782252276602="` echo /root/.ansible/tmp/ansible-tmp-1604649819.1800437-20872-147782252276602 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649868.1048448-23465-121642542081159 `" && echo ansible-tmp-1604649868.1048448-23465-121642542081159="` echo /root/.ansible/tmp/ansible-tmp-1604649868.1048448-23465-121642542081159 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp45r7_4ec TO /root/.ansible/tmp/ansible-tmp-1604649819.1800437-20872-147782252276602/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649819.1800437-20872-147782252276602/ /root/.ansible/tmp/ansible-tmp-1604649819.1800437-20872-147782252276602/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649819.1800437-20872-147782252276602/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649819.1800437-20872-147782252276602/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp3vnkkmf0 TO /root/.ansible/tmp/ansible-tmp-1604649868.1048448-23465-121642542081159/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649868.1048448-23465-121642542081159/ /root/.ansible/tmp/ansible-tmp-1604649868.1048448-23465-121642542081159/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649868.1048448-23465-121642542081159/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649868.1048448-23465-121642542081159/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "attempts": 1,
     "changed": false,
@@ -2560,12 +2560,12 @@ TASK [helm : register temporary directory] *************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649820.2648656-20927-23342980498219 `" && echo ansible-tmp-1604649820.2648656-20927-23342980498219="` echo /root/.ansible/tmp/ansible-tmp-1604649820.2648656-20927-23342980498219 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649869.1787164-23520-205767348643240 `" && echo ansible-tmp-1604649869.1787164-23520-205767348643240="` echo /root/.ansible/tmp/ansible-tmp-1604649869.1787164-23520-205767348643240 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/tempfile.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpzdek8seb TO /root/.ansible/tmp/ansible-tmp-1604649820.2648656-20927-23342980498219/AnsiballZ_tempfile.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649820.2648656-20927-23342980498219/ /root/.ansible/tmp/ansible-tmp-1604649820.2648656-20927-23342980498219/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649820.2648656-20927-23342980498219/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649820.2648656-20927-23342980498219/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpva52c4xc TO /root/.ansible/tmp/ansible-tmp-1604649869.1787164-23520-205767348643240/AnsiballZ_tempfile.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649869.1787164-23520-205767348643240/ /root/.ansible/tmp/ansible-tmp-1604649869.1787164-23520-205767348643240/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649869.1787164-23520-205767348643240/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649869.1787164-23520-205767348643240/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "gid": 0,
@@ -2580,7 +2580,7 @@ changed: [localhost] => {
     },
     "mode": "0700",
     "owner": "root",
-    "path": "/tmp/ansible.t6p5crsa",
+    "path": "/tmp/ansible._wn8ugwm",
     "size": 4096,
     "state": "directory",
     "uid": 0
@@ -2590,12 +2590,12 @@ TASK [check helm] **************************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649820.4424167-20953-173529756315321 `" && echo ansible-tmp-1604649820.4424167-20953-173529756315321="` echo /root/.ansible/tmp/ansible-tmp-1604649820.4424167-20953-173529756315321 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649869.362995-23546-2903969938950 `" && echo ansible-tmp-1604649869.362995-23546-2903969938950="` echo /root/.ansible/tmp/ansible-tmp-1604649869.362995-23546-2903969938950 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpyudqbuin TO /root/.ansible/tmp/ansible-tmp-1604649820.4424167-20953-173529756315321/AnsiballZ_stat.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649820.4424167-20953-173529756315321/ /root/.ansible/tmp/ansible-tmp-1604649820.4424167-20953-173529756315321/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649820.4424167-20953-173529756315321/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649820.4424167-20953-173529756315321/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpkmg43ymb TO /root/.ansible/tmp/ansible-tmp-1604649869.362995-23546-2903969938950/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649869.362995-23546-2903969938950/ /root/.ansible/tmp/ansible-tmp-1604649869.362995-23546-2903969938950/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649869.362995-23546-2903969938950/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649869.362995-23546-2903969938950/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -2693,12 +2693,12 @@ TASK [Test helm installation] **************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:58
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649820.792979-20989-178573610599958 `" && echo ansible-tmp-1604649820.792979-20989-178573610599958="` echo /root/.ansible/tmp/ansible-tmp-1604649820.792979-20989-178573610599958 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649869.7302656-23582-195357974602333 `" && echo ansible-tmp-1604649869.7302656-23582-195357974602333="` echo /root/.ansible/tmp/ansible-tmp-1604649869.7302656-23582-195357974602333 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmplismk7t8 TO /root/.ansible/tmp/ansible-tmp-1604649820.792979-20989-178573610599958/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649820.792979-20989-178573610599958/ /root/.ansible/tmp/ansible-tmp-1604649820.792979-20989-178573610599958/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649820.792979-20989-178573610599958/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649820.792979-20989-178573610599958/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpuhtp0uuh TO /root/.ansible/tmp/ansible-tmp-1604649869.7302656-23582-195357974602333/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649869.7302656-23582-195357974602333/ /root/.ansible/tmp/ansible-tmp-1604649869.7302656-23582-195357974602333/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649869.7302656-23582-195357974602333/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649869.7302656-23582-195357974602333/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": [
@@ -2707,8 +2707,8 @@ ok: [localhost] => {
         "--client",
         "--short"
     ],
-    "delta": "0:00:00.053576",
-    "end": "2020-11-06 08:03:40.975952",
+    "delta": "0:00:00.050981",
+    "end": "2020-11-06 08:04:29.910207",
     "invocation": {
         "module_args": {
             "_raw_params": "helm version --client --short",
@@ -2725,7 +2725,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:40.922376",
+    "start": "2020-11-06 08:04:29.859226",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "Client: v2.16.12+g47f0b88",
@@ -2738,12 +2738,12 @@ TASK [kubectl : register temporary directory] **********************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649821.027944-21020-181356271014376 `" && echo ansible-tmp-1604649821.027944-21020-181356271014376="` echo /root/.ansible/tmp/ansible-tmp-1604649821.027944-21020-181356271014376 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649869.9615307-23613-36708246529930 `" && echo ansible-tmp-1604649869.9615307-23613-36708246529930="` echo /root/.ansible/tmp/ansible-tmp-1604649869.9615307-23613-36708246529930 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/tempfile.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpctbsht1o TO /root/.ansible/tmp/ansible-tmp-1604649821.027944-21020-181356271014376/AnsiballZ_tempfile.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649821.027944-21020-181356271014376/ /root/.ansible/tmp/ansible-tmp-1604649821.027944-21020-181356271014376/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649821.027944-21020-181356271014376/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649821.027944-21020-181356271014376/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpz97qc2hb TO /root/.ansible/tmp/ansible-tmp-1604649869.9615307-23613-36708246529930/AnsiballZ_tempfile.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649869.9615307-23613-36708246529930/ /root/.ansible/tmp/ansible-tmp-1604649869.9615307-23613-36708246529930/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649869.9615307-23613-36708246529930/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649869.9615307-23613-36708246529930/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "gid": 0,
@@ -2758,7 +2758,7 @@ changed: [localhost] => {
     },
     "mode": "0700",
     "owner": "root",
-    "path": "/tmp/ansible.zltk_ccd",
+    "path": "/tmp/ansible.b6q01h4o",
     "size": 4096,
     "state": "directory",
     "uid": 0
@@ -2768,12 +2768,12 @@ TASK [check kubectl] ***********************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649821.2077954-21046-150593745280203 `" && echo ansible-tmp-1604649821.2077954-21046-150593745280203="` echo /root/.ansible/tmp/ansible-tmp-1604649821.2077954-21046-150593745280203 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649870.1397958-23639-78084414380547 `" && echo ansible-tmp-1604649870.1397958-23639-78084414380547="` echo /root/.ansible/tmp/ansible-tmp-1604649870.1397958-23639-78084414380547 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp2isdsr9a TO /root/.ansible/tmp/ansible-tmp-1604649821.2077954-21046-150593745280203/AnsiballZ_stat.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649821.2077954-21046-150593745280203/ /root/.ansible/tmp/ansible-tmp-1604649821.2077954-21046-150593745280203/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649821.2077954-21046-150593745280203/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649821.2077954-21046-150593745280203/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp5ujybz_x TO /root/.ansible/tmp/ansible-tmp-1604649870.1397958-23639-78084414380547/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649870.1397958-23639-78084414380547/ /root/.ansible/tmp/ansible-tmp-1604649870.1397958-23639-78084414380547/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649870.1397958-23639-78084414380547/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649870.1397958-23639-78084414380547/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -2871,12 +2871,12 @@ TASK [Test kubectl installation] ***********************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:55
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649821.5718834-21082-91318131139855 `" && echo ansible-tmp-1604649821.5718834-21082-91318131139855="` echo /root/.ansible/tmp/ansible-tmp-1604649821.5718834-21082-91318131139855 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649870.504355-23675-266262296959945 `" && echo ansible-tmp-1604649870.504355-23675-266262296959945="` echo /root/.ansible/tmp/ansible-tmp-1604649870.504355-23675-266262296959945 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpb0aiblyx TO /root/.ansible/tmp/ansible-tmp-1604649821.5718834-21082-91318131139855/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649821.5718834-21082-91318131139855/ /root/.ansible/tmp/ansible-tmp-1604649821.5718834-21082-91318131139855/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649821.5718834-21082-91318131139855/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649821.5718834-21082-91318131139855/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp64h8i03b TO /root/.ansible/tmp/ansible-tmp-1604649870.504355-23675-266262296959945/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649870.504355-23675-266262296959945/ /root/.ansible/tmp/ansible-tmp-1604649870.504355-23675-266262296959945/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649870.504355-23675-266262296959945/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649870.504355-23675-266262296959945/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": [
@@ -2885,8 +2885,8 @@ ok: [localhost] => {
         "--client",
         "--short"
     ],
-    "delta": "0:00:00.048580",
-    "end": "2020-11-06 08:03:41.750965",
+    "delta": "0:00:00.051091",
+    "end": "2020-11-06 08:04:30.686638",
     "invocation": {
         "module_args": {
             "_raw_params": "kubectl version --client --short",
@@ -2903,7 +2903,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:41.702385",
+    "start": "2020-11-06 08:04:30.635547",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "Client Version: v1.19.0",
@@ -2916,13 +2916,13 @@ TASK [setup/tiller : Check if Tiller is already installed in the Kubernetes clus
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/tiller/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649821.8083527-21113-3665291304434 `" && echo ansible-tmp-1604649821.8083527-21113-3665291304434="` echo /root/.ansible/tmp/ansible-tmp-1604649821.8083527-21113-3665291304434 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649870.743915-23706-134317432450754 `" && echo ansible-tmp-1604649870.743915-23706-134317432450754="` echo /root/.ansible/tmp/ansible-tmp-1604649870.743915-23706-134317432450754 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpr_7ppago TO /root/.ansible/tmp/ansible-tmp-1604649821.8083527-21113-3665291304434/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649821.8083527-21113-3665291304434/ /root/.ansible/tmp/ansible-tmp-1604649821.8083527-21113-3665291304434/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649821.8083527-21113-3665291304434/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649821.8083527-21113-3665291304434/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmplfzxqe__ TO /root/.ansible/tmp/ansible-tmp-1604649870.743915-23706-134317432450754/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649870.743915-23706-134317432450754/ /root/.ansible/tmp/ansible-tmp-1604649870.743915-23706-134317432450754/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649870.743915-23706-134317432450754/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649870.743915-23706-134317432450754/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -3202,13 +3202,13 @@ TASK [check/helm_component : Wait for Pod helm in kube-system] *****************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:36
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649822.6580124-21153-191575956311247 `" && echo ansible-tmp-1604649822.6580124-21153-191575956311247="` echo /root/.ansible/tmp/ansible-tmp-1604649822.6580124-21153-191575956311247 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649871.611206-23746-152485886000612 `" && echo ansible-tmp-1604649871.611206-23746-152485886000612="` echo /root/.ansible/tmp/ansible-tmp-1604649871.611206-23746-152485886000612 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpuwc9qdra TO /root/.ansible/tmp/ansible-tmp-1604649822.6580124-21153-191575956311247/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649822.6580124-21153-191575956311247/ /root/.ansible/tmp/ansible-tmp-1604649822.6580124-21153-191575956311247/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649822.6580124-21153-191575956311247/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649822.6580124-21153-191575956311247/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp9xi8rxm4 TO /root/.ansible/tmp/ansible-tmp-1604649871.611206-23746-152485886000612/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649871.611206-23746-152485886000612/ /root/.ansible/tmp/ansible-tmp-1604649871.611206-23746-152485886000612/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649871.611206-23746-152485886000612/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649871.611206-23746-152485886000612/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "attempts": 1,
     "changed": false,
@@ -3448,13 +3448,13 @@ TASK [setup/flux : Check if Flux is running] ***********************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/flux/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649823.2907948-21181-77777752277022 `" && echo ansible-tmp-1604649823.2907948-21181-77777752277022="` echo /root/.ansible/tmp/ansible-tmp-1604649823.2907948-21181-77777752277022 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649872.2480597-23774-278562065773266 `" && echo ansible-tmp-1604649872.2480597-23774-278562065773266="` echo /root/.ansible/tmp/ansible-tmp-1604649872.2480597-23774-278562065773266 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpzwkt0gab TO /root/.ansible/tmp/ansible-tmp-1604649823.2907948-21181-77777752277022/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649823.2907948-21181-77777752277022/ /root/.ansible/tmp/ansible-tmp-1604649823.2907948-21181-77777752277022/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649823.2907948-21181-77777752277022/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649823.2907948-21181-77777752277022/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpbsymkrrr TO /root/.ansible/tmp/ansible-tmp-1604649872.2480597-23774-278562065773266/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649872.2480597-23774-278562065773266/ /root/.ansible/tmp/ansible-tmp-1604649872.2480597-23774-278562065773266/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649872.2480597-23774-278562065773266/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649872.2480597-23774-278562065773266/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -3771,17 +3771,17 @@ TASK [setup/flux : Get ssh key] ************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/flux/tasks/main.yaml:54
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649824.0185764-21217-138183139898170 `" && echo ansible-tmp-1604649824.0185764-21217-138183139898170="` echo /root/.ansible/tmp/ansible-tmp-1604649824.0185764-21217-138183139898170 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649872.9652553-23810-38943808183476 `" && echo ansible-tmp-1604649872.9652553-23810-38943808183476="` echo /root/.ansible/tmp/ansible-tmp-1604649872.9652553-23810-38943808183476 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp_mh4cjml TO /root/.ansible/tmp/ansible-tmp-1604649824.0185764-21217-138183139898170/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649824.0185764-21217-138183139898170/ /root/.ansible/tmp/ansible-tmp-1604649824.0185764-21217-138183139898170/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649824.0185764-21217-138183139898170/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649824.0185764-21217-138183139898170/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpf89ku1zq TO /root/.ansible/tmp/ansible-tmp-1604649872.9652553-23810-38943808183476/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649872.9652553-23810-38943808183476/ /root/.ansible/tmp/ansible-tmp-1604649872.9652553-23810-38943808183476/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649872.9652553-23810-38943808183476/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649872.9652553-23810-38943808183476/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": "KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl -n default logs deployment/flux-dev | grep identity.pub | cut -d '\"' -f2\n",
-    "delta": "0:00:00.234516",
-    "end": "2020-11-06 08:03:44.384335",
+    "delta": "0:00:00.139489",
+    "end": "2020-11-06 08:04:33.234252",
     "invocation": {
         "module_args": {
             "_raw_params": "KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl -n default logs deployment/flux-dev | grep identity.pub | cut -d '\"' -f2\n",
@@ -3798,7 +3798,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:44.149819",
+    "start": "2020-11-06 08:04:33.094763",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8ImoOJkm9nhYVB2d6wbBVNW526Q3nEQoeBG0tQTTbQ5F6bFIkfraDGKKxqpRZRPwiSTkcxUbGeWV1xpbX4kuG3NKn8MwFm1LBilEnp8m9t48ID9cIfLe4WESE4KCqmXPXjMK/OFa1Yo1JRd9P/PHVK4mJK1syXAZl0XKhK9gujrStC/EOsRaB/6ToyQeOPPfeWqL/EO8P6a5T1CFerUBc+Mw4lnFa8XEP7ab4q3xZbmuZ+oGt6sFR+/Jzu8kYJAY1j0ASqBU0DbJbUvvDnpEr7sM3DHTLHj3Mu0K3d4qyc+eaSMono+6BJZIi5JfT3ymgJ5Xwa3W87w5zPgYd+/LVF/wnChgeYYAzCfHZagFQTzxS/wEuWjvNouTf2TbVbgdFRCKPQ9BTTQB+Hrlm8kzqhduNsWlQO9puWd6Zn/A8B+rcae0hrJdKrF7A8NA5N5N/cR9kiri6rJ4m8kJWvrG+zTEBHWcqtDvRj0Yqf29m0XP2IjERFfCwe5W5efIkEk0=",
@@ -3901,12 +3901,12 @@ TASK [helm : register temporary directory] *************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649824.7552884-21277-240279075368098 `" && echo ansible-tmp-1604649824.7552884-21277-240279075368098="` echo /root/.ansible/tmp/ansible-tmp-1604649824.7552884-21277-240279075368098 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649873.6190498-23870-98545301329051 `" && echo ansible-tmp-1604649873.6190498-23870-98545301329051="` echo /root/.ansible/tmp/ansible-tmp-1604649873.6190498-23870-98545301329051 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/tempfile.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpuiqbgeak TO /root/.ansible/tmp/ansible-tmp-1604649824.7552884-21277-240279075368098/AnsiballZ_tempfile.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649824.7552884-21277-240279075368098/ /root/.ansible/tmp/ansible-tmp-1604649824.7552884-21277-240279075368098/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649824.7552884-21277-240279075368098/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649824.7552884-21277-240279075368098/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpbsqqjn6h TO /root/.ansible/tmp/ansible-tmp-1604649873.6190498-23870-98545301329051/AnsiballZ_tempfile.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649873.6190498-23870-98545301329051/ /root/.ansible/tmp/ansible-tmp-1604649873.6190498-23870-98545301329051/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649873.6190498-23870-98545301329051/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649873.6190498-23870-98545301329051/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "gid": 0,
@@ -3921,7 +3921,7 @@ changed: [localhost] => {
     },
     "mode": "0700",
     "owner": "root",
-    "path": "/tmp/ansible.2ihqeqnv",
+    "path": "/tmp/ansible.vdm3jct1",
     "size": 4096,
     "state": "directory",
     "uid": 0
@@ -3931,12 +3931,12 @@ TASK [check helm] **************************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649824.9327521-21303-71983543966435 `" && echo ansible-tmp-1604649824.9327521-21303-71983543966435="` echo /root/.ansible/tmp/ansible-tmp-1604649824.9327521-21303-71983543966435 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649873.7973466-23896-252553467014627 `" && echo ansible-tmp-1604649873.7973466-23896-252553467014627="` echo /root/.ansible/tmp/ansible-tmp-1604649873.7973466-23896-252553467014627 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpje1n5a1j TO /root/.ansible/tmp/ansible-tmp-1604649824.9327521-21303-71983543966435/AnsiballZ_stat.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649824.9327521-21303-71983543966435/ /root/.ansible/tmp/ansible-tmp-1604649824.9327521-21303-71983543966435/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649824.9327521-21303-71983543966435/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649824.9327521-21303-71983543966435/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp3wem1vzy TO /root/.ansible/tmp/ansible-tmp-1604649873.7973466-23896-252553467014627/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649873.7973466-23896-252553467014627/ /root/.ansible/tmp/ansible-tmp-1604649873.7973466-23896-252553467014627/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649873.7973466-23896-252553467014627/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649873.7973466-23896-252553467014627/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -4034,12 +4034,12 @@ TASK [Test helm installation] **************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:58
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649825.2912378-21339-240192439537195 `" && echo ansible-tmp-1604649825.2912378-21339-240192439537195="` echo /root/.ansible/tmp/ansible-tmp-1604649825.2912378-21339-240192439537195 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649874.1539147-23932-10814374442357 `" && echo ansible-tmp-1604649874.1539147-23932-10814374442357="` echo /root/.ansible/tmp/ansible-tmp-1604649874.1539147-23932-10814374442357 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpgukyvkpg TO /root/.ansible/tmp/ansible-tmp-1604649825.2912378-21339-240192439537195/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649825.2912378-21339-240192439537195/ /root/.ansible/tmp/ansible-tmp-1604649825.2912378-21339-240192439537195/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649825.2912378-21339-240192439537195/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649825.2912378-21339-240192439537195/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp15n2w_4u TO /root/.ansible/tmp/ansible-tmp-1604649874.1539147-23932-10814374442357/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649874.1539147-23932-10814374442357/ /root/.ansible/tmp/ansible-tmp-1604649874.1539147-23932-10814374442357/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649874.1539147-23932-10814374442357/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649874.1539147-23932-10814374442357/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": [
@@ -4048,8 +4048,8 @@ ok: [localhost] => {
         "--client",
         "--short"
     ],
-    "delta": "0:00:00.049541",
-    "end": "2020-11-06 08:03:45.470586",
+    "delta": "0:00:00.056899",
+    "end": "2020-11-06 08:04:34.340477",
     "invocation": {
         "module_args": {
             "_raw_params": "helm version --client --short",
@@ -4066,7 +4066,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:45.421045",
+    "start": "2020-11-06 08:04:34.283578",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "Client: v2.16.12+g47f0b88",
@@ -4079,12 +4079,12 @@ TASK [kubectl : register temporary directory] **********************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649825.5217147-21371-70503614765439 `" && echo ansible-tmp-1604649825.5217147-21371-70503614765439="` echo /root/.ansible/tmp/ansible-tmp-1604649825.5217147-21371-70503614765439 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649874.3957973-23963-242333751304170 `" && echo ansible-tmp-1604649874.3957973-23963-242333751304170="` echo /root/.ansible/tmp/ansible-tmp-1604649874.3957973-23963-242333751304170 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/tempfile.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpzz9peygo TO /root/.ansible/tmp/ansible-tmp-1604649825.5217147-21371-70503614765439/AnsiballZ_tempfile.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649825.5217147-21371-70503614765439/ /root/.ansible/tmp/ansible-tmp-1604649825.5217147-21371-70503614765439/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649825.5217147-21371-70503614765439/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649825.5217147-21371-70503614765439/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmptf77wa5_ TO /root/.ansible/tmp/ansible-tmp-1604649874.3957973-23963-242333751304170/AnsiballZ_tempfile.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649874.3957973-23963-242333751304170/ /root/.ansible/tmp/ansible-tmp-1604649874.3957973-23963-242333751304170/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649874.3957973-23963-242333751304170/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649874.3957973-23963-242333751304170/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "gid": 0,
@@ -4099,7 +4099,7 @@ changed: [localhost] => {
     },
     "mode": "0700",
     "owner": "root",
-    "path": "/tmp/ansible.ym9rt84i",
+    "path": "/tmp/ansible.rfgzk7pr",
     "size": 4096,
     "state": "directory",
     "uid": 0
@@ -4109,12 +4109,12 @@ TASK [check kubectl] ***********************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649825.7016327-21397-87067998950042 `" && echo ansible-tmp-1604649825.7016327-21397-87067998950042="` echo /root/.ansible/tmp/ansible-tmp-1604649825.7016327-21397-87067998950042 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649874.57518-23989-214573744242078 `" && echo ansible-tmp-1604649874.57518-23989-214573744242078="` echo /root/.ansible/tmp/ansible-tmp-1604649874.57518-23989-214573744242078 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpifce8a8j TO /root/.ansible/tmp/ansible-tmp-1604649825.7016327-21397-87067998950042/AnsiballZ_stat.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649825.7016327-21397-87067998950042/ /root/.ansible/tmp/ansible-tmp-1604649825.7016327-21397-87067998950042/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649825.7016327-21397-87067998950042/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649825.7016327-21397-87067998950042/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpk95stv7w TO /root/.ansible/tmp/ansible-tmp-1604649874.57518-23989-214573744242078/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649874.57518-23989-214573744242078/ /root/.ansible/tmp/ansible-tmp-1604649874.57518-23989-214573744242078/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649874.57518-23989-214573744242078/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649874.57518-23989-214573744242078/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -4212,12 +4212,12 @@ TASK [Test kubectl installation] ***********************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/kubectl/tasks/main.yaml:55
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649826.0636165-21433-251891001961532 `" && echo ansible-tmp-1604649826.0636165-21433-251891001961532="` echo /root/.ansible/tmp/ansible-tmp-1604649826.0636165-21433-251891001961532 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649874.9360034-24025-1028569592657 `" && echo ansible-tmp-1604649874.9360034-24025-1028569592657="` echo /root/.ansible/tmp/ansible-tmp-1604649874.9360034-24025-1028569592657 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp8p9b8awg TO /root/.ansible/tmp/ansible-tmp-1604649826.0636165-21433-251891001961532/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649826.0636165-21433-251891001961532/ /root/.ansible/tmp/ansible-tmp-1604649826.0636165-21433-251891001961532/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649826.0636165-21433-251891001961532/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649826.0636165-21433-251891001961532/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmphsxqag5c TO /root/.ansible/tmp/ansible-tmp-1604649874.9360034-24025-1028569592657/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649874.9360034-24025-1028569592657/ /root/.ansible/tmp/ansible-tmp-1604649874.9360034-24025-1028569592657/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649874.9360034-24025-1028569592657/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649874.9360034-24025-1028569592657/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": [
@@ -4226,8 +4226,8 @@ ok: [localhost] => {
         "--client",
         "--short"
     ],
-    "delta": "0:00:00.048370",
-    "end": "2020-11-06 08:03:46.246540",
+    "delta": "0:00:00.052972",
+    "end": "2020-11-06 08:04:35.117894",
     "invocation": {
         "module_args": {
             "_raw_params": "kubectl version --client --short",
@@ -4244,7 +4244,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:46.198170",
+    "start": "2020-11-06 08:04:35.064922",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "Client Version: v1.19.0",
@@ -4257,13 +4257,13 @@ TASK [setup/tiller : Check if Tiller is already installed in the Kubernetes clus
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/tiller/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649826.303327-21464-25399924762459 `" && echo ansible-tmp-1604649826.303327-21464-25399924762459="` echo /root/.ansible/tmp/ansible-tmp-1604649826.303327-21464-25399924762459 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649875.175091-24056-166638548758393 `" && echo ansible-tmp-1604649875.175091-24056-166638548758393="` echo /root/.ansible/tmp/ansible-tmp-1604649875.175091-24056-166638548758393 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp0obnhhyd TO /root/.ansible/tmp/ansible-tmp-1604649826.303327-21464-25399924762459/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649826.303327-21464-25399924762459/ /root/.ansible/tmp/ansible-tmp-1604649826.303327-21464-25399924762459/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649826.303327-21464-25399924762459/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649826.303327-21464-25399924762459/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpw3yxh_xw TO /root/.ansible/tmp/ansible-tmp-1604649875.175091-24056-166638548758393/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649875.175091-24056-166638548758393/ /root/.ansible/tmp/ansible-tmp-1604649875.175091-24056-166638548758393/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649875.175091-24056-166638548758393/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649875.175091-24056-166638548758393/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -4540,13 +4540,13 @@ TASK [check/helm_component : Wait for Pod helm in kube-system] *****************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:36
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649827.1173255-21504-186084153071158 `" && echo ansible-tmp-1604649827.1173255-21504-186084153071158="` echo /root/.ansible/tmp/ansible-tmp-1604649827.1173255-21504-186084153071158 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649875.9853094-24096-246019838736594 `" && echo ansible-tmp-1604649875.9853094-24096-246019838736594="` echo /root/.ansible/tmp/ansible-tmp-1604649875.9853094-24096-246019838736594 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp6k6d2qj9 TO /root/.ansible/tmp/ansible-tmp-1604649827.1173255-21504-186084153071158/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649827.1173255-21504-186084153071158/ /root/.ansible/tmp/ansible-tmp-1604649827.1173255-21504-186084153071158/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649827.1173255-21504-186084153071158/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649827.1173255-21504-186084153071158/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpmkj76rjt TO /root/.ansible/tmp/ansible-tmp-1604649875.9853094-24096-246019838736594/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649875.9853094-24096-246019838736594/ /root/.ansible/tmp/ansible-tmp-1604649875.9853094-24096-246019838736594/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649875.9853094-24096-246019838736594/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649875.9853094-24096-246019838736594/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "attempts": 1,
     "changed": false,
@@ -4786,13 +4786,13 @@ TASK [setup/flux : Check if Flux is running] ***********************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/flux/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649827.772465-21532-147613675848323 `" && echo ansible-tmp-1604649827.772465-21532-147613675848323="` echo /root/.ansible/tmp/ansible-tmp-1604649827.772465-21532-147613675848323 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649876.6106946-24124-8531022618096 `" && echo ansible-tmp-1604649876.6106946-24124-8531022618096="` echo /root/.ansible/tmp/ansible-tmp-1604649876.6106946-24124-8531022618096 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpobq6mti8 TO /root/.ansible/tmp/ansible-tmp-1604649827.772465-21532-147613675848323/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649827.772465-21532-147613675848323/ /root/.ansible/tmp/ansible-tmp-1604649827.772465-21532-147613675848323/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649827.772465-21532-147613675848323/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649827.772465-21532-147613675848323/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpx96tp6ag TO /root/.ansible/tmp/ansible-tmp-1604649876.6106946-24124-8531022618096/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649876.6106946-24124-8531022618096/ /root/.ansible/tmp/ansible-tmp-1604649876.6106946-24124-8531022618096/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649876.6106946-24124-8531022618096/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649876.6106946-24124-8531022618096/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -5109,17 +5109,17 @@ TASK [setup/flux : Get ssh key] ************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/flux/tasks/main.yaml:54
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649828.5107687-21568-18388447145737 `" && echo ansible-tmp-1604649828.5107687-21568-18388447145737="` echo /root/.ansible/tmp/ansible-tmp-1604649828.5107687-21568-18388447145737 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649877.3425422-24160-197756689231690 `" && echo ansible-tmp-1604649877.3425422-24160-197756689231690="` echo /root/.ansible/tmp/ansible-tmp-1604649877.3425422-24160-197756689231690 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpmwqmmb9r TO /root/.ansible/tmp/ansible-tmp-1604649828.5107687-21568-18388447145737/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649828.5107687-21568-18388447145737/ /root/.ansible/tmp/ansible-tmp-1604649828.5107687-21568-18388447145737/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649828.5107687-21568-18388447145737/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649828.5107687-21568-18388447145737/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmplj12qj4y TO /root/.ansible/tmp/ansible-tmp-1604649877.3425422-24160-197756689231690/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649877.3425422-24160-197756689231690/ /root/.ansible/tmp/ansible-tmp-1604649877.3425422-24160-197756689231690/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649877.3425422-24160-197756689231690/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649877.3425422-24160-197756689231690/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": "KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl -n default logs deployment/flux-dev | grep identity.pub | cut -d '\"' -f2\n",
-    "delta": "0:00:00.131737",
-    "end": "2020-11-06 08:03:48.773095",
+    "delta": "0:00:00.145849",
+    "end": "2020-11-06 08:04:37.619550",
     "invocation": {
         "module_args": {
             "_raw_params": "KUBECONFIG=/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml kubectl -n default logs deployment/flux-dev | grep identity.pub | cut -d '\"' -f2\n",
@@ -5136,7 +5136,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:48.641358",
+    "start": "2020-11-06 08:04:37.473701",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8ImoOJkm9nhYVB2d6wbBVNW526Q3nEQoeBG0tQTTbQ5F6bFIkfraDGKKxqpRZRPwiSTkcxUbGeWV1xpbX4kuG3NKn8MwFm1LBilEnp8m9t48ID9cIfLe4WESE4KCqmXPXjMK/OFa1Yo1JRd9P/PHVK4mJK1syXAZl0XKhK9gujrStC/EOsRaB/6ToyQeOPPfeWqL/EO8P6a5T1CFerUBc+Mw4lnFa8XEP7ab4q3xZbmuZ+oGt6sFR+/Jzu8kYJAY1j0ASqBU0DbJbUvvDnpEr7sM3DHTLHj3Mu0K3d4qyc+eaSMono+6BJZIi5JfT3ymgJ5Xwa3W87w5zPgYd+/LVF/wnChgeYYAzCfHZagFQTzxS/wEuWjvNouTf2TbVbgdFRCKPQ9BTTQB+Hrlm8kzqhduNsWlQO9puWd6Zn/A8B+rcae0hrJdKrF7A8NA5N5N/cR9kiri6rJ4m8kJWvrG+zTEBHWcqtDvRj0Yqf29m0XP2IjERFfCwe5W5efIkEk0=",
@@ -5707,12 +5707,12 @@ TASK [setup/helm : register temporary directory] *******************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649829.4550717-21634-99618246635391 `" && echo ansible-tmp-1604649829.4550717-21634-99618246635391="` echo /root/.ansible/tmp/ansible-tmp-1604649829.4550717-21634-99618246635391 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649878.29364-24226-59351593237810 `" && echo ansible-tmp-1604649878.29364-24226-59351593237810="` echo /root/.ansible/tmp/ansible-tmp-1604649878.29364-24226-59351593237810 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/tempfile.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpe706z80k TO /root/.ansible/tmp/ansible-tmp-1604649829.4550717-21634-99618246635391/AnsiballZ_tempfile.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649829.4550717-21634-99618246635391/ /root/.ansible/tmp/ansible-tmp-1604649829.4550717-21634-99618246635391/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649829.4550717-21634-99618246635391/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649829.4550717-21634-99618246635391/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmplwr5_vfk TO /root/.ansible/tmp/ansible-tmp-1604649878.29364-24226-59351593237810/AnsiballZ_tempfile.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649878.29364-24226-59351593237810/ /root/.ansible/tmp/ansible-tmp-1604649878.29364-24226-59351593237810/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649878.29364-24226-59351593237810/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649878.29364-24226-59351593237810/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "gid": 0,
@@ -5727,7 +5727,7 @@ changed: [localhost] => {
     },
     "mode": "0700",
     "owner": "root",
-    "path": "/tmp/ansible.ais5px4d",
+    "path": "/tmp/ansible.8_w4d9yz",
     "size": 4096,
     "state": "directory",
     "uid": 0
@@ -5737,12 +5737,12 @@ TASK [setup/helm : check helm] *************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649829.6327507-21660-109920131603932 `" && echo ansible-tmp-1604649829.6327507-21660-109920131603932="` echo /root/.ansible/tmp/ansible-tmp-1604649829.6327507-21660-109920131603932 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649878.474236-24252-155014212674511 `" && echo ansible-tmp-1604649878.474236-24252-155014212674511="` echo /root/.ansible/tmp/ansible-tmp-1604649878.474236-24252-155014212674511 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpjf2cz3fe TO /root/.ansible/tmp/ansible-tmp-1604649829.6327507-21660-109920131603932/AnsiballZ_stat.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649829.6327507-21660-109920131603932/ /root/.ansible/tmp/ansible-tmp-1604649829.6327507-21660-109920131603932/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649829.6327507-21660-109920131603932/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649829.6327507-21660-109920131603932/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp8ons93wg TO /root/.ansible/tmp/ansible-tmp-1604649878.474236-24252-155014212674511/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649878.474236-24252-155014212674511/ /root/.ansible/tmp/ansible-tmp-1604649878.474236-24252-155014212674511/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649878.474236-24252-155014212674511/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649878.474236-24252-155014212674511/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -5840,12 +5840,12 @@ TASK [setup/helm : Test helm installation] *************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:58
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649829.9882843-21696-266424781080116 `" && echo ansible-tmp-1604649829.9882843-21696-266424781080116="` echo /root/.ansible/tmp/ansible-tmp-1604649829.9882843-21696-266424781080116 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649878.8345757-24288-19153481994147 `" && echo ansible-tmp-1604649878.8345757-24288-19153481994147="` echo /root/.ansible/tmp/ansible-tmp-1604649878.8345757-24288-19153481994147 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpt92i8e6f TO /root/.ansible/tmp/ansible-tmp-1604649829.9882843-21696-266424781080116/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649829.9882843-21696-266424781080116/ /root/.ansible/tmp/ansible-tmp-1604649829.9882843-21696-266424781080116/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649829.9882843-21696-266424781080116/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649829.9882843-21696-266424781080116/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp5n2jtu7f TO /root/.ansible/tmp/ansible-tmp-1604649878.8345757-24288-19153481994147/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649878.8345757-24288-19153481994147/ /root/.ansible/tmp/ansible-tmp-1604649878.8345757-24288-19153481994147/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649878.8345757-24288-19153481994147/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649878.8345757-24288-19153481994147/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": [
@@ -5854,8 +5854,8 @@ ok: [localhost] => {
         "--client",
         "--short"
     ],
-    "delta": "0:00:00.050438",
-    "end": "2020-11-06 08:03:50.171209",
+    "delta": "0:00:00.050581",
+    "end": "2020-11-06 08:04:39.015378",
     "invocation": {
         "module_args": {
             "_raw_params": "helm version --client --short",
@@ -5872,7 +5872,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:50.120771",
+    "start": "2020-11-06 08:04:38.964797",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "Client: v2.16.12+g47f0b88",
@@ -5885,13 +5885,13 @@ TASK [setup/tiller : Check if Tiller is already installed in the Kubernetes clus
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/tiller/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649830.2281904-21727-240213761392386 `" && echo ansible-tmp-1604649830.2281904-21727-240213761392386="` echo /root/.ansible/tmp/ansible-tmp-1604649830.2281904-21727-240213761392386 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649879.073827-24319-81627058093171 `" && echo ansible-tmp-1604649879.073827-24319-81627058093171="` echo /root/.ansible/tmp/ansible-tmp-1604649879.073827-24319-81627058093171 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpb5aw1u5p TO /root/.ansible/tmp/ansible-tmp-1604649830.2281904-21727-240213761392386/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649830.2281904-21727-240213761392386/ /root/.ansible/tmp/ansible-tmp-1604649830.2281904-21727-240213761392386/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649830.2281904-21727-240213761392386/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649830.2281904-21727-240213761392386/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpp_pxotyz TO /root/.ansible/tmp/ansible-tmp-1604649879.073827-24319-81627058093171/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649879.073827-24319-81627058093171/ /root/.ansible/tmp/ansible-tmp-1604649879.073827-24319-81627058093171/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649879.073827-24319-81627058093171/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649879.073827-24319-81627058093171/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -6168,13 +6168,13 @@ TASK [check/helm_component : Wait for Pod helm in kube-system] *****************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:36
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649831.0388336-21767-219552578811144 `" && echo ansible-tmp-1604649831.0388336-21767-219552578811144="` echo /root/.ansible/tmp/ansible-tmp-1604649831.0388336-21767-219552578811144 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649879.949792-24359-64070382267155 `" && echo ansible-tmp-1604649879.949792-24359-64070382267155="` echo /root/.ansible/tmp/ansible-tmp-1604649879.949792-24359-64070382267155 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpoch67a9p TO /root/.ansible/tmp/ansible-tmp-1604649831.0388336-21767-219552578811144/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649831.0388336-21767-219552578811144/ /root/.ansible/tmp/ansible-tmp-1604649831.0388336-21767-219552578811144/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649831.0388336-21767-219552578811144/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649831.0388336-21767-219552578811144/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp0cn94z74 TO /root/.ansible/tmp/ansible-tmp-1604649879.949792-24359-64070382267155/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649879.949792-24359-64070382267155/ /root/.ansible/tmp/ansible-tmp-1604649879.949792-24359-64070382267155/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649879.949792-24359-64070382267155/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649879.949792-24359-64070382267155/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "attempts": 1,
     "changed": false,
@@ -6414,13 +6414,13 @@ TASK [setup/haproxy-ingress : Check if haproxy is already installed] ***********
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/haproxy-ingress/tasks/main.yaml:3
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649831.6862924-21795-86182232463904 `" && echo ansible-tmp-1604649831.6862924-21795-86182232463904="` echo /root/.ansible/tmp/ansible-tmp-1604649831.6862924-21795-86182232463904 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649880.5717854-24387-271877427482684 `" && echo ansible-tmp-1604649880.5717854-24387-271877427482684="` echo /root/.ansible/tmp/ansible-tmp-1604649880.5717854-24387-271877427482684 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpqr1njcy4 TO /root/.ansible/tmp/ansible-tmp-1604649831.6862924-21795-86182232463904/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649831.6862924-21795-86182232463904/ /root/.ansible/tmp/ansible-tmp-1604649831.6862924-21795-86182232463904/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649831.6862924-21795-86182232463904/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649831.6862924-21795-86182232463904/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpuix131_0 TO /root/.ansible/tmp/ansible-tmp-1604649880.5717854-24387-271877427482684/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649880.5717854-24387-271877427482684/ /root/.ansible/tmp/ansible-tmp-1604649880.5717854-24387-271877427482684/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649880.5717854-24387-271877427482684/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649880.5717854-24387-271877427482684/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -7204,13 +7204,13 @@ TASK [check/helm_component : Wait for Pod flux in ingress-controller] **********
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:36
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649832.5116282-21835-114110389322110 `" && echo ansible-tmp-1604649832.5116282-21835-114110389322110="` echo /root/.ansible/tmp/ansible-tmp-1604649832.5116282-21835-114110389322110 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649881.393508-24427-107309389922297 `" && echo ansible-tmp-1604649881.393508-24427-107309389922297="` echo /root/.ansible/tmp/ansible-tmp-1604649881.393508-24427-107309389922297 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpfrl6k_3i TO /root/.ansible/tmp/ansible-tmp-1604649832.5116282-21835-114110389322110/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649832.5116282-21835-114110389322110/ /root/.ansible/tmp/ansible-tmp-1604649832.5116282-21835-114110389322110/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649832.5116282-21835-114110389322110/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649832.5116282-21835-114110389322110/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpd04u09mh TO /root/.ansible/tmp/ansible-tmp-1604649881.393508-24427-107309389922297/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649881.393508-24427-107309389922297/ /root/.ansible/tmp/ansible-tmp-1604649881.393508-24427-107309389922297/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649881.393508-24427-107309389922297/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649881.393508-24427-107309389922297/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "attempts": 1,
     "changed": false,
@@ -8038,12 +8038,12 @@ TASK [setup/helm : register temporary directory] *******************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649833.4524753-21887-259925987309238 `" && echo ansible-tmp-1604649833.4524753-21887-259925987309238="` echo /root/.ansible/tmp/ansible-tmp-1604649833.4524753-21887-259925987309238 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649882.3623147-24479-110606035877947 `" && echo ansible-tmp-1604649882.3623147-24479-110606035877947="` echo /root/.ansible/tmp/ansible-tmp-1604649882.3623147-24479-110606035877947 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/tempfile.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpvfnax4fs TO /root/.ansible/tmp/ansible-tmp-1604649833.4524753-21887-259925987309238/AnsiballZ_tempfile.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649833.4524753-21887-259925987309238/ /root/.ansible/tmp/ansible-tmp-1604649833.4524753-21887-259925987309238/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649833.4524753-21887-259925987309238/AnsiballZ_tempfile.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649833.4524753-21887-259925987309238/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpbbu9686f TO /root/.ansible/tmp/ansible-tmp-1604649882.3623147-24479-110606035877947/AnsiballZ_tempfile.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649882.3623147-24479-110606035877947/ /root/.ansible/tmp/ansible-tmp-1604649882.3623147-24479-110606035877947/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649882.3623147-24479-110606035877947/AnsiballZ_tempfile.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649882.3623147-24479-110606035877947/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "gid": 0,
@@ -8058,7 +8058,7 @@ changed: [localhost] => {
     },
     "mode": "0700",
     "owner": "root",
-    "path": "/tmp/ansible.6e3t7r45",
+    "path": "/tmp/ansible.fet3ucqa",
     "size": 4096,
     "state": "directory",
     "uid": 0
@@ -8068,12 +8068,12 @@ TASK [setup/helm : check helm] *************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649833.630468-21913-82695699092192 `" && echo ansible-tmp-1604649833.630468-21913-82695699092192="` echo /root/.ansible/tmp/ansible-tmp-1604649833.630468-21913-82695699092192 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649882.5520804-24505-70063969873961 `" && echo ansible-tmp-1604649882.5520804-24505-70063969873961="` echo /root/.ansible/tmp/ansible-tmp-1604649882.5520804-24505-70063969873961 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpo753t6yb TO /root/.ansible/tmp/ansible-tmp-1604649833.630468-21913-82695699092192/AnsiballZ_stat.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649833.630468-21913-82695699092192/ /root/.ansible/tmp/ansible-tmp-1604649833.630468-21913-82695699092192/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649833.630468-21913-82695699092192/AnsiballZ_stat.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649833.630468-21913-82695699092192/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpqthb54gq TO /root/.ansible/tmp/ansible-tmp-1604649882.5520804-24505-70063969873961/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649882.5520804-24505-70063969873961/ /root/.ansible/tmp/ansible-tmp-1604649882.5520804-24505-70063969873961/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649882.5520804-24505-70063969873961/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649882.5520804-24505-70063969873961/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -8171,12 +8171,12 @@ TASK [setup/helm : Test helm installation] *************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/helm/tasks/main.yaml:58
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649833.982543-21949-266530920787837 `" && echo ansible-tmp-1604649833.982543-21949-266530920787837="` echo /root/.ansible/tmp/ansible-tmp-1604649833.982543-21949-266530920787837 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649882.9096563-24541-17880659017719 `" && echo ansible-tmp-1604649882.9096563-24541-17880659017719="` echo /root/.ansible/tmp/ansible-tmp-1604649882.9096563-24541-17880659017719 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpu9n1_dql TO /root/.ansible/tmp/ansible-tmp-1604649833.982543-21949-266530920787837/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649833.982543-21949-266530920787837/ /root/.ansible/tmp/ansible-tmp-1604649833.982543-21949-266530920787837/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649833.982543-21949-266530920787837/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649833.982543-21949-266530920787837/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp8_r93k43 TO /root/.ansible/tmp/ansible-tmp-1604649882.9096563-24541-17880659017719/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649882.9096563-24541-17880659017719/ /root/.ansible/tmp/ansible-tmp-1604649882.9096563-24541-17880659017719/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649882.9096563-24541-17880659017719/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649882.9096563-24541-17880659017719/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "cmd": [
@@ -8185,8 +8185,8 @@ ok: [localhost] => {
         "--client",
         "--short"
     ],
-    "delta": "0:00:00.050223",
-    "end": "2020-11-06 08:03:54.164113",
+    "delta": "0:00:00.053780",
+    "end": "2020-11-06 08:04:43.092441",
     "invocation": {
         "module_args": {
             "_raw_params": "helm version --client --short",
@@ -8203,7 +8203,7 @@ ok: [localhost] => {
         }
     },
     "rc": 0,
-    "start": "2020-11-06 08:03:54.113890",
+    "start": "2020-11-06 08:04:43.038661",
     "stderr": "",
     "stderr_lines": [],
     "stdout": "Client: v2.16.12+g47f0b88",
@@ -8216,13 +8216,13 @@ TASK [setup/tiller : Check if Tiller is already installed in the Kubernetes clus
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/tiller/tasks/main.yaml:2
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649834.2233925-21981-245342395369349 `" && echo ansible-tmp-1604649834.2233925-21981-245342395369349="` echo /root/.ansible/tmp/ansible-tmp-1604649834.2233925-21981-245342395369349 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649883.1510098-24572-20811803403317 `" && echo ansible-tmp-1604649883.1510098-24572-20811803403317="` echo /root/.ansible/tmp/ansible-tmp-1604649883.1510098-24572-20811803403317 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp1gd6hh64 TO /root/.ansible/tmp/ansible-tmp-1604649834.2233925-21981-245342395369349/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649834.2233925-21981-245342395369349/ /root/.ansible/tmp/ansible-tmp-1604649834.2233925-21981-245342395369349/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649834.2233925-21981-245342395369349/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649834.2233925-21981-245342395369349/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpslid3_ap TO /root/.ansible/tmp/ansible-tmp-1604649883.1510098-24572-20811803403317/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649883.1510098-24572-20811803403317/ /root/.ansible/tmp/ansible-tmp-1604649883.1510098-24572-20811803403317/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649883.1510098-24572-20811803403317/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649883.1510098-24572-20811803403317/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -8499,13 +8499,13 @@ TASK [check/helm_component : Wait for Pod helm in kube-system] *****************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:36
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649835.030163-22021-241092084396707 `" && echo ansible-tmp-1604649835.030163-22021-241092084396707="` echo /root/.ansible/tmp/ansible-tmp-1604649835.030163-22021-241092084396707 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649883.9712873-24612-244414997459110 `" && echo ansible-tmp-1604649883.9712873-24612-244414997459110="` echo /root/.ansible/tmp/ansible-tmp-1604649883.9712873-24612-244414997459110 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpxshhjaut TO /root/.ansible/tmp/ansible-tmp-1604649835.030163-22021-241092084396707/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649835.030163-22021-241092084396707/ /root/.ansible/tmp/ansible-tmp-1604649835.030163-22021-241092084396707/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649835.030163-22021-241092084396707/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649835.030163-22021-241092084396707/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmptcb0r4r9 TO /root/.ansible/tmp/ansible-tmp-1604649883.9712873-24612-244414997459110/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649883.9712873-24612-244414997459110/ /root/.ansible/tmp/ansible-tmp-1604649883.9712873-24612-244414997459110/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649883.9712873-24612-244414997459110/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649883.9712873-24612-244414997459110/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "attempts": 1,
     "changed": false,
@@ -8745,13 +8745,13 @@ TASK [setup/haproxy-ingress : Check if haproxy is already installed] ***********
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/setup/haproxy-ingress/tasks/main.yaml:3
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649835.6623693-22049-175945737166065 `" && echo ansible-tmp-1604649835.6623693-22049-175945737166065="` echo /root/.ansible/tmp/ansible-tmp-1604649835.6623693-22049-175945737166065 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649884.5921605-24640-177695559420975 `" && echo ansible-tmp-1604649884.5921605-24640-177695559420975="` echo /root/.ansible/tmp/ansible-tmp-1604649884.5921605-24640-177695559420975 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpftdw831l TO /root/.ansible/tmp/ansible-tmp-1604649835.6623693-22049-175945737166065/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649835.6623693-22049-175945737166065/ /root/.ansible/tmp/ansible-tmp-1604649835.6623693-22049-175945737166065/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649835.6623693-22049-175945737166065/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649835.6623693-22049-175945737166065/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp9ubbfka1 TO /root/.ansible/tmp/ansible-tmp-1604649884.5921605-24640-177695559420975/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649884.5921605-24640-177695559420975/ /root/.ansible/tmp/ansible-tmp-1604649884.5921605-24640-177695559420975/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649884.5921605-24640-177695559420975/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649884.5921605-24640-177695559420975/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -9532,13 +9532,13 @@ TASK [check/helm_component : Wait for Pod flux in ingress-controller] **********
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:36
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649836.4815633-22091-75672521383563 `" && echo ansible-tmp-1604649836.4815633-22091-75672521383563="` echo /root/.ansible/tmp/ansible-tmp-1604649836.4815633-22091-75672521383563 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649885.4115682-24680-212260864442352 `" && echo ansible-tmp-1604649885.4115682-24680-212260864442352="` echo /root/.ansible/tmp/ansible-tmp-1604649885.4115682-24680-212260864442352 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpz30knmfj TO /root/.ansible/tmp/ansible-tmp-1604649836.4815633-22091-75672521383563/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649836.4815633-22091-75672521383563/ /root/.ansible/tmp/ansible-tmp-1604649836.4815633-22091-75672521383563/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649836.4815633-22091-75672521383563/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649836.4815633-22091-75672521383563/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp9p8u_1vc TO /root/.ansible/tmp/ansible-tmp-1604649885.4115682-24680-212260864442352/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649885.4115682-24680-212260864442352/ /root/.ansible/tmp/ansible-tmp-1604649885.4115682-24680-212260864442352/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649885.4115682-24680-212260864442352/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649885.4115682-24680-212260864442352/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "attempts": 1,
     "changed": false,
@@ -10287,12 +10287,12 @@ TASK [Remove build directory] **************************************************
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/deploy-network.yaml:16
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649837.1463258-22120-58804502997538 `" && echo ansible-tmp-1604649837.1463258-22120-58804502997538="` echo /root/.ansible/tmp/ansible-tmp-1604649837.1463258-22120-58804502997538 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649886.0632975-24709-77783824245898 `" && echo ansible-tmp-1604649886.0632975-24709-77783824245898="` echo /root/.ansible/tmp/ansible-tmp-1604649886.0632975-24709-77783824245898 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/file.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpqm17cmpa TO /root/.ansible/tmp/ansible-tmp-1604649837.1463258-22120-58804502997538/AnsiballZ_file.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649837.1463258-22120-58804502997538/ /root/.ansible/tmp/ansible-tmp-1604649837.1463258-22120-58804502997538/AnsiballZ_file.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649837.1463258-22120-58804502997538/AnsiballZ_file.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649837.1463258-22120-58804502997538/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp1bt4l8g5 TO /root/.ansible/tmp/ansible-tmp-1604649886.0632975-24709-77783824245898/AnsiballZ_file.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649886.0632975-24709-77783824245898/ /root/.ansible/tmp/ansible-tmp-1604649886.0632975-24709-77783824245898/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649886.0632975-24709-77783824245898/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649886.0632975-24709-77783824245898/ > /dev/null 2>&1 && sleep 0'
 changed: [localhost] => {
     "changed": true,
     "diff": {
@@ -10354,13 +10354,13 @@ TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledg
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:7
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649837.623694-22150-210548241947899 `" && echo ansible-tmp-1604649837.623694-22150-210548241947899="` echo /root/.ansible/tmp/ansible-tmp-1604649837.623694-22150-210548241947899 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649886.5791888-24739-247821299266531 `" && echo ansible-tmp-1604649886.5791888-24739-247821299266531="` echo /root/.ansible/tmp/ansible-tmp-1604649886.5791888-24739-247821299266531 `" ) && sleep 0'
 redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
 Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpfm86tjdx TO /root/.ansible/tmp/ansible-tmp-1604649837.623694-22150-210548241947899/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649837.623694-22150-210548241947899/ /root/.ansible/tmp/ansible-tmp-1604649837.623694-22150-210548241947899/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649837.623694-22150-210548241947899/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649837.623694-22150-210548241947899/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpcnbgmftn TO /root/.ansible/tmp/ansible-tmp-1604649886.5791888-24739-247821299266531/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649886.5791888-24739-247821299266531/ /root/.ansible/tmp/ansible-tmp-1604649886.5791888-24739-247821299266531/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649886.5791888-24739-247821299266531/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649886.5791888-24739-247821299266531/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "invocation": {
@@ -10515,12 +10515,12 @@ TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledg
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:3
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649838.5410297-22196-221891796884406 `" && echo ansible-tmp-1604649838.5410297-22196-221891796884406="` echo /root/.ansible/tmp/ansible-tmp-1604649838.5410297-22196-221891796884406 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649887.4918528-24785-247496734055640 `" && echo ansible-tmp-1604649887.4918528-24785-247496734055640="` echo /root/.ansible/tmp/ansible-tmp-1604649887.4918528-24785-247496734055640 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/file.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp0z8908ai TO /root/.ansible/tmp/ansible-tmp-1604649838.5410297-22196-221891796884406/AnsiballZ_file.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649838.5410297-22196-221891796884406/ /root/.ansible/tmp/ansible-tmp-1604649838.5410297-22196-221891796884406/AnsiballZ_file.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649838.5410297-22196-221891796884406/AnsiballZ_file.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649838.5410297-22196-221891796884406/ > /dev/null 2>&1 && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmpqv8kln6j TO /root/.ansible/tmp/ansible-tmp-1604649887.4918528-24785-247496734055640/AnsiballZ_file.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649887.4918528-24785-247496734055640/ /root/.ansible/tmp/ansible-tmp-1604649887.4918528-24785-247496734055640/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649887.4918528-24785-247496734055640/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649887.4918528-24785-247496734055640/ > /dev/null 2>&1 && sleep 0'
 ok: [localhost] => {
     "changed": false,
     "diff": {
@@ -10570,540 +10570,8 @@ TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledg
 task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:9
 <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
 <localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649838.7440963-22222-228289316558235 `" && echo ansible-tmp-1604649838.7440963-22222-228289316558235="` echo /root/.ansible/tmp/ansible-tmp-1604649838.7440963-22222-228289316558235 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649887.693029-24811-195641017116736 `" && echo ansible-tmp-1604649887.693029-24811-195641017116736="` echo /root/.ansible/tmp/ansible-tmp-1604649887.693029-24811-195641017116736 `" ) && sleep 0'
 Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp7du_udm9 TO /root/.ansible/tmp/ansible-tmp-1604649838.7440963-22222-228289316558235/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649838.7440963-22222-228289316558235/ /root/.ansible/tmp/ansible-tmp-1604649838.7440963-22222-228289316558235/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649838.7440963-22222-228289316558235/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649838.7440963-22222-228289316558235/ > /dev/null 2>&1 && sleep 0'
-changed: [localhost] => {
-    "changed": true,
-    "cmd": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:gorilla\n",
-    "delta": "0:00:03.182424",
-    "end": "2020-11-06 08:04:02.064186",
-    "invocation": {
-        "module_args": {
-            "_raw_params": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:gorilla\n",
-            "_uses_shell": true,
-            "argv": null,
-            "chdir": null,
-            "creates": null,
-            "executable": null,
-            "removes": null,
-            "stdin": null,
-            "stdin_add_newline": true,
-            "strip_empty_ends": true,
-            "warn": true
-        }
-    },
-    "rc": 0,
-    "start": "2020-11-06 08:03:58.881762",
-    "stderr": "To https://github.com/bafsunsu/blockchain-automation-framework.git\n   2e09844f..7cd96d25  HEAD -> gorilla",
-    "stderr_lines": [
-        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
-        "   2e09844f..7cd96d25  HEAD -> gorilla"
-    ],
-    "stdout": "---------------SHOW CONTENT OF DIR---------------\n.\n..\n.circleci\n.git\n.github\n.gitignore\n.travis.yml\nCODEOWNERS\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nDockerfile\nLICENSE\nMAINTAINERS.md\nREADME.md\nautomation\nbuild\nconsole.out\nconsole1.out\ndocs\nexamples\nplatforms\nrelease-notes.md\nreset.sh\nrun.sh\n---------------GIT PUSH---------------\n[gorilla 7cd96d25] [ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding\n 1 file changed, 541 insertions(+), 3325 deletions(-)",
-    "stdout_lines": [
-        "---------------SHOW CONTENT OF DIR---------------",
-        ".",
-        "..",
-        ".circleci",
-        ".git",
-        ".github",
-        ".gitignore",
-        ".travis.yml",
-        "CODEOWNERS",
-        "CODE_OF_CONDUCT.md",
-        "CONTRIBUTING.md",
-        "Dockerfile",
-        "LICENSE",
-        "MAINTAINERS.md",
-        "README.md",
-        "automation",
-        "build",
-        "console.out",
-        "console1.out",
-        "docs",
-        "examples",
-        "platforms",
-        "release-notes.md",
-        "reset.sh",
-        "run.sh",
-        "---------------GIT PUSH---------------",
-        "[gorilla 7cd96d25] [ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding",
-        " 1 file changed, 541 insertions(+), 3325 deletions(-)"
-    ]
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Output for gitpush] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:32
-ok: [localhost] => {
-    "msg": [
-        "---------------SHOW CONTENT OF DIR---------------",
-        ".",
-        "..",
-        ".circleci",
-        ".git",
-        ".github",
-        ".gitignore",
-        ".travis.yml",
-        "CODEOWNERS",
-        "CODE_OF_CONDUCT.md",
-        "CONTRIBUTING.md",
-        "Dockerfile",
-        "LICENSE",
-        "MAINTAINERS.md",
-        "README.md",
-        "automation",
-        "build",
-        "console.out",
-        "console1.out",
-        "docs",
-        "examples",
-        "platforms",
-        "release-notes.md",
-        "reset.sh",
-        "run.sh",
-        "---------------GIT PUSH---------------",
-        "[gorilla 7cd96d25] [ci skip] Pushing deployment files for namespace, service accounts and clusterrolebinding",
-        " 1 file changed, 541 insertions(+), 3325 deletions(-)"
-    ]
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Error for git_push] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:37
-ok: [localhost] => {
-    "msg": [
-        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
-        "   2e09844f..7cd96d25  HEAD -> gorilla"
-    ]
-}
-
-TASK [Checking for the walmart-net-role-tokenreview-binding] *******************
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:90
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [Including the check for ServiceAccount vault-reviewer in walmart-net] ****
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:103
-redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
-redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
-redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
-redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Check ServiceAccount vault-reviewer is created] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:7
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-reviewer] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:17
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-reviewer] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:32
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-reviewer] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:45
-<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
-<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649842.3762257-22280-256637391529164 `" && echo ansible-tmp-1604649842.3762257-22280-256637391529164="` echo /root/.ansible/tmp/ansible-tmp-1604649842.3762257-22280-256637391529164 `" ) && sleep 0'
-redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
-Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpsbh2mjlx TO /root/.ansible/tmp/ansible-tmp-1604649842.3762257-22280-256637391529164/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649842.3762257-22280-256637391529164/ /root/.ansible/tmp/ansible-tmp-1604649842.3762257-22280-256637391529164/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649842.3762257-22280-256637391529164/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649842.3762257-22280-256637391529164/ > /dev/null 2>&1 && sleep 0'
-ok: [localhost] => {
-    "attempts": 1,
-    "changed": false,
-    "invocation": {
-        "module_args": {
-            "api_key": null,
-            "api_version": "v1",
-            "ca_cert": null,
-            "client_cert": null,
-            "client_key": null,
-            "context": "fabric-aks-dev1",
-            "field_selectors": [],
-            "host": null,
-            "kind": "ServiceAccount",
-            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
-            "label_selectors": [],
-            "name": "vault-reviewer",
-            "namespace": "walmart-net",
-            "password": null,
-            "persist_config": null,
-            "proxy": null,
-            "username": null,
-            "validate_certs": null,
-            "wait": false,
-            "wait_condition": null,
-            "wait_sleep": 5,
-            "wait_timeout": 120
-        }
-    },
-    "resources": [
-        {
-            "apiVersion": "v1",
-            "kind": "ServiceAccount",
-            "metadata": {
-                "annotations": {
-                    "fluxcd.io/sync-checksum": "586eac56c69c15efee4d4ceb86bb2999c96a56c2",
-                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"ServiceAccount\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"586eac56c69c15efee4d4ceb86bb2999c96a56c2\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256._HQr2TZ7Xag8ZALP1GDf1v7MWxG57gY5JKCA-0lQrMA\"},\"name\":\"vault-reviewer\",\"namespace\":\"walmart-net\"}}\n"
-                },
-                "creationTimestamp": "2020-11-06T07:10:22Z",
-                "labels": {
-                    "fluxcd.io/sync-gc-mark": "sha256._HQr2TZ7Xag8ZALP1GDf1v7MWxG57gY5JKCA-0lQrMA"
-                },
-                "name": "vault-reviewer",
-                "namespace": "walmart-net",
-                "resourceVersion": "2396294",
-                "selfLink": "/api/v1/namespaces/walmart-net/serviceaccounts/vault-reviewer",
-                "uid": "29a7d625-87bc-4a06-8bdf-4304890a416c"
-            },
-            "secrets": [
-                {
-                    "name": "vault-reviewer-token-4mhnv"
-                }
-            ]
-        }
-    ]
-}
-
-TASK [Including the check for ServiceAccount vault-auth in walmart-net] ********
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:115
-redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
-redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
-redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
-redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Check ServiceAccount vault-auth is created] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:7
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-auth] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:17
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-auth] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:32
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for ServiceAccount vault-auth] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:45
-<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
-<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649843.2205606-22316-12937093162633 `" && echo ansible-tmp-1604649843.2205606-22316-12937093162633="` echo /root/.ansible/tmp/ansible-tmp-1604649843.2205606-22316-12937093162633 `" ) && sleep 0'
-redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
-Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpr35fvkdk TO /root/.ansible/tmp/ansible-tmp-1604649843.2205606-22316-12937093162633/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649843.2205606-22316-12937093162633/ /root/.ansible/tmp/ansible-tmp-1604649843.2205606-22316-12937093162633/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649843.2205606-22316-12937093162633/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649843.2205606-22316-12937093162633/ > /dev/null 2>&1 && sleep 0'
-ok: [localhost] => {
-    "attempts": 1,
-    "changed": false,
-    "invocation": {
-        "module_args": {
-            "api_key": null,
-            "api_version": "v1",
-            "ca_cert": null,
-            "client_cert": null,
-            "client_key": null,
-            "context": "fabric-aks-dev1",
-            "field_selectors": [],
-            "host": null,
-            "kind": "ServiceAccount",
-            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
-            "label_selectors": [],
-            "name": "vault-auth",
-            "namespace": "walmart-net",
-            "password": null,
-            "persist_config": null,
-            "proxy": null,
-            "username": null,
-            "validate_certs": null,
-            "wait": false,
-            "wait_condition": null,
-            "wait_sleep": 5,
-            "wait_timeout": 120
-        }
-    },
-    "resources": [
-        {
-            "apiVersion": "v1",
-            "kind": "ServiceAccount",
-            "metadata": {
-                "annotations": {
-                    "fluxcd.io/sync-checksum": "b527239518c6f14365e0009e83a7965e765a8dc3",
-                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"ServiceAccount\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"b527239518c6f14365e0009e83a7965e765a8dc3\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.PORVc536_cz560074Yt3tw1lMBw9TuOpitX_7rUhwY0\"},\"name\":\"vault-auth\",\"namespace\":\"walmart-net\"}}\n"
-                },
-                "creationTimestamp": "2020-11-06T07:10:22Z",
-                "labels": {
-                    "fluxcd.io/sync-gc-mark": "sha256.PORVc536_cz560074Yt3tw1lMBw9TuOpitX_7rUhwY0"
-                },
-                "name": "vault-auth",
-                "namespace": "walmart-net",
-                "resourceVersion": "2396292",
-                "selfLink": "/api/v1/namespaces/walmart-net/serviceaccounts/vault-auth",
-                "uid": "ba8f0b46-2cb6-4eb8-af3e-13e433764b2c"
-            },
-            "secrets": [
-                {
-                    "name": "vault-auth-token-zbmlk"
-                }
-            ]
-        }
-    ]
-}
-
-TASK [Checking if the namespace carrier-net already exists] ********************
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:6
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Check Namespace carrier-net is created] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:7
-<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
-<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649843.9067633-22346-188484508368875 `" && echo ansible-tmp-1604649843.9067633-22346-188484508368875="` echo /root/.ansible/tmp/ansible-tmp-1604649843.9067633-22346-188484508368875 `" ) && sleep 0'
-redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
-Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp_rz06n4a TO /root/.ansible/tmp/ansible-tmp-1604649843.9067633-22346-188484508368875/AnsiballZ_k8s_info.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649843.9067633-22346-188484508368875/ /root/.ansible/tmp/ansible-tmp-1604649843.9067633-22346-188484508368875/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649843.9067633-22346-188484508368875/AnsiballZ_k8s_info.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649843.9067633-22346-188484508368875/ > /dev/null 2>&1 && sleep 0'
-ok: [localhost] => {
-    "changed": false,
-    "invocation": {
-        "module_args": {
-            "api_key": null,
-            "api_version": "v1",
-            "ca_cert": null,
-            "client_cert": null,
-            "client_key": null,
-            "context": "fabric-aks-dev1",
-            "field_selectors": [],
-            "host": null,
-            "kind": "Namespace",
-            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
-            "label_selectors": [],
-            "name": "carrier-net",
-            "namespace": null,
-            "password": null,
-            "persist_config": null,
-            "proxy": null,
-            "username": null,
-            "validate_certs": null,
-            "wait": false,
-            "wait_condition": null,
-            "wait_sleep": 5,
-            "wait_timeout": 120
-        }
-    },
-    "resources": [
-        {
-            "apiVersion": "v1",
-            "kind": "Namespace",
-            "metadata": {
-                "annotations": {
-                    "fluxcd.io/sync-checksum": "9caeb41821a229aac426fa223fc4c5e4a1457332",
-                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"9caeb41821a229aac426fa223fc4c5e4a1457332\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.czRisvyIFDFCF8DyxxTuOO9avUFja9OQy3KGX8saHvI\"},\"name\":\"carrier-net\"}}\n"
-                },
-                "creationTimestamp": "2020-11-06T07:55:37Z",
-                "labels": {
-                    "fluxcd.io/sync-gc-mark": "sha256.czRisvyIFDFCF8DyxxTuOO9avUFja9OQy3KGX8saHvI"
-                },
-                "name": "carrier-net",
-                "resourceVersion": "2403276",
-                "selfLink": "/api/v1/namespaces/carrier-net",
-                "uid": "7d803dcc-16aa-4cb1-b640-f2df886acd21"
-            },
-            "spec": {
-                "finalizers": [
-                    "kubernetes"
-                ]
-            },
-            "status": {
-                "phase": "Active"
-            }
-        }
-    ]
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for Namespace carrier-net] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:17
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for Namespace carrier-net] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:32
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/k8_component : Wait for Namespace carrier-net] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:45
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [create/namespace_vaultauth : Set Variable] *******************************
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:17
-ok: [localhost] => {
-    "ansible_facts": {
-        "get_namespace": {
-            "changed": false,
-            "failed": false,
-            "resources": [
-                {
-                    "apiVersion": "v1",
-                    "kind": "Namespace",
-                    "metadata": {
-                        "annotations": {
-                            "fluxcd.io/sync-checksum": "9caeb41821a229aac426fa223fc4c5e4a1457332",
-                            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"9caeb41821a229aac426fa223fc4c5e4a1457332\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.czRisvyIFDFCF8DyxxTuOO9avUFja9OQy3KGX8saHvI\"},\"name\":\"carrier-net\"}}\n"
-                        },
-                        "creationTimestamp": "2020-11-06T07:55:37Z",
-                        "labels": {
-                            "fluxcd.io/sync-gc-mark": "sha256.czRisvyIFDFCF8DyxxTuOO9avUFja9OQy3KGX8saHvI"
-                        },
-                        "name": "carrier-net",
-                        "resourceVersion": "2403276",
-                        "selfLink": "/api/v1/namespaces/carrier-net",
-                        "uid": "7d803dcc-16aa-4cb1-b640-f2df886acd21"
-                    },
-                    "spec": {
-                        "finalizers": [
-                            "kubernetes"
-                        ]
-                    },
-                    "status": {
-                        "phase": "Active"
-                    }
-                }
-            ]
-        }
-    },
-    "changed": false
-}
-
-TASK [Create namespaces] *******************************************************
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:24
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [Create vault reviewer service account for Organizations] *****************
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:38
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [Create vault auth service account for Organizations] *********************
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:52
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [Create clusterrolebinding for Ordrers] ***********************************
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:66
-skipping: [localhost] => {
-    "changed": false,
-    "skip_reason": "Conditional result was False"
-}
-
-TASK [Git Push] ****************************************************************
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/namespace_vaultauth/tasks/main.yaml:74
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Check if directory: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../ exists] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:3
-<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
-<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649844.8166063-22392-111917030670167 `" && echo ansible-tmp-1604649844.8166063-22392-111917030670167="` echo /root/.ansible/tmp/ansible-tmp-1604649844.8166063-22392-111917030670167 `" ) && sleep 0'
-Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/file.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmp45yafm1f TO /root/.ansible/tmp/ansible-tmp-1604649844.8166063-22392-111917030670167/AnsiballZ_file.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649844.8166063-22392-111917030670167/ /root/.ansible/tmp/ansible-tmp-1604649844.8166063-22392-111917030670167/AnsiballZ_file.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649844.8166063-22392-111917030670167/AnsiballZ_file.py && sleep 0'
-<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604649844.8166063-22392-111917030670167/ > /dev/null 2>&1 && sleep 0'
-ok: [localhost] => {
-    "changed": false,
-    "diff": {
-        "after": {
-            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../"
-        },
-        "before": {
-            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../"
-        }
-    },
-    "gid": 0,
-    "group": "root",
-    "invocation": {
-        "module_args": {
-            "_diff_peek": null,
-            "_original_basename": null,
-            "access_time": null,
-            "access_time_format": "%Y%m%d%H%M.%S",
-            "attributes": null,
-            "follow": true,
-            "force": false,
-            "group": null,
-            "mode": null,
-            "modification_time": null,
-            "modification_time_format": "%Y%m%d%H%M.%S",
-            "owner": null,
-            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../",
-            "recurse": false,
-            "selevel": null,
-            "serole": null,
-            "setype": null,
-            "seuser": null,
-            "src": null,
-            "state": "directory",
-            "unsafe_writes": false
-        }
-    },
-    "mode": "0755",
-    "owner": "root",
-    "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../",
-    "size": 4096,
-    "state": "directory",
-    "uid": 0
-}
-
-TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Execute git push via shell task] ***
-task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:9
-<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
-<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
-<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604649845.0144305-22418-84874941309844 `" && echo ansible-tmp-1604649845.0144305-22418-84874941309844="` echo /root/.ansible/tmp/ansible-tmp-1604649845.0144305-22418-84874941309844 `" ) && sleep 0'
-Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
-<localhost> PUT /root/.ansible/tmp/ansible-local-20226y31i4r92/tmpm6lrzr6h TO /root/.ansible/tmp/ansible-tmp-1604649845.0144305-22418-84874941309844/AnsiballZ_command.py
-<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649845.0144305-22418-84874941309844/ /root/.ansible/tmp/ansible-tmp-1604649845.0144305-22418-84874941309844/AnsiballZ_command.py && sleep 0'
-<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649845.0144305-22418-84874941309844/AnsiballZ_command.py && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-228194cld8vz9/tmp4saga0zq TO /root/.ansible/tmp/ansible-tmp-1604649887.693029-24811-195641017116736/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604649887.693029-24811-195641017116736/ /root/.ansible/tmp/ansible-tmp-1604649887.693029-24811-195641017116736/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604649887.693029-24811-195641017116736/AnsiballZ_command.py && sleep 0'
