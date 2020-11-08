@@ -30660,3 +30660,1333 @@ Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command
 <localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpfu8c_10o TO /root/.ansible/tmp/ansible-tmp-1604841515.3188837-5423-210938872505104/AnsiballZ_command.py
 <localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841515.3188837-5423-210938872505104/ /root/.ansible/tmp/ansible-tmp-1604841515.3188837-5423-210938872505104/AnsiballZ_command.py && sleep 0'
 <localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841515.3188837-5423-210938872505104/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841515.3188837-5423-210938872505104/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "cmd": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing Orderer files\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:gorilla\n",
+    "delta": "0:00:03.372416",
+    "end": "2020-11-08 13:18:38.825363",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing Orderer files\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:gorilla\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-11-08 13:18:35.452947",
+    "stderr": "To https://github.com/bafsunsu/blockchain-automation-framework.git\n   075651dd..3d53bac7  HEAD -> gorilla",
+    "stderr_lines": [
+        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
+        "   075651dd..3d53bac7  HEAD -> gorilla"
+    ],
+    "stdout": "---------------SHOW CONTENT OF DIR---------------\n.\n..\n.circleci\n.git\n.github\n.gitignore\n.travis.yml\nCODEOWNERS\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nDockerfile\nLICENSE\nMAINTAINERS.md\nREADME.md\nautomation\nbuild\nconsole.out\ndocs\nexamples\nplatforms\nrelease-notes.md\nreset.sh\nrun.sh\n---------------GIT PUSH---------------\n[gorilla 3d53bac7] [ci skip] Pushing Orderer files\n 4 files changed, 12637 insertions(+)\n create mode 100644 platforms/hyperledger-fabric/releases/dev/walmart/orderer/orderer1-walmart.yaml\n create mode 100644 platforms/hyperledger-fabric/releases/dev/walmart/orderer/orderer2-walmart.yaml\n create mode 100644 platforms/hyperledger-fabric/releases/dev/walmart/orderer/orderer3-walmart.yaml",
+    "stdout_lines": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        ".travis.yml",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "automation",
+        "build",
+        "console.out",
+        "docs",
+        "examples",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "[gorilla 3d53bac7] [ci skip] Pushing Orderer files",
+        " 4 files changed, 12637 insertions(+)",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/walmart/orderer/orderer1-walmart.yaml",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/walmart/orderer/orderer2-walmart.yaml",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/walmart/orderer/orderer3-walmart.yaml"
+    ]
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Output for gitpush] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:32
+ok: [localhost] => {
+    "msg": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        ".travis.yml",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "automation",
+        "build",
+        "console.out",
+        "docs",
+        "examples",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "[gorilla 3d53bac7] [ci skip] Pushing Orderer files",
+        " 4 files changed, 12637 insertions(+)",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/walmart/orderer/orderer1-walmart.yaml",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/walmart/orderer/orderer2-walmart.yaml",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/walmart/orderer/orderer3-walmart.yaml"
+    ]
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Error for git_push] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:37
+ok: [localhost] => {
+    "msg": [
+        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
+        "   075651dd..3d53bac7  HEAD -> gorilla"
+    ]
+}
+
+TASK [include_role : create/peers] *********************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/deploy-network.yaml:173
+skipping: [localhost] => (item={'organization': None, 'name': 'walmart', 'country': 'UK', 'state': 'London', 'location': 'London', 'subject': 'O=Orderer,L=51.50/-0.13/London,C=GB', 'type': 'orderer', 'external_url_suffix': 'walmart-net.suneel.pvt.wmtbaf.info', 'org_status': 'new', 'ca_data': {'url': 'ca.walmart-net:7054', 'certificate': 'file/server.crt'}, 'cloud_provider': 'azure', 'aws': {'access_key': 'aws_access_key', 'secret_key': 'aws_secret_key'}, 'k8s': {'region': 'South Central US', 'context': 'fabric-aks-dev1', 'config_file': '/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml'}, 'vault': {'url': 'http://vault.suneelbaf.svc.cluster.local:8200', 'root_token': 's.V28i17sRnBQyQV55J3jHp0hu'}, 'gitops': {'git_ssh': 'ssh://git@github.com/bafsunsu/blockchain-automation-framework.git', 'branch': 'gorilla', 'release_dir': 'platforms/hyperledger-fabric/releases/dev', 'chart_source': 'platforms/hyperledger-fabric/charts', 'git_push_url': 'github.com/bafsunsu/blockchain-automation-framework.git', 'username': 'bafsunsu', 'password': 'bafsunsu2020', 'email': 's.unil18031992@gmail.com', 'private_key': '/Users/s0s0dit/project/blockchain-automation-framework/build/gitops'}, 'services': {'ca': {'name': 'ca', 'subject': '/C=GB/ST=London/L=London/O=Orderer/CN=ca.walmart-net', 'type': 'ca', 'grpc': {'port': 7054}}, 'consensus': {'name': 'raft', 'type': 'broker', 'replicas': 4, 'grpc': {'port': 9092}}, 'orderers': [{'orderer': None, 'name': 'orderer1', 'type': 'orderer', 'consensus': 'raft', 'grpc': {'port': 7050}}, {'orderer': None, 'name': 'orderer2', 'type': 'orderer', 'consensus': 'raft', 'grpc': {'port': 7050}}, {'orderer': None, 'name': 'orderer3', 'type': 'orderer', 'consensus': 'raft', 'grpc': {'port': 7050}}]}})  => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": {
+        "aws": {
+            "access_key": "aws_access_key",
+            "secret_key": "aws_secret_key"
+        },
+        "ca_data": {
+            "certificate": "file/server.crt",
+            "url": "ca.walmart-net:7054"
+        },
+        "cloud_provider": "azure",
+        "country": "UK",
+        "external_url_suffix": "walmart-net.suneel.pvt.wmtbaf.info",
+        "gitops": {
+            "branch": "gorilla",
+            "chart_source": "platforms/hyperledger-fabric/charts",
+            "email": "s.unil18031992@gmail.com",
+            "git_push_url": "github.com/bafsunsu/blockchain-automation-framework.git",
+            "git_ssh": "ssh://git@github.com/bafsunsu/blockchain-automation-framework.git",
+            "password": "bafsunsu2020",
+            "private_key": "/Users/s0s0dit/project/blockchain-automation-framework/build/gitops",
+            "release_dir": "platforms/hyperledger-fabric/releases/dev",
+            "username": "bafsunsu"
+        },
+        "k8s": {
+            "config_file": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "context": "fabric-aks-dev1",
+            "region": "South Central US"
+        },
+        "location": "London",
+        "name": "walmart",
+        "org_status": "new",
+        "organization": null,
+        "services": {
+            "ca": {
+                "grpc": {
+                    "port": 7054
+                },
+                "name": "ca",
+                "subject": "/C=GB/ST=London/L=London/O=Orderer/CN=ca.walmart-net",
+                "type": "ca"
+            },
+            "consensus": {
+                "grpc": {
+                    "port": 9092
+                },
+                "name": "raft",
+                "replicas": 4,
+                "type": "broker"
+            },
+            "orderers": [
+                {
+                    "consensus": "raft",
+                    "grpc": {
+                        "port": 7050
+                    },
+                    "name": "orderer1",
+                    "orderer": null,
+                    "type": "orderer"
+                },
+                {
+                    "consensus": "raft",
+                    "grpc": {
+                        "port": 7050
+                    },
+                    "name": "orderer2",
+                    "orderer": null,
+                    "type": "orderer"
+                },
+                {
+                    "consensus": "raft",
+                    "grpc": {
+                        "port": 7050
+                    },
+                    "name": "orderer3",
+                    "orderer": null,
+                    "type": "orderer"
+                }
+            ]
+        },
+        "state": "London",
+        "subject": "O=Orderer,L=51.50/-0.13/London,C=GB",
+        "type": "orderer",
+        "vault": {
+            "root_token": "s.V28i17sRnBQyQV55J3jHp0hu",
+            "url": "http://vault.suneelbaf.svc.cluster.local:8200"
+        }
+    },
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [create/peers : Write the couchdb credentials to Vault] *******************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/peers/tasks/main.yaml:8
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841519.1214683-5475-57931377063296 `" && echo ansible-tmp-1604841519.1214683-5475-57931377063296="` echo /root/.ansible/tmp/ansible-tmp-1604841519.1214683-5475-57931377063296 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpi8rw9fqg TO /root/.ansible/tmp/ansible-tmp-1604841519.1214683-5475-57931377063296/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841519.1214683-5475-57931377063296/ /root/.ansible/tmp/ansible-tmp-1604841519.1214683-5475-57931377063296/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'VAULT_ADDR=http://vault.suneelbaf.svc.cluster.local:8200 VAULT_TOKEN=s.V28i17sRnBQyQV55J3jHp0hu /usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841519.1214683-5475-57931377063296/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841519.1214683-5475-57931377063296/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "cmd": "vault write secret/credentials/carrier-net/couchdb/carrier user=\"admin123\"\n",
+    "delta": "0:00:00.081887",
+    "end": "2020-11-08 13:18:39.333875",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "vault write secret/credentials/carrier-net/couchdb/carrier user=\"admin123\"\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-11-08 13:18:39.251988",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "Success! Data written to: secret/credentials/carrier-net/couchdb/carrier",
+    "stdout_lines": [
+        "Success! Data written to: secret/credentials/carrier-net/couchdb/carrier"
+    ]
+}
+
+TASK [Create Value files for Organization Peers] *******************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/peers/tasks/main.yaml:17
+
+TASK [helm_component : Ensures /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier dir exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:8
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841519.483253-5513-106767536901111 `" && echo ansible-tmp-1604841519.483253-5513-106767536901111="` echo /root/.ansible/tmp/ansible-tmp-1604841519.483253-5513-106767536901111 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/file.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmp_jrxeopx TO /root/.ansible/tmp/ansible-tmp-1604841519.483253-5513-106767536901111/AnsiballZ_file.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841519.483253-5513-106767536901111/ /root/.ansible/tmp/ansible-tmp-1604841519.483253-5513-106767536901111/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841519.483253-5513-106767536901111/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841519.483253-5513-106767536901111/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "diff": {
+        "after": {
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier",
+            "state": "directory"
+        },
+        "before": {
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier",
+            "state": "absent"
+        }
+    },
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier",
+            "recurse": false,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": false
+        }
+    },
+    "mode": "0755",
+    "owner": "root",
+    "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier",
+    "size": 4096,
+    "state": "directory",
+    "uid": 0
+}
+
+TASK [helm_component : Check if the value file is already present] *************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:15
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841519.685176-5539-197736823002980 `" && echo ansible-tmp-1604841519.685176-5539-197736823002980="` echo /root/.ansible/tmp/ansible-tmp-1604841519.685176-5539-197736823002980 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmp061fmbln TO /root/.ansible/tmp/ansible-tmp-1604841519.685176-5539-197736823002980/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841519.685176-5539-197736823002980/ /root/.ansible/tmp/ansible-tmp-1604841519.685176-5539-197736823002980/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841519.685176-5539-197736823002980/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841519.685176-5539-197736823002980/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer0.yaml"
+        }
+    },
+    "stat": {
+        "exists": false
+    }
+}
+
+TASK [helm_component : create value file for values-peer0] *********************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:24
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286 `" && echo ansible-tmp-1604841519.8850038-5565-234761722343286="` echo /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpmyd1iyh8 TO /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/ /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/AnsiballZ_stat.py && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpbmp1i0v4/value_peer.tpl TO /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/source
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/ /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/source && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/copy.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpufjht7r1 TO /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/AnsiballZ_copy.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/ /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "checksum": "59ff0f9d1b83b61deb3bc4bc785043cb8bd29787",
+    "dest": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer0.yaml",
+    "diff": [],
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "value_peer.tpl",
+            "attributes": null,
+            "backup": false,
+            "checksum": "59ff0f9d1b83b61deb3bc4bc785043cb8bd29787",
+            "content": null,
+            "dest": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer0.yaml",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/source",
+            "unsafe_writes": false,
+            "validate": null
+        }
+    },
+    "md5sum": "5924829f1b2287b7ba7e9a7a6bd94c1d",
+    "mode": "0644",
+    "owner": "root",
+    "size": 1838,
+    "src": "/root/.ansible/tmp/ansible-tmp-1604841519.8850038-5565-234761722343286/source",
+    "state": "file",
+    "uid": 0
+}
+
+TASK [Helm lint] ***************************************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:34
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Check if value file exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:10
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841520.3042743-5607-269454635009458 `" && echo ansible-tmp-1604841520.3042743-5607-269454635009458="` echo /root/.ansible/tmp/ansible-tmp-1604841520.3042743-5607-269454635009458 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpb1ct3xaw TO /root/.ansible/tmp/ansible-tmp-1604841520.3042743-5607-269454635009458/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841520.3042743-5607-269454635009458/ /root/.ansible/tmp/ansible-tmp-1604841520.3042743-5607-269454635009458/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841520.3042743-5607-269454635009458/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841520.3042743-5607-269454635009458/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer0.yaml"
+        }
+    },
+    "stat": {
+        "atime": 1604841520.189169,
+        "attr_flags": "e",
+        "attributes": [
+            "extents"
+        ],
+        "block_size": 4096,
+        "blocks": 8,
+        "charset": "us-ascii",
+        "checksum": "59ff0f9d1b83b61deb3bc4bc785043cb8bd29787",
+        "ctime": 1604841520.1931689,
+        "dev": 2080,
+        "device_type": 0,
+        "executable": false,
+        "exists": true,
+        "gid": 0,
+        "gr_name": "root",
+        "inode": 3966,
+        "isblk": false,
+        "ischr": false,
+        "isdir": false,
+        "isfifo": false,
+        "isgid": false,
+        "islnk": false,
+        "isreg": true,
+        "issock": false,
+        "isuid": false,
+        "mimetype": "text/plain",
+        "mode": "0644",
+        "mtime": 1604841520.0571668,
+        "nlink": 1,
+        "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer0.yaml",
+        "pw_name": "root",
+        "readable": true,
+        "rgrp": true,
+        "roth": true,
+        "rusr": true,
+        "size": 1838,
+        "uid": 0,
+        "version": "2302231304",
+        "wgrp": false,
+        "woth": false,
+        "writeable": true,
+        "wusr": true,
+        "xgrp": false,
+        "xoth": false,
+        "xusr": false
+    }
+}
+
+TASK [Check or create test directory] ******************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:16
+
+TASK [../../shared/configuration/roles/check/setup : check if dir exists or not] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:3
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841520.5613775-5637-21844661863929 `" && echo ansible-tmp-1604841520.5613775-5637-21844661863929="` echo /root/.ansible/tmp/ansible-tmp-1604841520.5613775-5637-21844661863929 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpd7px2cbn TO /root/.ansible/tmp/ansible-tmp-1604841520.5613775-5637-21844661863929/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841520.5613775-5637-21844661863929/ /root/.ansible/tmp/ansible-tmp-1604841520.5613775-5637-21844661863929/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841520.5613775-5637-21844661863929/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841520.5613775-5637-21844661863929/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "./build/test"
+        }
+    },
+    "stat": {
+        "atime": 1604840904.1838007,
+        "attr_flags": "e",
+        "attributes": [
+            "extents"
+        ],
+        "block_size": 4096,
+        "blocks": 8,
+        "charset": "binary",
+        "ctime": 1604841514.6650848,
+        "dev": 2080,
+        "device_type": 0,
+        "executable": true,
+        "exists": true,
+        "gid": 0,
+        "gr_name": "root",
+        "inode": 3429,
+        "isblk": false,
+        "ischr": false,
+        "isdir": true,
+        "isfifo": false,
+        "isgid": false,
+        "islnk": false,
+        "isreg": false,
+        "issock": false,
+        "isuid": false,
+        "mimetype": "inode/directory",
+        "mode": "0755",
+        "mtime": 1604841514.6650848,
+        "nlink": 2,
+        "path": "./build/test",
+        "pw_name": "root",
+        "readable": true,
+        "rgrp": true,
+        "roth": true,
+        "rusr": true,
+        "size": 4096,
+        "uid": 0,
+        "version": "1450343826",
+        "wgrp": false,
+        "woth": false,
+        "writeable": true,
+        "wusr": true,
+        "xgrp": true,
+        "xoth": true,
+        "xusr": true
+    }
+}
+
+TASK [../../shared/configuration/roles/check/setup : Ensures dir exists] *******
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:11
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [../../shared/configuration/roles/check/setup : Check if Kubernetes-auth already created for Organization] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:20
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [../../shared/configuration/roles/check/setup : Check if policy exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:30
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [../../shared/configuration/roles/check/setup : Check docker cred exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:41
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Load file into memory] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:25
+ok: [localhost] => {
+    "ansible_facts": {
+        "apiVersion": "flux.weave.works/v1beta1",
+        "kind": "HelmRelease",
+        "metadata": {
+            "annotations": {
+                "flux.weave.works/automated": "false"
+            },
+            "name": "carrier-peer0",
+            "namespace": "carrier-net"
+        },
+        "spec": {
+            "chart": {
+                "git": "ssh://git@github.com/bafsunsu/blockchain-automation-framework.git",
+                "path": "platforms/hyperledger-fabric/charts/peernode",
+                "ref": "gorilla"
+            },
+            "releaseName": "carrier-peer0",
+            "values": {
+                "metadata": {
+                    "images": {
+                        "alpineutils": "index.docker.io/hyperledgerlabs/alpine-utils:1.0",
+                        "couchdb": "hyperledger/fabric-couchdb:0.4.18",
+                        "peer": "hyperledger/fabric-peer:2.0.0"
+                    },
+                    "namespace": "carrier-net"
+                },
+                "peer": {
+                    "builder": "hyperledger/fabric-ccenv:2.0.0",
+                    "couchdb": {
+                        "username": "carrier-user"
+                    },
+                    "gossipexternalendpoint": "peer0.carrier-net.carrier-net.suneel.pvt.wmtbaf.info:8443",
+                    "gossippeeraddress": "peer1.carrier-net:7051",
+                    "localmspid": "carrierMSP",
+                    "loglevel": "info",
+                    "name": "peer0",
+                    "tlsstatus": true
+                },
+                "proxy": {
+                    "external_url_suffix": "carrier-net.suneel.pvt.wmtbaf.info",
+                    "provider": "haproxy"
+                },
+                "service": {
+                    "ports": {
+                        "couchdb": {
+                            "clusteripport": 5984
+                        },
+                        "events": {
+                            "clusteripport": 7053
+                        },
+                        "grpc": {
+                            "clusteripport": 7051
+                        }
+                    },
+                    "servicetype": "ClusterIP"
+                },
+                "storage": {
+                    "couchdb": {
+                        "storageclassname": "carriersc",
+                        "storagesize": "1Gi"
+                    },
+                    "peer": {
+                        "storageclassname": "carriersc",
+                        "storagesize": "512Mi"
+                    }
+                },
+                "vault": {
+                    "address": "http://vault.suneelbaf.svc.cluster.local:8200",
+                    "authpath": "carrier-net-auth",
+                    "imagesecretname": "regcred",
+                    "role": "vault-role",
+                    "secretambassador": "secret/crypto/peerOrganizations/carrier-net/ambassador",
+                    "secretcouchdbpass": "secret/credentials/carrier-net/couchdb/carrier?user",
+                    "secretprefix": "secret/crypto/peerOrganizations/carrier-net/peers/peer0.carrier-net",
+                    "serviceaccountname": "vault-auth"
+                }
+            }
+        }
+    },
+    "ansible_included_var_files": [
+        "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer0.yaml"
+    ],
+    "changed": false
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Create value file] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:30
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621 `" && echo ansible-tmp-1604841520.9578867-5675-118924269861621="` echo /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmp6j6qga6g TO /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/ /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/AnsiballZ_stat.py && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmplktdlh30 TO /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/source
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/ /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/source && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/copy.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmph9m6307e TO /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/AnsiballZ_copy.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/ /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "checksum": "beec398cec96662804998c820bb73987e97f6818",
+    "dest": "./build/test/carrier-peer0.yaml",
+    "diff": [],
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "tmplktdlh30",
+            "attributes": null,
+            "backup": false,
+            "checksum": "beec398cec96662804998c820bb73987e97f6818",
+            "content": null,
+            "dest": "./build/test/carrier-peer0.yaml",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/source",
+            "unsafe_writes": false,
+            "validate": null
+        }
+    },
+    "md5sum": "b409925164dd5fb9798ac11633025b96",
+    "mode": "0644",
+    "owner": "root",
+    "size": 1377,
+    "src": "/root/.ansible/tmp/ansible-tmp-1604841520.9578867-5675-118924269861621/source",
+    "state": "file",
+    "uid": 0
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Run helm lint] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:35
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841521.3011742-5715-50267344761054 `" && echo ansible-tmp-1604841521.3011742-5715-50267344761054="` echo /root/.ansible/tmp/ansible-tmp-1604841521.3011742-5715-50267344761054 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpk7qm2a0n TO /root/.ansible/tmp/ansible-tmp-1604841521.3011742-5715-50267344761054/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841521.3011742-5715-50267344761054/ /root/.ansible/tmp/ansible-tmp-1604841521.3011742-5715-50267344761054/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841521.3011742-5715-50267344761054/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841521.3011742-5715-50267344761054/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "cmd": "helm lint -f \"./build/test/carrier-peer0.yaml\" \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/peernode\"\n",
+    "delta": "0:00:00.060892",
+    "end": "2020-11-08 13:18:41.495266",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "helm lint -f \"./build/test/carrier-peer0.yaml\" \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/peernode\"\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-11-08 13:18:41.434374",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "==> Linting /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/peernode\n[INFO] Chart.yaml: icon is recommended\n\n1 chart(s) linted, no failures",
+    "stdout_lines": [
+        "==> Linting /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/peernode",
+        "[INFO] Chart.yaml: icon is recommended",
+        "",
+        "1 chart(s) linted, no failures"
+    ]
+}
+
+TASK [helm_component : Ensures /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier dir exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:8
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841521.569437-5747-117605428605227 `" && echo ansible-tmp-1604841521.569437-5747-117605428605227="` echo /root/.ansible/tmp/ansible-tmp-1604841521.569437-5747-117605428605227 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/file.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpq90j_gog TO /root/.ansible/tmp/ansible-tmp-1604841521.569437-5747-117605428605227/AnsiballZ_file.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841521.569437-5747-117605428605227/ /root/.ansible/tmp/ansible-tmp-1604841521.569437-5747-117605428605227/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841521.569437-5747-117605428605227/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841521.569437-5747-117605428605227/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "diff": {
+        "after": {
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier"
+        },
+        "before": {
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier"
+        }
+    },
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier",
+            "recurse": false,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": false
+        }
+    },
+    "mode": "0755",
+    "owner": "root",
+    "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier",
+    "size": 4096,
+    "state": "directory",
+    "uid": 0
+}
+
+TASK [helm_component : Check if the value file is already present] *************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:15
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841521.7680507-5773-82041022114150 `" && echo ansible-tmp-1604841521.7680507-5773-82041022114150="` echo /root/.ansible/tmp/ansible-tmp-1604841521.7680507-5773-82041022114150 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmp935hem7n TO /root/.ansible/tmp/ansible-tmp-1604841521.7680507-5773-82041022114150/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841521.7680507-5773-82041022114150/ /root/.ansible/tmp/ansible-tmp-1604841521.7680507-5773-82041022114150/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841521.7680507-5773-82041022114150/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841521.7680507-5773-82041022114150/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer1.yaml"
+        }
+    },
+    "stat": {
+        "exists": false
+    }
+}
+
+TASK [helm_component : create value file for values-peer1] *********************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:24
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716 `" && echo ansible-tmp-1604841521.9658751-5799-148495931067716="` echo /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmphet_q4ag TO /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/ /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/AnsiballZ_stat.py && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmp26gv5my3/value_peer.tpl TO /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/source
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/ /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/source && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/copy.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmp1xa0iw_1 TO /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/AnsiballZ_copy.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/ /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "checksum": "1097fa0fe767b2acc650175553ac130d207084a5",
+    "dest": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer1.yaml",
+    "diff": [],
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "value_peer.tpl",
+            "attributes": null,
+            "backup": false,
+            "checksum": "1097fa0fe767b2acc650175553ac130d207084a5",
+            "content": null,
+            "dest": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer1.yaml",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/source",
+            "unsafe_writes": false,
+            "validate": null
+        }
+    },
+    "md5sum": "ea690b179a1c60b6051a9e07c70c567d",
+    "mode": "0644",
+    "owner": "root",
+    "size": 1838,
+    "src": "/root/.ansible/tmp/ansible-tmp-1604841521.9658751-5799-148495931067716/source",
+    "state": "file",
+    "uid": 0
+}
+
+TASK [Helm lint] ***************************************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/helm_component/tasks/main.yaml:34
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Check if value file exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:10
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841522.3866057-5841-251503136985431 `" && echo ansible-tmp-1604841522.3866057-5841-251503136985431="` echo /root/.ansible/tmp/ansible-tmp-1604841522.3866057-5841-251503136985431 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpze_62_z1 TO /root/.ansible/tmp/ansible-tmp-1604841522.3866057-5841-251503136985431/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841522.3866057-5841-251503136985431/ /root/.ansible/tmp/ansible-tmp-1604841522.3866057-5841-251503136985431/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841522.3866057-5841-251503136985431/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841522.3866057-5841-251503136985431/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer1.yaml"
+        }
+    },
+    "stat": {
+        "atime": 1604841522.2692006,
+        "attr_flags": "e",
+        "attributes": [
+            "extents"
+        ],
+        "block_size": 4096,
+        "blocks": 8,
+        "charset": "us-ascii",
+        "checksum": "1097fa0fe767b2acc650175553ac130d207084a5",
+        "ctime": 1604841522.2732005,
+        "dev": 2080,
+        "device_type": 0,
+        "executable": false,
+        "exists": true,
+        "gid": 0,
+        "gr_name": "root",
+        "inode": 3969,
+        "isblk": false,
+        "ischr": false,
+        "isdir": false,
+        "isfifo": false,
+        "isgid": false,
+        "islnk": false,
+        "isreg": true,
+        "issock": false,
+        "isuid": false,
+        "mimetype": "text/plain",
+        "mode": "0644",
+        "mtime": 1604841522.1371984,
+        "nlink": 1,
+        "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer1.yaml",
+        "pw_name": "root",
+        "readable": true,
+        "rgrp": true,
+        "roth": true,
+        "rusr": true,
+        "size": 1838,
+        "uid": 0,
+        "version": "4070365785",
+        "wgrp": false,
+        "woth": false,
+        "writeable": true,
+        "wusr": true,
+        "xgrp": false,
+        "xoth": false,
+        "xusr": false
+    }
+}
+
+TASK [Check or create test directory] ******************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:16
+
+TASK [../../shared/configuration/roles/check/setup : check if dir exists or not] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:3
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841522.647162-5871-16398155594277 `" && echo ansible-tmp-1604841522.647162-5871-16398155594277="` echo /root/.ansible/tmp/ansible-tmp-1604841522.647162-5871-16398155594277 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpgkub4xui TO /root/.ansible/tmp/ansible-tmp-1604841522.647162-5871-16398155594277/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841522.647162-5871-16398155594277/ /root/.ansible/tmp/ansible-tmp-1604841522.647162-5871-16398155594277/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841522.647162-5871-16398155594277/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841522.647162-5871-16398155594277/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "./build/test"
+        }
+    },
+    "stat": {
+        "atime": 1604840904.1838007,
+        "attr_flags": "e",
+        "attributes": [
+            "extents"
+        ],
+        "block_size": 4096,
+        "blocks": 8,
+        "charset": "binary",
+        "ctime": 1604841521.2291846,
+        "dev": 2080,
+        "device_type": 0,
+        "executable": true,
+        "exists": true,
+        "gid": 0,
+        "gr_name": "root",
+        "inode": 3429,
+        "isblk": false,
+        "ischr": false,
+        "isdir": true,
+        "isfifo": false,
+        "isgid": false,
+        "islnk": false,
+        "isreg": false,
+        "issock": false,
+        "isuid": false,
+        "mimetype": "inode/directory",
+        "mode": "0755",
+        "mtime": 1604841521.2291846,
+        "nlink": 2,
+        "path": "./build/test",
+        "pw_name": "root",
+        "readable": true,
+        "rgrp": true,
+        "roth": true,
+        "rusr": true,
+        "size": 4096,
+        "uid": 0,
+        "version": "1450343826",
+        "wgrp": false,
+        "woth": false,
+        "writeable": true,
+        "wusr": true,
+        "xgrp": true,
+        "xoth": true,
+        "xusr": true
+    }
+}
+
+TASK [../../shared/configuration/roles/check/setup : Ensures dir exists] *******
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:11
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [../../shared/configuration/roles/check/setup : Check if Kubernetes-auth already created for Organization] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:20
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [../../shared/configuration/roles/check/setup : Check if policy exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:30
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [../../shared/configuration/roles/check/setup : Check docker cred exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/setup/tasks/main.yaml:41
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Load file into memory] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:25
+ok: [localhost] => {
+    "ansible_facts": {
+        "apiVersion": "flux.weave.works/v1beta1",
+        "kind": "HelmRelease",
+        "metadata": {
+            "annotations": {
+                "flux.weave.works/automated": "false"
+            },
+            "name": "carrier-peer1",
+            "namespace": "carrier-net"
+        },
+        "spec": {
+            "chart": {
+                "git": "ssh://git@github.com/bafsunsu/blockchain-automation-framework.git",
+                "path": "platforms/hyperledger-fabric/charts/peernode",
+                "ref": "gorilla"
+            },
+            "releaseName": "carrier-peer1",
+            "values": {
+                "metadata": {
+                    "images": {
+                        "alpineutils": "index.docker.io/hyperledgerlabs/alpine-utils:1.0",
+                        "couchdb": "hyperledger/fabric-couchdb:0.4.18",
+                        "peer": "hyperledger/fabric-peer:2.0.0"
+                    },
+                    "namespace": "carrier-net"
+                },
+                "peer": {
+                    "builder": "hyperledger/fabric-ccenv:2.0.0",
+                    "couchdb": {
+                        "username": "carrier-user"
+                    },
+                    "gossipexternalendpoint": "peer1.carrier-net.carrier-net.suneel.pvt.wmtbaf.info:8443",
+                    "gossippeeraddress": "peer0.carrier-net:7051",
+                    "localmspid": "carrierMSP",
+                    "loglevel": "info",
+                    "name": "peer1",
+                    "tlsstatus": true
+                },
+                "proxy": {
+                    "external_url_suffix": "carrier-net.suneel.pvt.wmtbaf.info",
+                    "provider": "haproxy"
+                },
+                "service": {
+                    "ports": {
+                        "couchdb": {
+                            "clusteripport": 5984
+                        },
+                        "events": {
+                            "clusteripport": 7053
+                        },
+                        "grpc": {
+                            "clusteripport": 7051
+                        }
+                    },
+                    "servicetype": "ClusterIP"
+                },
+                "storage": {
+                    "couchdb": {
+                        "storageclassname": "carriersc",
+                        "storagesize": "1Gi"
+                    },
+                    "peer": {
+                        "storageclassname": "carriersc",
+                        "storagesize": "512Mi"
+                    }
+                },
+                "vault": {
+                    "address": "http://vault.suneelbaf.svc.cluster.local:8200",
+                    "authpath": "carrier-net-auth",
+                    "imagesecretname": "regcred",
+                    "role": "vault-role",
+                    "secretambassador": "secret/crypto/peerOrganizations/carrier-net/ambassador",
+                    "secretcouchdbpass": "secret/credentials/carrier-net/couchdb/carrier?user",
+                    "secretprefix": "secret/crypto/peerOrganizations/carrier-net/peers/peer1.carrier-net",
+                    "serviceaccountname": "vault-auth"
+                }
+            }
+        }
+    },
+    "ansible_included_var_files": [
+        "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/releases/dev/carrier/carrier/values-peer1.yaml"
+    ],
+    "changed": false
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Create value file] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:30
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920 `" && echo ansible-tmp-1604841523.0315905-5909-156760364083920="` echo /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpfe2m6ey1 TO /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/ /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/AnsiballZ_stat.py && sleep 0'
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpbtgr5o9f TO /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/source
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/ /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/source && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/copy.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmp61toiv08 TO /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/AnsiballZ_copy.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/ /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/AnsiballZ_copy.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "checksum": "6f23b3c4d21d5e1b17394dc8b98e252be615b7ce",
+    "dest": "./build/test/carrier-peer1.yaml",
+    "diff": [],
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "tmpbtgr5o9f",
+            "attributes": null,
+            "backup": false,
+            "checksum": "6f23b3c4d21d5e1b17394dc8b98e252be615b7ce",
+            "content": null,
+            "dest": "./build/test/carrier-peer1.yaml",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/source",
+            "unsafe_writes": false,
+            "validate": null
+        }
+    },
+    "md5sum": "f38e89060480eee327b404e347d3e3c4",
+    "mode": "0644",
+    "owner": "root",
+    "size": 1377,
+    "src": "/root/.ansible/tmp/ansible-tmp-1604841523.0315905-5909-156760364083920/source",
+    "state": "file",
+    "uid": 0
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/helm_lint : Run helm lint] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/helm_lint/tasks/main.yaml:35
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841523.3823767-5949-156273814229582 `" && echo ansible-tmp-1604841523.3823767-5949-156273814229582="` echo /root/.ansible/tmp/ansible-tmp-1604841523.3823767-5949-156273814229582 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmpnwiw9d1g TO /root/.ansible/tmp/ansible-tmp-1604841523.3823767-5949-156273814229582/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841523.3823767-5949-156273814229582/ /root/.ansible/tmp/ansible-tmp-1604841523.3823767-5949-156273814229582/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841523.3823767-5949-156273814229582/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841523.3823767-5949-156273814229582/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "cmd": "helm lint -f \"./build/test/carrier-peer1.yaml\" \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/peernode\"\n",
+    "delta": "0:00:00.060401",
+    "end": "2020-11-08 13:18:43.574385",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "helm lint -f \"./build/test/carrier-peer1.yaml\" \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/peernode\"\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-11-08 13:18:43.513984",
+    "stderr": "",
+    "stderr_lines": [],
+    "stdout": "==> Linting /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/peernode\n[INFO] Chart.yaml: icon is recommended\n\n1 chart(s) linted, no failures",
+    "stdout_lines": [
+        "==> Linting /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../platforms/hyperledger-fabric/charts/peernode",
+        "[INFO] Chart.yaml: icon is recommended",
+        "",
+        "1 chart(s) linted, no failures"
+    ]
+}
+
+TASK [Git Push] ****************************************************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/peers/tasks/main.yaml:36
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Check if directory: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../ exists] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:3
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841523.6892-5983-97061603017460 `" && echo ansible-tmp-1604841523.6892-5983-97061603017460="` echo /root/.ansible/tmp/ansible-tmp-1604841523.6892-5983-97061603017460 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/file.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmp8y5axo5r TO /root/.ansible/tmp/ansible-tmp-1604841523.6892-5983-97061603017460/AnsiballZ_file.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841523.6892-5983-97061603017460/ /root/.ansible/tmp/ansible-tmp-1604841523.6892-5983-97061603017460/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841523.6892-5983-97061603017460/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604841523.6892-5983-97061603017460/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "diff": {
+        "after": {
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../"
+        },
+        "before": {
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../"
+        }
+    },
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../",
+            "recurse": false,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": false
+        }
+    },
+    "mode": "0755",
+    "owner": "root",
+    "path": "/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../",
+    "size": 4096,
+    "state": "directory",
+    "uid": 0
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Execute git push via shell task] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:9
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604841523.899552-6009-130167624824963 `" && echo ansible-tmp-1604841523.899552-6009-130167624824963="` echo /root/.ansible/tmp/ansible-tmp-1604841523.899552-6009-130167624824963 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-26046afg6dqua/tmp6x_d2tig TO /root/.ansible/tmp/ansible-tmp-1604841523.899552-6009-130167624824963/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604841523.899552-6009-130167624824963/ /root/.ansible/tmp/ansible-tmp-1604841523.899552-6009-130167624824963/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604841523.899552-6009-130167624824963/AnsiballZ_command.py && sleep 0'
