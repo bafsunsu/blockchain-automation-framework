@@ -47021,3 +47021,1095 @@ Using module file /usr/local/lib/python3.6/dist-packages/ansible/modules/command
 <localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmp1zpbakuc TO /root/.ansible/tmp/ansible-tmp-1604845889.9205055-28099-205385594290113/AnsiballZ_command.py
 <localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604845889.9205055-28099-205385594290113/ /root/.ansible/tmp/ansible-tmp-1604845889.9205055-28099-205385594290113/AnsiballZ_command.py && sleep 0'
 <localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604845889.9205055-28099-205385594290113/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604845889.9205055-28099-205385594290113/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "cmd": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing chaincode installation files\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:gorilla\n",
+    "delta": "0:00:03.230847",
+    "end": "2020-11-08 14:31:33.283056",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "cd \"/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email s.unil18031992@gmail.com\ngit config user.name bafsunsu\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/hyperledger-fabric/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git reset \"platforms/hyperledger-fabric/configuration\"\nfi  \n\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git commit -s -m \"[ci skip] Pushing chaincode installation files\" || true\ngit --git-dir=/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../..//.git push https://bafsunsu:bafsunsu2020@github.com/bafsunsu/blockchain-automation-framework.git HEAD:gorilla\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2020-11-08 14:31:30.052209",
+    "stderr": "To https://github.com/bafsunsu/blockchain-automation-framework.git\n   6b6261b3..afdfc1e9  HEAD -> gorilla",
+    "stderr_lines": [
+        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
+        "   6b6261b3..afdfc1e9  HEAD -> gorilla"
+    ],
+    "stdout": "---------------SHOW CONTENT OF DIR---------------\n.\n..\n.circleci\n.git\n.github\n.gitignore\n.travis.yml\nCODEOWNERS\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nDockerfile\nLICENSE\nMAINTAINERS.md\nREADME.md\nautomation\nbuild\nconsole.out\ndocs\nexamples\nplatforms\nrelease-notes.md\nreset.sh\nrun.sh\n---------------GIT PUSH---------------\n[gorilla afdfc1e9] [ci skip] Pushing chaincode installation files\n 2 files changed, 2139 insertions(+)\n create mode 100644 platforms/hyperledger-fabric/releases/dev/carrier/carrier/chaincode-install-carrier-peer1-1.yaml",
+    "stdout_lines": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        ".travis.yml",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "automation",
+        "build",
+        "console.out",
+        "docs",
+        "examples",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "[gorilla afdfc1e9] [ci skip] Pushing chaincode installation files",
+        " 2 files changed, 2139 insertions(+)",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/carrier/carrier/chaincode-install-carrier-peer1-1.yaml"
+    ]
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Output for gitpush] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:32
+ok: [localhost] => {
+    "msg": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        ".travis.yml",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "automation",
+        "build",
+        "console.out",
+        "docs",
+        "examples",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "[gorilla afdfc1e9] [ci skip] Pushing chaincode installation files",
+        " 2 files changed, 2139 insertions(+)",
+        " create mode 100644 platforms/hyperledger-fabric/releases/dev/carrier/carrier/chaincode-install-carrier-peer1-1.yaml"
+    ]
+}
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/git_push : Error for git_push] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:37
+ok: [localhost] => {
+    "msg": [
+        "To https://github.com/bafsunsu/blockchain-automation-framework.git",
+        "   6b6261b3..afdfc1e9  HEAD -> gorilla"
+    ]
+}
+
+TASK [include_role : create/chaincode/instantiate] *****************************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/chaincode-install-instantiate.yaml:28
+
+TASK [create/chaincode/instantiate : Create value file for chaincode instantiation] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/tasks/main.yaml:8
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+included: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/tasks/valuefile.yaml for localhost => (item={'organization': None, 'name': 'carrier', 'type': 'creator', 'org_status': 'new', 'peers': [{'peer': None, 'name': 'peer0', 'gossipAddress': 'peer1.carrier-net.suneel.pvt.wmtbaf.info:8443', 'peerAddress': 'peer0.carrier-net.suneel.pvt.wmtbaf.info:8443'}, {'peer': None, 'name': 'peer1', 'gossipAddress': 'peer0.carrier-net.suneel.pvt.wmtbaf.info:8443', 'peerAddress': 'peer1.carrier-net.suneel.pvt.wmtbaf.info:8443'}], 'ordererAddress': 'orderer1.walmart-net.suneel.pvt.wmtbaf.info:8443'})
+
+TASK [Waiting for chaincode to be installed on {{ peer.name }}] ****************
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/roles/create/chaincode/instantiate/tasks/valuefile.yaml:6
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+
+TASK [/Users/s0s0dit/project/blockchain-automation-framework/platforms/hyperledger-fabric/configuration/../../shared/configuration/roles/check/helm_component : Wait for Job installchaincode-peer0-product-1 in carrier-net] ***
+task path: /Users/s0s0dit/project/blockchain-automation-framework/platforms/shared/configuration/roles/check/helm_component/tasks/main.yaml:5
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+redirecting filter ansible.builtin.json_query to community.general.json_query
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604845893.720202-28153-142281846559448 `" && echo ansible-tmp-1604845893.720202-28153-142281846559448="` echo /root/.ansible/tmp/ansible-tmp-1604845893.720202-28153-142281846559448 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmp0thtigiw TO /root/.ansible/tmp/ansible-tmp-1604845893.720202-28153-142281846559448/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604845893.720202-28153-142281846559448/ /root/.ansible/tmp/ansible-tmp-1604845893.720202-28153-142281846559448/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604845893.720202-28153-142281846559448/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604845893.720202-28153-142281846559448/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (20 retries left).Result was: {
+    "attempts": 1,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604845924.3325038-28153-268875343512675 `" && echo ansible-tmp-1604845924.3325038-28153-268875343512675="` echo /root/.ansible/tmp/ansible-tmp-1604845924.3325038-28153-268875343512675 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmpi9u4bm9z TO /root/.ansible/tmp/ansible-tmp-1604845924.3325038-28153-268875343512675/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604845924.3325038-28153-268875343512675/ /root/.ansible/tmp/ansible-tmp-1604845924.3325038-28153-268875343512675/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604845924.3325038-28153-268875343512675/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604845924.3325038-28153-268875343512675/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (19 retries left).Result was: {
+    "attempts": 2,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604845954.966571-28153-12556333362329 `" && echo ansible-tmp-1604845954.966571-28153-12556333362329="` echo /root/.ansible/tmp/ansible-tmp-1604845954.966571-28153-12556333362329 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmpk6b81m31 TO /root/.ansible/tmp/ansible-tmp-1604845954.966571-28153-12556333362329/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604845954.966571-28153-12556333362329/ /root/.ansible/tmp/ansible-tmp-1604845954.966571-28153-12556333362329/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604845954.966571-28153-12556333362329/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604845954.966571-28153-12556333362329/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (18 retries left).Result was: {
+    "attempts": 3,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604845985.5846474-28153-109734306009035 `" && echo ansible-tmp-1604845985.5846474-28153-109734306009035="` echo /root/.ansible/tmp/ansible-tmp-1604845985.5846474-28153-109734306009035 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmp9r3bl7zu TO /root/.ansible/tmp/ansible-tmp-1604845985.5846474-28153-109734306009035/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604845985.5846474-28153-109734306009035/ /root/.ansible/tmp/ansible-tmp-1604845985.5846474-28153-109734306009035/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604845985.5846474-28153-109734306009035/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604845985.5846474-28153-109734306009035/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (17 retries left).Result was: {
+    "attempts": 4,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846016.2139819-28153-51569812063465 `" && echo ansible-tmp-1604846016.2139819-28153-51569812063465="` echo /root/.ansible/tmp/ansible-tmp-1604846016.2139819-28153-51569812063465 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmpcwmxfsxo TO /root/.ansible/tmp/ansible-tmp-1604846016.2139819-28153-51569812063465/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846016.2139819-28153-51569812063465/ /root/.ansible/tmp/ansible-tmp-1604846016.2139819-28153-51569812063465/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846016.2139819-28153-51569812063465/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846016.2139819-28153-51569812063465/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (16 retries left).Result was: {
+    "attempts": 5,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846046.8411398-28153-119221986254305 `" && echo ansible-tmp-1604846046.8411398-28153-119221986254305="` echo /root/.ansible/tmp/ansible-tmp-1604846046.8411398-28153-119221986254305 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmpuvvftopm TO /root/.ansible/tmp/ansible-tmp-1604846046.8411398-28153-119221986254305/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846046.8411398-28153-119221986254305/ /root/.ansible/tmp/ansible-tmp-1604846046.8411398-28153-119221986254305/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846046.8411398-28153-119221986254305/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846046.8411398-28153-119221986254305/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (15 retries left).Result was: {
+    "attempts": 6,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846077.5108204-28153-109907061443531 `" && echo ansible-tmp-1604846077.5108204-28153-109907061443531="` echo /root/.ansible/tmp/ansible-tmp-1604846077.5108204-28153-109907061443531 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmp9nhqaj_s TO /root/.ansible/tmp/ansible-tmp-1604846077.5108204-28153-109907061443531/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846077.5108204-28153-109907061443531/ /root/.ansible/tmp/ansible-tmp-1604846077.5108204-28153-109907061443531/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846077.5108204-28153-109907061443531/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846077.5108204-28153-109907061443531/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (14 retries left).Result was: {
+    "attempts": 7,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846108.1464343-28153-200601449701412 `" && echo ansible-tmp-1604846108.1464343-28153-200601449701412="` echo /root/.ansible/tmp/ansible-tmp-1604846108.1464343-28153-200601449701412 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmp_j054dbw TO /root/.ansible/tmp/ansible-tmp-1604846108.1464343-28153-200601449701412/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846108.1464343-28153-200601449701412/ /root/.ansible/tmp/ansible-tmp-1604846108.1464343-28153-200601449701412/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846108.1464343-28153-200601449701412/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846108.1464343-28153-200601449701412/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (13 retries left).Result was: {
+    "attempts": 8,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846138.8511074-28153-267664222302028 `" && echo ansible-tmp-1604846138.8511074-28153-267664222302028="` echo /root/.ansible/tmp/ansible-tmp-1604846138.8511074-28153-267664222302028 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmpx1crh9zq TO /root/.ansible/tmp/ansible-tmp-1604846138.8511074-28153-267664222302028/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846138.8511074-28153-267664222302028/ /root/.ansible/tmp/ansible-tmp-1604846138.8511074-28153-267664222302028/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846138.8511074-28153-267664222302028/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846138.8511074-28153-267664222302028/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (12 retries left).Result was: {
+    "attempts": 9,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846169.5026512-28153-213038936438347 `" && echo ansible-tmp-1604846169.5026512-28153-213038936438347="` echo /root/.ansible/tmp/ansible-tmp-1604846169.5026512-28153-213038936438347 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmps2oww5dk TO /root/.ansible/tmp/ansible-tmp-1604846169.5026512-28153-213038936438347/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846169.5026512-28153-213038936438347/ /root/.ansible/tmp/ansible-tmp-1604846169.5026512-28153-213038936438347/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846169.5026512-28153-213038936438347/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846169.5026512-28153-213038936438347/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (11 retries left).Result was: {
+    "attempts": 10,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846200.1315413-28153-17302605218797 `" && echo ansible-tmp-1604846200.1315413-28153-17302605218797="` echo /root/.ansible/tmp/ansible-tmp-1604846200.1315413-28153-17302605218797 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmp7vybhshc TO /root/.ansible/tmp/ansible-tmp-1604846200.1315413-28153-17302605218797/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846200.1315413-28153-17302605218797/ /root/.ansible/tmp/ansible-tmp-1604846200.1315413-28153-17302605218797/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846200.1315413-28153-17302605218797/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846200.1315413-28153-17302605218797/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (10 retries left).Result was: {
+    "attempts": 11,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846230.8079722-28153-124971298287132 `" && echo ansible-tmp-1604846230.8079722-28153-124971298287132="` echo /root/.ansible/tmp/ansible-tmp-1604846230.8079722-28153-124971298287132 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmpzpc5yea9 TO /root/.ansible/tmp/ansible-tmp-1604846230.8079722-28153-124971298287132/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846230.8079722-28153-124971298287132/ /root/.ansible/tmp/ansible-tmp-1604846230.8079722-28153-124971298287132/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846230.8079722-28153-124971298287132/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846230.8079722-28153-124971298287132/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (9 retries left).Result was: {
+    "attempts": 12,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846261.6374052-28153-114441685233364 `" && echo ansible-tmp-1604846261.6374052-28153-114441685233364="` echo /root/.ansible/tmp/ansible-tmp-1604846261.6374052-28153-114441685233364 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmpmzkau9sj TO /root/.ansible/tmp/ansible-tmp-1604846261.6374052-28153-114441685233364/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846261.6374052-28153-114441685233364/ /root/.ansible/tmp/ansible-tmp-1604846261.6374052-28153-114441685233364/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846261.6374052-28153-114441685233364/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846261.6374052-28153-114441685233364/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (8 retries left).Result was: {
+    "attempts": 13,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846292.2549117-28153-33574941868903 `" && echo ansible-tmp-1604846292.2549117-28153-33574941868903="` echo /root/.ansible/tmp/ansible-tmp-1604846292.2549117-28153-33574941868903 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmp6kukerkb TO /root/.ansible/tmp/ansible-tmp-1604846292.2549117-28153-33574941868903/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846292.2549117-28153-33574941868903/ /root/.ansible/tmp/ansible-tmp-1604846292.2549117-28153-33574941868903/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846292.2549117-28153-33574941868903/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846292.2549117-28153-33574941868903/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (7 retries left).Result was: {
+    "attempts": 14,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846322.8664722-28153-28465405172837 `" && echo ansible-tmp-1604846322.8664722-28153-28465405172837="` echo /root/.ansible/tmp/ansible-tmp-1604846322.8664722-28153-28465405172837 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmpcglkqajf TO /root/.ansible/tmp/ansible-tmp-1604846322.8664722-28153-28465405172837/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846322.8664722-28153-28465405172837/ /root/.ansible/tmp/ansible-tmp-1604846322.8664722-28153-28465405172837/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846322.8664722-28153-28465405172837/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846322.8664722-28153-28465405172837/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (6 retries left).Result was: {
+    "attempts": 15,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846353.4977584-28153-266370331261595 `" && echo ansible-tmp-1604846353.4977584-28153-266370331261595="` echo /root/.ansible/tmp/ansible-tmp-1604846353.4977584-28153-266370331261595 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmp2ey5sq7n TO /root/.ansible/tmp/ansible-tmp-1604846353.4977584-28153-266370331261595/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846353.4977584-28153-266370331261595/ /root/.ansible/tmp/ansible-tmp-1604846353.4977584-28153-266370331261595/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846353.4977584-28153-266370331261595/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846353.4977584-28153-266370331261595/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (5 retries left).Result was: {
+    "attempts": 16,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846384.1208305-28153-107024630765371 `" && echo ansible-tmp-1604846384.1208305-28153-107024630765371="` echo /root/.ansible/tmp/ansible-tmp-1604846384.1208305-28153-107024630765371 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmpprl77aw3 TO /root/.ansible/tmp/ansible-tmp-1604846384.1208305-28153-107024630765371/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846384.1208305-28153-107024630765371/ /root/.ansible/tmp/ansible-tmp-1604846384.1208305-28153-107024630765371/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846384.1208305-28153-107024630765371/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846384.1208305-28153-107024630765371/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (4 retries left).Result was: {
+    "attempts": 17,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846414.7538056-28153-23097414171288 `" && echo ansible-tmp-1604846414.7538056-28153-23097414171288="` echo /root/.ansible/tmp/ansible-tmp-1604846414.7538056-28153-23097414171288 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmp5n2nxfsf TO /root/.ansible/tmp/ansible-tmp-1604846414.7538056-28153-23097414171288/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846414.7538056-28153-23097414171288/ /root/.ansible/tmp/ansible-tmp-1604846414.7538056-28153-23097414171288/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846414.7538056-28153-23097414171288/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846414.7538056-28153-23097414171288/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (3 retries left).Result was: {
+    "attempts": 18,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846445.436087-28153-9181017318044 `" && echo ansible-tmp-1604846445.436087-28153-9181017318044="` echo /root/.ansible/tmp/ansible-tmp-1604846445.436087-28153-9181017318044 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmp7d5i1ply TO /root/.ansible/tmp/ansible-tmp-1604846445.436087-28153-9181017318044/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846445.436087-28153-9181017318044/ /root/.ansible/tmp/ansible-tmp-1604846445.436087-28153-9181017318044/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846445.436087-28153-9181017318044/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846445.436087-28153-9181017318044/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (2 retries left).Result was: {
+    "attempts": 19,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846476.0588653-28153-248947001053660 `" && echo ansible-tmp-1604846476.0588653-28153-248947001053660="` echo /root/.ansible/tmp/ansible-tmp-1604846476.0588653-28153-248947001053660 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmpl2hf1xb0 TO /root/.ansible/tmp/ansible-tmp-1604846476.0588653-28153-248947001053660/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846476.0588653-28153-248947001053660/ /root/.ansible/tmp/ansible-tmp-1604846476.0588653-28153-248947001053660/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846476.0588653-28153-248947001053660/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846476.0588653-28153-248947001053660/ > /dev/null 2>&1 && sleep 0'
+FAILED - RETRYING: Wait for Job installchaincode-peer0-product-1 in carrier-net (1 retries left).Result was: {
+    "attempts": 20,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [],
+    "retries": 21
+}
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1604846506.6935556-28153-280019731117857 `" && echo ansible-tmp-1604846506.6935556-28153-280019731117857="` echo /root/.ansible/tmp/ansible-tmp-1604846506.6935556-28153-280019731117857 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.6/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-108882a9f9rgf/tmp4h0weuog TO /root/.ansible/tmp/ansible-tmp-1604846506.6935556-28153-280019731117857/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1604846506.6935556-28153-280019731117857/ /root/.ansible/tmp/ansible-tmp-1604846506.6935556-28153-280019731117857/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1604846506.6935556-28153-280019731117857/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1604846506.6935556-28153-280019731117857/ > /dev/null 2>&1 && sleep 0'
+fatal: [localhost]: FAILED! => {
+    "attempts": 20,
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "fabric-aks-dev1",
+            "field_selectors": [
+                "status.phase=Succeeded"
+            ],
+            "host": null,
+            "kind": "Pod",
+            "kubeconfig": "/Users/s0s0dit/project/blockchain-automation-framework/build/kubeconfig.yaml",
+            "label_selectors": [
+                "app = installchaincode-peer0-product-1"
+            ],
+            "name": null,
+            "namespace": "carrier-net",
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": []
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=527  changed=191  unreachable=0    failed=1    skipped=403  rescued=0    ignored=23  
+
